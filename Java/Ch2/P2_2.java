@@ -1,6 +1,5 @@
 package Ch2;
 
-import Ch1.Main;
 
 import java.util.Scanner;
 

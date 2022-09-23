@@ -1,6 +1,7 @@
 package Ch4;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,7 +15,7 @@ public class P4_17 {
         String[] months = {
                 "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Set", "Oct", "Nov", "Dec"
         };
-        ArrayList<String> Mon = new ArrayList<String>(List.of(months));
+        ArrayList<String> Mon = new ArrayList<String>(Arrays.asList(months));
         out.print("Enter a year: ");
         Scanner scanner = new Scanner(System.in);
         int year = scanner.nextInt();
