@@ -103,12 +103,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/cmake-build-debug",
-		"source" : "C:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures"
+		"build" : "C:/Users/LY/OneDrive/Documents/LearningStaff/DataStructures/cmake-build-debug",
+		"source" : "C:/Users/LY/OneDrive/Documents/LearningStaff/DataStructures"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 4
 	}
 }
