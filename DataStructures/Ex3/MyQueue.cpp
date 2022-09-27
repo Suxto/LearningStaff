@@ -45,7 +45,13 @@ struct MyQueue {
 
 
 int main() {
-    auto q = new MyQueue<int>(5);
+    auto q = new MyQueue<int>(4);
+    for (int i = 0; i < 3; i++) {
+        int t;
+        cin >> t;
+        q->push(t);
+    }
+    for (int i = 0; i < 2; i++)q->pop();
     for (int i = 0; i < 3; i++) {
         int t;
         cin >> t;
