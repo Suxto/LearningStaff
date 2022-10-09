@@ -12,3 +12,6 @@ add_executable(3.1-3  Ex3/3.1-3.cpp)
 add_executable(3.2-2  Ex3/3.2-2.cpp)
 
 add_executable(MyQueue Ex3/MyQueue.cpp)
+add_executable(4.1 Ex4/4.1.cpp)
+add_executable(4.2-2 Ex4/4.2-2.cpp)
+add_executable(4.3 Ex4/4.3.cpp)
