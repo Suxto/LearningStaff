@@ -78,7 +78,6 @@ void print(node *now, int lay = 0) {
     for (int i = 0; i < lay; i++)cout << "   ";
     cout << now << ' ' << endl;
     print(now->lChild, lay + 1);
-
 }
 
 

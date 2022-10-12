@@ -403,6 +403,39 @@ build 4.3.exe: CXX_EXECUTABLE_LINKER__4.2e3_Debug CMakeFiles/4.3.dir/Ex4/4.3.cpp
   TARGET_IMPLIB = lib4.3.dll.a
   TARGET_PDB = 4.3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target 4.4
+
+
+#############################################
+# Order-only phony target for 4.4
+
+build cmake_object_order_depends_target_4.4: phony || CMakeFiles/4.4.dir
+
+build CMakeFiles/4.4.dir/Ex4/4.4.cpp.obj: CXX_COMPILER__4.2e4_Debug C$:/Users/LY/OneDrive/Documents/LearningStaff/DataStructures/Ex4/4.4.cpp || cmake_object_order_depends_target_4.4
+  DEP_FILE = CMakeFiles\4.4.dir\Ex4\4.4.cpp.obj.d
+  FLAGS = -g -std=gnu++23
+  OBJECT_DIR = CMakeFiles\4.4.dir
+  OBJECT_FILE_DIR = CMakeFiles\4.4.dir\Ex4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 4.4
+
+
+#############################################
+# Link the executable 4.4.exe
+
+build 4.4.exe: CXX_EXECUTABLE_LINKER__4.2e4_Debug CMakeFiles/4.4.dir/Ex4/4.4.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\4.4.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 4.4.exe
+  TARGET_IMPLIB = lib4.4.dll.a
+  TARGET_PDB = 4.4.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -449,6 +482,8 @@ build 4.2-2: phony 4.2-2.exe
 
 build 4.3: phony 4.3.exe
 
+build 4.4: phony 4.4.exe
+
 build MyQueue: phony MyQueue.exe
 
 # =============================================================================
@@ -459,7 +494,7 @@ build MyQueue: phony MyQueue.exe
 #############################################
 # Folder: C:/Users/LY/OneDrive/Documents/LearningStaff/DataStructures/cmake-build-debug
 
-build all: phony 1.1.exe 2.1.exe 2.2.exe 2.3.exe 3.1-1.exe 3.1-3.exe 3.2-2.exe MyQueue.exe 4.1.exe 4.2-2.exe 4.3.exe
+build all: phony 1.1.exe 2.1.exe 2.2.exe 2.3.exe 3.1-1.exe 3.1-3.exe 3.2-2.exe MyQueue.exe 4.1.exe 4.2-2.exe 4.3.exe 4.4.exe
 
 # =============================================================================
 # Built-in targets

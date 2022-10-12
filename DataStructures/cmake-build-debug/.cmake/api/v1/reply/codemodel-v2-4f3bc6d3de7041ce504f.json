@@ -25,7 +25,8 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11
 					]
 				}
 			],
@@ -50,7 +51,8 @@
 						7,
 						8,
 						9,
-						10
+						10,
+						11
 					]
 				}
 			],
@@ -124,6 +126,13 @@
 					"id" : "4.3::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-4.3-Debug-bd9d03fdd385f0699ab7.json",
 					"name" : "4.3",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "4.4::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-4.4-Debug-1f5ffa56489fb33f1497.json",
+					"name" : "4.4",
 					"projectIndex" : 0
 				},
 				{
