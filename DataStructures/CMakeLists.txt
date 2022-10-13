@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 project(DataStructures)
 
-set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD 17)
 
 add_executable(1.1   Ex1/1.1.cpp)
 add_executable(2.1   Ex2/2.1.cpp)

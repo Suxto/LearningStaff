@@ -18,7 +18,7 @@ public:
     T *arr = nullptr;
 
     explicit myStack(int n) {
-        arr = (T *) malloc(n * sizeof(T));
+        arr = new T[n];
     }
 
     myStack() = default;
