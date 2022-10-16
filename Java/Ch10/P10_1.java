@@ -6,9 +6,11 @@ import static java.lang.System.out;
 
 public class P10_1 {
     public static void main(String[] args) {
-        long se = System.currentTimeMillis();
-        Time time = new Time(se);
-
+        long se = 555550000L;
+        Time time = new Time();
+        out.println(time);
+        time.setTime(se);
+        out.println(time);
     }
 }
 
@@ -36,7 +38,16 @@ class Time {
         this.minute = minute;
         this.second = second;
     }
-    
+
+    void setTime(long el) {
+        long div = 1000;
+        second = (int) (el / div) % 60;
+        div *= 60;
+        minute = (int) (el / div) % 60;
+        div *= 60;
+        hour = (int) (el / div) % 24;
+    }
+
     public int getHour() {
         return hour;
     }
@@ -49,6 +60,7 @@ class Time {
         return second;
     }
 
+    @Override
     public String toString() {
         return String.format("%02d:%02d:%02d", hour, minute, second);
     }
