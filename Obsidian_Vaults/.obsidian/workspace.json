@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "fe64758504ee8269",
+        "id": "61cc88e2260f54b6",
         "type": "tabs",
         "children": [
           {
-            "id": "61504f727abb0624",
+            "id": "9ea492fef8006928",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -57,35 +57,12 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200.51103591918945
   },
   "right": {
     "id": "286134787f615b8e",
     "type": "split",
-    "children": [
-      {
-        "id": "f389f2e3554599e5",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "25ec873a89053f19",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          }
-        ]
-      }
-    ],
+    "children": [],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
@@ -93,6 +70,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "61504f727abb0624",
-  "lastOpenFiles": []
+  "active": "9ea492fef8006928",
+  "lastOpenFiles": [
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/面向对象.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/面向对象 781207919bb34eff8503a1a7daf3abd9/继承 a5e899ac5e2a4858bbb66aa7cdc9868b/访问权限 8ecf68e291b1469ba0b89da9455b6dbd/同一个类 ca3c9b534fd046408fceb0fa50e131ce.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/面向对象 781207919bb34eff8503a1a7daf3abd9/继承 a5e899ac5e2a4858bbb66aa7cdc9868b/访问权限 8ecf68e291b1469ba0b89da9455b6dbd/外部的类 b601cd7f2ce54d17a2c0cf7882b297d1.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/面向对象 781207919bb34eff8503a1a7daf3abd9/继承 a5e899ac5e2a4858bbb66aa7cdc9868b/访问权限 8ecf68e291b1469ba0b89da9455b6dbd/派生类 faefe2ac117a43a9a9bba0a0682dc048.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/面向对象 781207919bb34eff8503a1a7daf3abd9/继承 a5e899ac5e2a4858bbb66aa7cdc9868b/Untitled.png",
+    "Problems/Problems/因数分解.md",
+    "Problems/Table.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/进阶操作.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/STL(Standard Template Library).md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/Basic.md"
+  ]
 }

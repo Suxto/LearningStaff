@@ -1,0 +1,109 @@
+{
+  "main": {
+    "id": "819fc6fca1bb35ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "0ba05461c50837af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8577475d994b8be",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cab3b579c912741a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ee22621b6e806dd5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "15cfe068fdc3368a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "262d172a0828c21f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 786.0110359191895
+  },
+  "right": {
+    "id": "286134787f615b8e",
+    "type": "split",
+    "children": [
+      {
+        "id": "aca2ce8ece8031ba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1628c8f1408d30c3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "15cfe068fdc3368a",
+  "lastOpenFiles": [
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/STL(Standard Template Library) 042ff52d54fa4e50ab01597dc5fc9953/STL核心包含三大组件 948345cdf8aa40d4838ddbba1b8e8973/容器（Containers） 071fa549ef7e4e1fb5fd336f84650eb2/STL容器 19cb15e8c2ce4116ad345e127bed6f31/序列容器 8f8d789542c04ce29ad68ce3c8aff2f8/array、vector 和 deque 容器的函数成员 a6475af507514d68bcff28f8fb6ebc08/begin() c7cef186e17c4067a2f59fa9a577f9cb.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/STL(Standard Template Library) 042ff52d54fa4e50ab01597dc5fc9953/STL核心包含三大组件 948345cdf8aa40d4838ddbba1b8e8973/容器（Containers） 071fa549ef7e4e1fb5fd336f84650eb2/STL容器 19cb15e8c2ce4116ad345e127bed6f31/序列容器 8f8d789542c04ce29ad68ce3c8aff2f8/array、vector 和 deque 容器的函数成员 a6475af507514d68bcff28f8fb6ebc08/back().md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/STL(Standard Template Library) 042ff52d54fa4e50ab01597dc5fc9953/STL核心包含三大组件 948345cdf8aa40d4838ddbba1b8e8973/容器（Containers） 071fa549ef7e4e1fb5fd336f84650eb2/STL容器 19cb15e8c2ce4116ad345e127bed6f31/序列容器 8f8d789542c04ce29ad68ce3c8aff2f8/array、vector 和 deque 容器的函数成员 a6475af507514d68bcff28f8fb6ebc08/at().md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/STL(Standard Template Library) 042ff52d54fa4e50ab01597dc5fc9953/STL核心包含三大组件 948345cdf8aa40d4838ddbba1b8e8973/容器（Containers） 071fa549ef7e4e1fb5fd336f84650eb2/STL容器 19cb15e8c2ce4116ad345e127bed6f31/序列容器 8f8d789542c04ce29ad68ce3c8aff2f8/array、vector 和 deque 容器的函数成员 a6475af507514d68bcff28f8fb6ebc08/assign().md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/Basic/Lambda表达式/C++11中的Lambda表达式捕获外部变量主要有以下形式： e1d002166e7542b69b7b3ca927f204af/[=, &x] 6447842d60f44ff19dc111b1a6124156.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/Basic/Lambda表达式/C++11中的Lambda表达式捕获外部变量主要有以下形式： e1d002166e7542b69b7b3ca927f204af/[&] a32e84fb42574c318e562bf5ddad8956.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/Basic/Lambda表达式/C++11中的Lambda表达式捕获外部变量主要有以下形式： e1d002166e7542b69b7b3ca927f204af/[&, x] ea340c64ef3b4633818b6b3db6d224f3.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++/Basic/Lambda表达式/C++11中的Lambda表达式捕获外部变量主要有以下形式： e1d002166e7542b69b7b3ca927f204af/[] 6ef012b258ff473e9fb3cb9e7ddda979.md",
+    "Programming/Programming.md",
+    "Programming/Programming d6786caa2ba94b7983a41b4ab876f28f/C++.md"
+  ]
+}

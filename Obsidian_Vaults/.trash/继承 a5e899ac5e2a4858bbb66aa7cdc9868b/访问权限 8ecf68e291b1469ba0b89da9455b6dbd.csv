@@ -1,0 +1,4 @@
+﻿访问,public,protected,private
+同一个类,Yes,Yes,Yes
+派生类,Yes,Yes,No
+外部的类,Yes,No,No
