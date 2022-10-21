@@ -9,5 +9,3 @@
 [Lingo](Lingo.md)
 
 [MySQL](MySQL.md)
-
-[CSS](CSS.md)
