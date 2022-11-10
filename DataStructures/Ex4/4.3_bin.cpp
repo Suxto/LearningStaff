@@ -38,17 +38,14 @@ int main() {
             int now = q.front();
             int pos = vis[now];
             q.pop();
-            int degree = (int) tree[now].size();
-            if (degree) {
-                bool first = true;
-                for (const int &i: tree[now]) {
-                    if (vis[i]) continue;
-                    if (first) pos = pos << 1, first = false;
-                    else pos = (pos << 1) + 1;
-                    bin[pos] = i;
-                    vis[i] = pos;
-                    q.push(i);
-                }
+            bool first = true;
+            for (const int &i: tree[now]) {
+                if (vis[i]) continue;
+                if (first) pos = pos << 1, first = false;
+                else pos = (pos << 1) + 1;
+                bin[pos] = i;
+                vis[i] = pos;
+                q.push(i);
             }
         }
     };
