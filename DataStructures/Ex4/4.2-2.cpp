@@ -82,12 +82,11 @@ void print(node *now, int lay = 0) {
 
 
 int main() {
-	//1 2 0 4 0 0 3 5 0 6 0 0 0 
+    //1 2 0 4 0 0 3 5 0 6 0 0 0
     node *head = new node;
     int x;
     cin >> x;
     build(head, x);
-//    print(head);
     cin >> x;
     auto stack = myStack<int>(100);
     function<bool(node *, int)> dfs = [&](node *now, int x) {
@@ -96,11 +95,17 @@ int main() {
             stack.push(now->data);
             return true;
         }
-        if (dfs(now->lChild, x)) stack.push(now->data);
-        if (dfs(now->rChild, x)) stack.push(now->data);
+        if (dfs(now->lChild, x)) {
+            stack.push(now->data);
+            return true;
+        }
+        if (dfs(now->rChild, x)) {
+            stack.push(now->data);
+            return true;
+        }
         return false;
     };
     dfs(head, x);
-    stack.push(head->data);
+//    stack.push(head->data);
     cout << stack;
 }

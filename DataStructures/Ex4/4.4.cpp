@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 
-#include <utility>
-
 #define SP '$'
 #define NL '@'
 using namespace std;
