@@ -26,7 +26,7 @@ int main() {
         tree[x].emplace_back(y);
         tree[y].emplace_back(x);
     }
-    vector<int> bin(100, -1);
+    vector<int> bin(30, -1);
 
     auto bfs = [&](int fst) {
         vector<int> vis(n + 1);
@@ -65,6 +65,7 @@ int main() {
         if (bin[r] != -1) dfs(r, sp);
     };
     dfs(1, 0);
+    return 0;
 }
 /*
 7
