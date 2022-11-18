@@ -1,12 +1,15 @@
 import os
 
-path = "C:\\Users\\LY\\OneDrive\\Documents\\LearningStaff\\Java\\Ch8"
+path = "C:\\Users\\Suxto\\OneDrive\\Documents\\LearningStaff\\Java\\Ch10"
 names=os.listdir(path)
 # names.sort()
 print("左边是题目，右边是对应文件")
 for i in names:
-    if(i[4]=='.'):
-        print(i[1]+"."+i[3]+" ==> "+i)
+    if(i[5]=='.'): 
+        if(i[-1]=='g'): print(i[1]+i[2]+"."+i[4]+" 的类图 ==> "+i)
+        else: print(i[1]+i[2]+"."+i[4]+" ==> "+i)
+
     else:
-        print(i[1]+"."+i[3]+i[4]+" ==> "+i)
+        if(i[-1]=='g'): print(i[1]+i[2]+"."+i[4]+i[5]+" 的类图 ==> "+i)
+        print(i[1]+i[2]+"."+i[4]+i[5]+" ==> "+i)
     
