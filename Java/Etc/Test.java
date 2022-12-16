@@ -1,15 +1,20 @@
 package Etc;
 
-
-import javafx.geometry.Point2D;
-
-import java.util.Date;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.security.spec.ECField;
+import java.util.Scanner;
 
 public class Test {
-    static java.util.Date date = new Date();
-
     public static void main(String[] args) {
-        Test test = new Test();
-        System.out.println(date);
+        try {
+            System.out.println("Welcome to Java");
+            return;
+        } finally {
+            System.out.println("The finally clause is executed");
+        }
     }
 }
+
