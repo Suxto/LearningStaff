@@ -1,6 +1,6 @@
 import os
 
-path = "C:\\Users\\Suxto\\OneDrive\\Documents\\LearningStaff\\Java\\Ch13"
+path = "C:\\Users\\Suxto\\OneDrive\\Documents\\LearningStaff\\Java\\Ch15"
 names=os.listdir(path)
 # names.sort()
 print("左边是题目，右边是对应文件")

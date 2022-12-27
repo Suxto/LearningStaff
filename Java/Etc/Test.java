@@ -1,21 +1,18 @@
 package Etc;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.security.spec.ECField;
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
+
+import java.util.Date;
 import java.util.Scanner;
 
-import static java.lang.System.in;
-import static java.lang.System.out;
-
 public class Test {
-    public static void go() {
-
-    }
-
     public static void main(String[] args) {
     }
 }
-
