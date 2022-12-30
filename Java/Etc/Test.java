@@ -1,18 +1,42 @@
 package Etc;
 
-import javafx.application.Application;
-import javafx.geometry.Insets;
-import javafx.scene.Scene;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
+import java.math.BigInteger;
+import java.util.Random;
 
-import java.util.Date;
-import java.util.Scanner;
+public class Test extends BigInteger {
+    public Test(byte[] val, int off, int len) {
+        super(val, off, len);
+    }
 
-public class Test {
+    public Test(byte[] val) {
+        super(val);
+    }
+
+    public Test(int signum, byte[] magnitude, int off, int len) {
+        super(signum, magnitude, off, len);
+    }
+
+    public Test(int signum, byte[] magnitude) {
+        super(signum, magnitude);
+    }
+
+    public Test(String val, int radix) {
+        super(val, radix);
+    }
+
+    public Test(String val) {
+        super(val);
+    }
+
+    public Test(int numBits, Random rnd) {
+        super(numBits, rnd);
+    }
+
+    public Test(int bitLength, int certainty, Random rnd) {
+        super(bitLength, certainty, rnd);
+    }
+
     public static void main(String[] args) {
     }
+
 }
