@@ -9,20 +9,17 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import javafx.scene.control.Button;
-
-import java.time.LocalTime;
 
 public class AlarmClock extends Application {
 
@@ -126,96 +123,3 @@ public class AlarmClock extends Application {
 
 }
 
-class WarnStage extends Stage {
-    public WarnStage(String warning) {
-        this(warning, 0, 0);
-    }
-
-    public WarnStage(String warning, int x, int y) {
-        VBox pane = new VBox();
-        pane.setAlignment(Pos.CENTER);
-        Text text = new Text(warning);
-        text.setFont(Font.font(15));
-        pane.getChildren().add(text);
-        Button button = new Button("   OK   ");
-        button.setOnAction(e -> this.close());
-        pane.getChildren().add(button);
-        pane.setSpacing(10);
-        pane.setPadding(new Insets(10, 30, 10, 30));
-
-        Scene scene;
-        if (x == 0 || y == 0) scene = new Scene(pane);
-        else scene = new Scene(pane, x, y);
-        this.setTitle("Warn");
-        this.setScene(scene);
-        this.show();
-    }
-}
-
-class Message extends VBox {
-    int h, m, s;
-    String note;
-
-    public Message(int h, int m, int s, String note) {
-        this.h = h;
-        this.m = m;
-        this.s = s;
-        this.note = note;
-        show();
-    }
-
-    boolean isTheTime(TimePane timePane) {
-        return timePane.h == h && timePane.m == m && timePane.s == s;
-    }
-
-    boolean isTheTime(int h, int m, int s) {
-        return this.h == h && this.m == m && this.s == s;
-    }
-
-    void show() {
-        Text time = new Text(String.format("%02d:%02d:%02d", h, m, s));
-        time.setFont(Font.font(26));
-        Text msg = new Text(note);
-        this.getChildren().addAll(time, msg);
-    }
-}
-
-class TimePane extends Pane {
-    int h, m, s;
-    Text text;
-
-    public void setTime(int h, int m, int s) {
-        this.h = h;
-        this.m = m;
-        this.s = s;
-        upDate();
-    }
-
-    public TimePane(int h, int m, int s) {
-        text = new Text();
-        getChildren().add(text);
-        setTime(h, m, s);
-        show();
-    }
-
-    public TimePane() {
-        text = new Text();
-        getChildren().add(text);
-        upDate();
-        show();
-    }
-
-    public void upDate() {
-        this.h = LocalTime.now().getHour();
-        this.m = LocalTime.now().getMinute();
-        this.s = LocalTime.now().getSecond();
-        text.setText(String.format("%02d:%02d:%02d", h, m, s));
-    }
-
-    public void show() {
-//        text.setText(String.format("%02d:%02d:%02d", h, m, s));
-        text.xProperty().bind(this.widthProperty().divide(2).subtract(122));
-        text.yProperty().bind(this.heightProperty().divide(2).subtract(10));
-        text.setFont(Font.font(65));
-    }
-}

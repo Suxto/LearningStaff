@@ -44,7 +44,7 @@ void dfs(std::vector<std::vector<int>> *matrix, int now = 0) {
 }
 
 int main() {
-    std::cout << "Enter the number of vertex and node: ";
+    std::cout << "Enter the number of vertex and edge: ";
     int v, e;
     std::cin >> v >> e;
     std::vector<std::vector<int>> table(v);

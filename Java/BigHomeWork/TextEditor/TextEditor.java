@@ -25,26 +25,30 @@ public class TextEditor extends Application {
         vBox.getChildren().addAll(menuBar, tabPane);
         Menu muFile = new Menu("_File");
         menuBar.getMenus().add(muFile);
-        MenuItem miNew = new MenuItem("New   ");
+        MenuItem miNew = new MenuItem("_New   ");
         miNew.setAccelerator(KeyCombination.keyCombination("Ctrl + N"));
         miNew.addEventHandler(EventType.ROOT, e -> {
             tabPane.getTabs().add(FileTab.newTab());
+            tabPane.getSelectionModel().getSelectedItem().getContent().requestFocus();
+            tabPane.getSelectionModel().getSelectedItem().getContent().setStyle("-fx-underline: true");
         });
         muFile.getItems().add(miNew);
-        MenuItem miOpen = new MenuItem("Open  ");
+        MenuItem miOpen = new MenuItem("_Open  ");
         muFile.getItems().add(miOpen);
         miOpen.setAccelerator(KeyCombination.keyCombination("Ctrl + O"));
         miOpen.addEventHandler(EventType.ROOT, event -> {
             tabPane.getTabs().add(FileTab.openTab());
+            tabPane.getSelectionModel().selectLast();
+            tabPane.getSelectionModel().getSelectedItem().getContent().requestFocus();
         });
-        MenuItem miSave = new MenuItem("Save   ");
+        MenuItem miSave = new MenuItem("_Save   ");
         miSave.setDisable(true);
         miSave.setAccelerator(KeyCombination.keyCombination("Ctrl + S"));
         muFile.getItems().add(miSave);
         miSave.addEventHandler(EventType.ROOT, e -> {
             ((FileTab) tabPane.getSelectionModel().getSelectedItem()).save();
         });
-        MenuItem miClose = new MenuItem("Close    ");
+        MenuItem miClose = new MenuItem("_Close    ");
         miClose.setDisable(true);
         miClose.setAccelerator(KeyCombination.keyCombination("Ctrl + W"));
         miClose.addEventHandler(EventType.ROOT, e -> {
@@ -55,11 +59,11 @@ public class TextEditor extends Application {
         miCloseAll.setDisable(true);
         miCloseAll.addEventHandler(EventType.ROOT, e -> tabPane.getTabs().clear());
         muFile.getItems().add(miCloseAll);
-        MenuItem miExit = new MenuItem("Exit  ");
+        MenuItem miExit = new MenuItem("_Exit  ");
         miExit.addEventHandler(EventType.ROOT, e -> stage.close());
         muFile.getItems().add(miExit);
 
-        Menu muEdit = new Menu("Edit");
+        Menu muEdit = new Menu("_Edit");
         menuBar.getMenus().add(muEdit);
 
         MenuItem miCopy = new MenuItem("Copy");
@@ -95,7 +99,7 @@ public class TextEditor extends Application {
             textArea.redo();
         });
 
-        Menu muFormat = new Menu("Format");
+        Menu muFormat = new Menu("_Format");
         menuBar.getMenus().add(muFormat);
         CheckMenuItem cmiBold = new CheckMenuItem("Bold");
         cmiBold.setDisable(true);
@@ -154,70 +158,8 @@ public class TextEditor extends Application {
                 cmiWrap.setDisable(false);
             }
         });
+        new FileTab();
     }
 }
 
 
-class FileTab extends Tab {
-    File file = null;
-    TextArea textArea = null;
-
-    void save() {
-        FileWriter fileWriter;
-        if (file == null) {
-            FileChooser fileChooser = new FileChooser();
-            fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("txt", "*.txt"));
-            fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("C++", "*.cpp"));
-            fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Java", "*.java"));
-            file = fileChooser.showSaveDialog(new Stage());
-            this.setText(file.getName());
-        }
-        try {
-            fileWriter = new FileWriter(file);
-            fileWriter.write(textArea.getText());
-            fileWriter.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    public static FileTab openTab() {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("txt", "*.txt"));
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("C++", "*.cpp"));
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Java", "*.java"));
-        FileTab fileTab = new FileTab();
-        fileTab.file = fileChooser.showOpenDialog(new Stage());
-        FileReader fileReader;
-        try {
-            fileReader = new FileReader(fileTab.file);
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        Scanner scanner = new Scanner(fileReader);
-        StringBuilder stringBuilder = new StringBuilder();
-        while (scanner.hasNext()) stringBuilder.append(scanner.nextLine()).append('\n');
-        fileTab.textArea = new TextArea(stringBuilder.toString());
-        fileTab.textArea.setPrefHeight(1000);
-        fileTab.textArea.setFont(Font.font(20));
-        try {
-            fileReader.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        fileTab.setText(fileTab.file.getName());
-        fileTab.setContent(fileTab.textArea);
-        return fileTab;
-    }
-
-
-    public static FileTab newTab() {
-        FileTab fileTab = new FileTab();
-        fileTab.textArea = new TextArea();
-        fileTab.textArea.setPrefHeight(1000);
-        fileTab.textArea.setFont(Font.font(20));
-        fileTab.setText("No Name");
-        fileTab.setContent(fileTab.textArea);
-        return fileTab;
-    }
-}

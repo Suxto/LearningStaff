@@ -1,5 +1,7 @@
 package BigHomeWork.ShoppingChart;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.collections.ObservableList;
 import javafx.geometry.HPos;
@@ -17,8 +19,10 @@ import javafx.scene.layout.*;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 
 public class ShoppingChat extends Application {
@@ -50,10 +54,18 @@ public class ShoppingChat extends Application {
         checkOutPane.setAlignment(Pos.TOP_LEFT);
         checkOutPane.setSpacing(15);
         checkOutPane.setPadding(new Insets(15));
-        Scene scene2 = new Scene(checkOutPane, 400, 200);
+        Scene scene2 = new Scene(checkOutPane, 400, 400);
+
 
         Button btBack = new Button("Back");
-        btBack.setOnAction(e -> stage.setScene(scene1));
+        btBack.setOnAction(e -> {
+            Timeline timeline = new Timeline(new KeyFrame(Duration.millis(10), ee -> {
+                stage.setHeight(stage.getHeight() + 10);
+            }));
+            timeline.setCycleCount((int) ((400 - stage.getHeight()) / 10));
+            timeline.play();
+            stage.setScene(scene1);
+        });
         checkOutPane.getChildren().add(btBack);
         GridPane numbers = new GridPane();
         numbers.setVgap(15);
@@ -94,6 +106,11 @@ public class ShoppingChat extends Application {
             tfTax.setText(tex + "");
             tfTotal.setText((Double.parseDouble(tfSubtotal.getText()) + tex) + "");
             stage.setScene(scene2);
+            Timeline timeline = new Timeline(new KeyFrame(Duration.millis(10), ee -> {
+                stage.setHeight(stage.getHeight() - 9);
+            }));
+            timeline.setCycleCount((int) ((stage.getHeight() - 200) / 10));
+            timeline.play();
         });
     }
 
@@ -105,54 +122,3 @@ public class ShoppingChat extends Application {
     }
 }
 
-class ProductPane extends BorderPane {
-    Label label;
-    int cnt = 0;
-    final double price;
-    final double tex;
-
-    public ProductPane(TextField tot, double price, double tex, String name, String pic) {
-        this.price = price;
-        this.tex = tex;
-        label = new Label(name + " $" + price, new ImageView(pic));
-        label.setContentDisplay(ContentDisplay.TOP);
-        this.setCenter(label);
-        //control area
-        TextField tfNum = new TextField("0");
-        tfNum.setEditable(false);
-        tfNum.setPrefWidth(30);
-        tfNum.setAlignment(Pos.CENTER);
-
-        Button btAdd = new Button("+");
-        btAdd.setOnAction(e -> {
-            double pre = getSum();
-            tfNum.setText(++cnt + "");
-            tot.setText(Double.parseDouble(tot.getText()) - pre + getSum() + "");
-        });
-
-        Button btSubtract = new Button("-");
-        btSubtract.setOnAction(e -> {
-            if (cnt > 0) {
-                double pre = getSum();
-                tfNum.setText(--cnt + "");
-                tot.setText(Double.parseDouble(tot.getText()) - pre + getSum() + "");
-            }
-        });
-        HBox hBox = new HBox(btSubtract, tfNum, btAdd);
-        hBox.setSpacing(10);
-        hBox.setAlignment(Pos.CENTER);
-        this.setBottom(hBox);
-    }
-
-    public String getName() {
-        return label.getText();
-    }
-
-    public double getSum() {
-        return cnt * price;
-    }
-
-    public double getTex() {
-        return cnt * price * tex;
-    }
-}

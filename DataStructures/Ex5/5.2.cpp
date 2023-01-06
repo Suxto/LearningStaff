@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <queue>
 #include <numeric>
 #include <algorithm>
 
@@ -46,7 +45,7 @@ int main() {
             ans.emplace_back(n);
         }
     }
-    std::cout << ans.size();
+//    std::cout << ans.size();
     if (ans.size() >= v - 1) {
         std::cout << "The minimum spanning tree is:\n";
         for (auto &n: ans) {
