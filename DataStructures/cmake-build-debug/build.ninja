@@ -54,8 +54,6 @@ build CMakeFiles/1.1.dir/Ex1/1.1.cpp.obj: CXX_COMPILER__1.2e1_Debug C$:/Users/su
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\1.1.dir
   OBJECT_FILE_DIR = CMakeFiles\1.1.dir\Ex1
-  TARGET_COMPILE_PDB = CMakeFiles\1.1.dir\
-  TARGET_PDB = 1.1.pdb
 
 
 # =============================================================================
@@ -71,10 +69,9 @@ build 1.1.exe: CXX_EXECUTABLE_LINKER__1.2e1_Debug CMakeFiles/1.1.dir/Ex1/1.1.cpp
   OBJECT_DIR = CMakeFiles\1.1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\1.1.dir\
   TARGET_FILE = 1.1.exe
   TARGET_IMPLIB = lib1.1.dll.a
-  TARGET_PDB = 1.1.pdb
+  TARGET_PDB = 1.1.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 2.1
@@ -90,8 +87,6 @@ build CMakeFiles/2.1.dir/Ex2/2.1.cpp.obj: CXX_COMPILER__2.2e1_Debug C$:/Users/su
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\2.1.dir
   OBJECT_FILE_DIR = CMakeFiles\2.1.dir\Ex2
-  TARGET_COMPILE_PDB = CMakeFiles\2.1.dir\
-  TARGET_PDB = 2.1.pdb
 
 
 # =============================================================================
@@ -107,10 +102,9 @@ build 2.1.exe: CXX_EXECUTABLE_LINKER__2.2e1_Debug CMakeFiles/2.1.dir/Ex2/2.1.cpp
   OBJECT_DIR = CMakeFiles\2.1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\2.1.dir\
   TARGET_FILE = 2.1.exe
   TARGET_IMPLIB = lib2.1.dll.a
-  TARGET_PDB = 2.1.pdb
+  TARGET_PDB = 2.1.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 2.2
@@ -126,8 +120,6 @@ build CMakeFiles/2.2.dir/Ex2/2.2.cpp.obj: CXX_COMPILER__2.2e2_Debug C$:/Users/su
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\2.2.dir
   OBJECT_FILE_DIR = CMakeFiles\2.2.dir\Ex2
-  TARGET_COMPILE_PDB = CMakeFiles\2.2.dir\
-  TARGET_PDB = 2.2.pdb
 
 
 # =============================================================================
@@ -143,10 +135,9 @@ build 2.2.exe: CXX_EXECUTABLE_LINKER__2.2e2_Debug CMakeFiles/2.2.dir/Ex2/2.2.cpp
   OBJECT_DIR = CMakeFiles\2.2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\2.2.dir\
   TARGET_FILE = 2.2.exe
   TARGET_IMPLIB = lib2.2.dll.a
-  TARGET_PDB = 2.2.pdb
+  TARGET_PDB = 2.2.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 2.3
@@ -162,8 +153,6 @@ build CMakeFiles/2.3.dir/Ex2/2.3.cpp.obj: CXX_COMPILER__2.2e3_Debug C$:/Users/su
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\2.3.dir
   OBJECT_FILE_DIR = CMakeFiles\2.3.dir\Ex2
-  TARGET_COMPILE_PDB = CMakeFiles\2.3.dir\
-  TARGET_PDB = 2.3.pdb
 
 
 # =============================================================================
@@ -179,10 +168,9 @@ build 2.3.exe: CXX_EXECUTABLE_LINKER__2.2e3_Debug CMakeFiles/2.3.dir/Ex2/2.3.cpp
   OBJECT_DIR = CMakeFiles\2.3.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\2.3.dir\
   TARGET_FILE = 2.3.exe
   TARGET_IMPLIB = lib2.3.dll.a
-  TARGET_PDB = 2.3.pdb
+  TARGET_PDB = 2.3.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 3.1-1
@@ -198,8 +186,6 @@ build CMakeFiles/3.1-1.dir/Ex3/3.1-1.cpp.obj: CXX_COMPILER__3.2e1-1_Debug C$:/Us
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\3.1-1.dir
   OBJECT_FILE_DIR = CMakeFiles\3.1-1.dir\Ex3
-  TARGET_COMPILE_PDB = CMakeFiles\3.1-1.dir\
-  TARGET_PDB = 3.1-1.pdb
 
 
 # =============================================================================
@@ -215,10 +201,9 @@ build 3.1-1.exe: CXX_EXECUTABLE_LINKER__3.2e1-1_Debug CMakeFiles/3.1-1.dir/Ex3/3
   OBJECT_DIR = CMakeFiles\3.1-1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\3.1-1.dir\
   TARGET_FILE = 3.1-1.exe
   TARGET_IMPLIB = lib3.1-1.dll.a
-  TARGET_PDB = 3.1-1.pdb
+  TARGET_PDB = 3.1-1.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 3.1-3
@@ -234,8 +219,6 @@ build CMakeFiles/3.1-3.dir/Ex3/3.1-3.cpp.obj: CXX_COMPILER__3.2e1-3_Debug C$:/Us
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\3.1-3.dir
   OBJECT_FILE_DIR = CMakeFiles\3.1-3.dir\Ex3
-  TARGET_COMPILE_PDB = CMakeFiles\3.1-3.dir\
-  TARGET_PDB = 3.1-3.pdb
 
 
 # =============================================================================
@@ -251,10 +234,9 @@ build 3.1-3.exe: CXX_EXECUTABLE_LINKER__3.2e1-3_Debug CMakeFiles/3.1-3.dir/Ex3/3
   OBJECT_DIR = CMakeFiles\3.1-3.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\3.1-3.dir\
   TARGET_FILE = 3.1-3.exe
   TARGET_IMPLIB = lib3.1-3.dll.a
-  TARGET_PDB = 3.1-3.pdb
+  TARGET_PDB = 3.1-3.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 3.2-2
@@ -270,8 +252,6 @@ build CMakeFiles/3.2-2.dir/Ex3/3.2-2.cpp.obj: CXX_COMPILER__3.2e2-2_Debug C$:/Us
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\3.2-2.dir
   OBJECT_FILE_DIR = CMakeFiles\3.2-2.dir\Ex3
-  TARGET_COMPILE_PDB = CMakeFiles\3.2-2.dir\
-  TARGET_PDB = 3.2-2.pdb
 
 
 # =============================================================================
@@ -287,10 +267,9 @@ build 3.2-2.exe: CXX_EXECUTABLE_LINKER__3.2e2-2_Debug CMakeFiles/3.2-2.dir/Ex3/3
   OBJECT_DIR = CMakeFiles\3.2-2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\3.2-2.dir\
   TARGET_FILE = 3.2-2.exe
   TARGET_IMPLIB = lib3.2-2.dll.a
-  TARGET_PDB = 3.2-2.pdb
+  TARGET_PDB = 3.2-2.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target MyQueue
@@ -306,8 +285,6 @@ build CMakeFiles/MyQueue.dir/Ex3/MyQueue.cpp.obj: CXX_COMPILER__MyQueue_Debug C$
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\MyQueue.dir
   OBJECT_FILE_DIR = CMakeFiles\MyQueue.dir\Ex3
-  TARGET_COMPILE_PDB = CMakeFiles\MyQueue.dir\
-  TARGET_PDB = MyQueue.pdb
 
 
 # =============================================================================
@@ -323,10 +300,9 @@ build MyQueue.exe: CXX_EXECUTABLE_LINKER__MyQueue_Debug CMakeFiles/MyQueue.dir/E
   OBJECT_DIR = CMakeFiles\MyQueue.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\MyQueue.dir\
   TARGET_FILE = MyQueue.exe
   TARGET_IMPLIB = libMyQueue.dll.a
-  TARGET_PDB = MyQueue.pdb
+  TARGET_PDB = MyQueue.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 4.1
@@ -342,8 +318,6 @@ build CMakeFiles/4.1.dir/Ex4/4.1.cpp.obj: CXX_COMPILER__4.2e1_Debug C$:/Users/su
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\4.1.dir
   OBJECT_FILE_DIR = CMakeFiles\4.1.dir\Ex4
-  TARGET_COMPILE_PDB = CMakeFiles\4.1.dir\
-  TARGET_PDB = 4.1.pdb
 
 
 # =============================================================================
@@ -359,10 +333,9 @@ build 4.1.exe: CXX_EXECUTABLE_LINKER__4.2e1_Debug CMakeFiles/4.1.dir/Ex4/4.1.cpp
   OBJECT_DIR = CMakeFiles\4.1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\4.1.dir\
   TARGET_FILE = 4.1.exe
   TARGET_IMPLIB = lib4.1.dll.a
-  TARGET_PDB = 4.1.pdb
+  TARGET_PDB = 4.1.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 4.2-2
@@ -378,8 +351,6 @@ build CMakeFiles/4.2-2.dir/Ex4/4.2-2.cpp.obj: CXX_COMPILER__4.2e2-2_Debug C$:/Us
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\4.2-2.dir
   OBJECT_FILE_DIR = CMakeFiles\4.2-2.dir\Ex4
-  TARGET_COMPILE_PDB = CMakeFiles\4.2-2.dir\
-  TARGET_PDB = 4.2-2.pdb
 
 
 # =============================================================================
@@ -395,10 +366,9 @@ build 4.2-2.exe: CXX_EXECUTABLE_LINKER__4.2e2-2_Debug CMakeFiles/4.2-2.dir/Ex4/4
   OBJECT_DIR = CMakeFiles\4.2-2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\4.2-2.dir\
   TARGET_FILE = 4.2-2.exe
   TARGET_IMPLIB = lib4.2-2.dll.a
-  TARGET_PDB = 4.2-2.pdb
+  TARGET_PDB = 4.2-2.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 4.3
@@ -414,8 +384,6 @@ build CMakeFiles/4.3.dir/Ex4/4.3.cpp.obj: CXX_COMPILER__4.2e3_Debug C$:/Users/su
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\4.3.dir
   OBJECT_FILE_DIR = CMakeFiles\4.3.dir\Ex4
-  TARGET_COMPILE_PDB = CMakeFiles\4.3.dir\
-  TARGET_PDB = 4.3.pdb
 
 
 # =============================================================================
@@ -431,10 +399,9 @@ build 4.3.exe: CXX_EXECUTABLE_LINKER__4.2e3_Debug CMakeFiles/4.3.dir/Ex4/4.3.cpp
   OBJECT_DIR = CMakeFiles\4.3.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\4.3.dir\
   TARGET_FILE = 4.3.exe
   TARGET_IMPLIB = lib4.3.dll.a
-  TARGET_PDB = 4.3.pdb
+  TARGET_PDB = 4.3.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 4.4
@@ -450,8 +417,6 @@ build CMakeFiles/4.4.dir/Ex4/4.4.cpp.obj: CXX_COMPILER__4.2e4_Debug C$:/Users/su
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\4.4.dir
   OBJECT_FILE_DIR = CMakeFiles\4.4.dir\Ex4
-  TARGET_COMPILE_PDB = CMakeFiles\4.4.dir\
-  TARGET_PDB = 4.4.pdb
 
 
 # =============================================================================
@@ -467,10 +432,9 @@ build 4.4.exe: CXX_EXECUTABLE_LINKER__4.2e4_Debug CMakeFiles/4.4.dir/Ex4/4.4.cpp
   OBJECT_DIR = CMakeFiles\4.4.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\4.4.dir\
   TARGET_FILE = 4.4.exe
   TARGET_IMPLIB = lib4.4.dll.a
-  TARGET_PDB = 4.4.pdb
+  TARGET_PDB = 4.4.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 5.1
@@ -486,8 +450,6 @@ build CMakeFiles/5.1.dir/Ex5/5.1.cpp.obj: CXX_COMPILER__5.2e1_Debug C$:/Users/su
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\5.1.dir
   OBJECT_FILE_DIR = CMakeFiles\5.1.dir\Ex5
-  TARGET_COMPILE_PDB = CMakeFiles\5.1.dir\
-  TARGET_PDB = 5.1.pdb
 
 
 # =============================================================================
@@ -503,10 +465,9 @@ build 5.1.exe: CXX_EXECUTABLE_LINKER__5.2e1_Debug CMakeFiles/5.1.dir/Ex5/5.1.cpp
   OBJECT_DIR = CMakeFiles\5.1.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\5.1.dir\
   TARGET_FILE = 5.1.exe
   TARGET_IMPLIB = lib5.1.dll.a
-  TARGET_PDB = 5.1.pdb
+  TARGET_PDB = 5.1.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 5.2
@@ -522,8 +483,6 @@ build CMakeFiles/5.2.dir/Ex5/5.2.cpp.obj: CXX_COMPILER__5.2e2_Debug C$:/Users/su
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\5.2.dir
   OBJECT_FILE_DIR = CMakeFiles\5.2.dir\Ex5
-  TARGET_COMPILE_PDB = CMakeFiles\5.2.dir\
-  TARGET_PDB = 5.2.pdb
 
 
 # =============================================================================
@@ -539,10 +498,9 @@ build 5.2.exe: CXX_EXECUTABLE_LINKER__5.2e2_Debug CMakeFiles/5.2.dir/Ex5/5.2.cpp
   OBJECT_DIR = CMakeFiles\5.2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\5.2.dir\
   TARGET_FILE = 5.2.exe
   TARGET_IMPLIB = lib5.2.dll.a
-  TARGET_PDB = 5.2.pdb
+  TARGET_PDB = 5.2.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 4.3_bin
@@ -558,8 +516,6 @@ build CMakeFiles/4.3_bin.dir/Ex4/4.3_bin.cpp.obj: CXX_COMPILER__4.2e3_bin_Debug 
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\4.3_bin.dir
   OBJECT_FILE_DIR = CMakeFiles\4.3_bin.dir\Ex4
-  TARGET_COMPILE_PDB = CMakeFiles\4.3_bin.dir\
-  TARGET_PDB = 4.3_bin.pdb
 
 
 # =============================================================================
@@ -575,10 +531,9 @@ build 4.3_bin.exe: CXX_EXECUTABLE_LINKER__4.2e3_bin_Debug CMakeFiles/4.3_bin.dir
   OBJECT_DIR = CMakeFiles\4.3_bin.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\4.3_bin.dir\
   TARGET_FILE = 4.3_bin.exe
   TARGET_IMPLIB = lib4.3_bin.dll.a
-  TARGET_PDB = 4.3_bin.pdb
+  TARGET_PDB = 4.3_bin.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 4.4_correct
@@ -594,8 +549,6 @@ build CMakeFiles/4.4_correct.dir/Ex4/4.4_correct.cpp.obj: CXX_COMPILER__4.2e4_co
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\4.4_correct.dir
   OBJECT_FILE_DIR = CMakeFiles\4.4_correct.dir\Ex4
-  TARGET_COMPILE_PDB = CMakeFiles\4.4_correct.dir\
-  TARGET_PDB = 4.4_correct.pdb
 
 
 # =============================================================================
@@ -611,10 +564,141 @@ build 4.4_correct.exe: CXX_EXECUTABLE_LINKER__4.2e4_correct_Debug CMakeFiles/4.4
   OBJECT_DIR = CMakeFiles\4.4_correct.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\4.4_correct.dir\
   TARGET_FILE = 4.4_correct.exe
   TARGET_IMPLIB = lib4.4_correct.dll.a
-  TARGET_PDB = 4.4_correct.pdb
+  TARGET_PDB = 4.4_correct.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 6.1
+
+
+#############################################
+# Order-only phony target for 6.1
+
+build cmake_object_order_depends_target_6.1: phony || CMakeFiles/6.1.dir
+
+build CMakeFiles/6.1.dir/EX6/6.1.cpp.obj: CXX_COMPILER__6.2e1_Debug C$:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/EX6/6.1.cpp || cmake_object_order_depends_target_6.1
+  DEP_FILE = CMakeFiles\6.1.dir\EX6\6.1.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\6.1.dir
+  OBJECT_FILE_DIR = CMakeFiles\6.1.dir\EX6
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 6.1
+
+
+#############################################
+# Link the executable 6.1.exe
+
+build 6.1.exe: CXX_EXECUTABLE_LINKER__6.2e1_Debug CMakeFiles/6.1.dir/EX6/6.1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\6.1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 6.1.exe
+  TARGET_IMPLIB = lib6.1.dll.a
+  TARGET_PDB = 6.1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 6.2
+
+
+#############################################
+# Order-only phony target for 6.2
+
+build cmake_object_order_depends_target_6.2: phony || CMakeFiles/6.2.dir
+
+build CMakeFiles/6.2.dir/EX6/6.2.cpp.obj: CXX_COMPILER__6.2e2_Debug C$:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/EX6/6.2.cpp || cmake_object_order_depends_target_6.2
+  DEP_FILE = CMakeFiles\6.2.dir\EX6\6.2.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\6.2.dir
+  OBJECT_FILE_DIR = CMakeFiles\6.2.dir\EX6
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 6.2
+
+
+#############################################
+# Link the executable 6.2.exe
+
+build 6.2.exe: CXX_EXECUTABLE_LINKER__6.2e2_Debug CMakeFiles/6.2.dir/EX6/6.2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\6.2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 6.2.exe
+  TARGET_IMPLIB = lib6.2.dll.a
+  TARGET_PDB = 6.2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Name_Gen
+
+
+#############################################
+# Order-only phony target for Name_Gen
+
+build cmake_object_order_depends_target_Name_Gen: phony || CMakeFiles/Name_Gen.dir
+
+build CMakeFiles/Name_Gen.dir/EX6/Name_Gen.cpp.obj: CXX_COMPILER__Name_Gen_Debug C$:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/EX6/Name_Gen.cpp || cmake_object_order_depends_target_Name_Gen
+  DEP_FILE = CMakeFiles\Name_Gen.dir\EX6\Name_Gen.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Name_Gen.dir
+  OBJECT_FILE_DIR = CMakeFiles\Name_Gen.dir\EX6
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Name_Gen
+
+
+#############################################
+# Link the executable Name_Gen.exe
+
+build Name_Gen.exe: CXX_EXECUTABLE_LINKER__Name_Gen_Debug CMakeFiles/Name_Gen.dir/EX6/Name_Gen.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\Name_Gen.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Name_Gen.exe
+  TARGET_IMPLIB = libName_Gen.dll.a
+  TARGET_PDB = Name_Gen.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 6.3
+
+
+#############################################
+# Order-only phony target for 6.3
+
+build cmake_object_order_depends_target_6.3: phony || CMakeFiles/6.3.dir
+
+build CMakeFiles/6.3.dir/EX6/6.3.cpp.obj: CXX_COMPILER__6.2e3_Debug C$:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/EX6/6.3.cpp || cmake_object_order_depends_target_6.3
+  DEP_FILE = CMakeFiles\6.3.dir\EX6\6.3.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\6.3.dir
+  OBJECT_FILE_DIR = CMakeFiles\6.3.dir\EX6
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 6.3
+
+
+#############################################
+# Link the executable 6.3.exe
+
+build 6.3.exe: CXX_EXECUTABLE_LINKER__6.2e3_Debug CMakeFiles/6.3.dir/EX6/6.3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\6.3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 6.3.exe
+  TARGET_IMPLIB = lib6.3.dll.a
+  TARGET_PDB = 6.3.exe.dbg
 
 
 #############################################
@@ -672,7 +756,15 @@ build 5.1: phony 5.1.exe
 
 build 5.2: phony 5.2.exe
 
+build 6.1: phony 6.1.exe
+
+build 6.2: phony 6.2.exe
+
+build 6.3: phony 6.3.exe
+
 build MyQueue: phony MyQueue.exe
+
+build Name_Gen: phony Name_Gen.exe
 
 # =============================================================================
 # Folder targets.
@@ -682,7 +774,7 @@ build MyQueue: phony MyQueue.exe
 #############################################
 # Folder: C:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/cmake-build-debug
 
-build all: phony 1.1.exe 2.1.exe 2.2.exe 2.3.exe 3.1-1.exe 3.1-3.exe 3.2-2.exe MyQueue.exe 4.1.exe 4.2-2.exe 4.3.exe 4.4.exe 5.1.exe 5.2.exe 4.3_bin.exe 4.4_correct.exe
+build all: phony 1.1.exe 2.1.exe 2.2.exe 2.3.exe 3.1-1.exe 3.1-3.exe 3.2-2.exe MyQueue.exe 4.1.exe 4.2-2.exe 4.3.exe 4.4.exe 5.1.exe 5.2.exe 4.3_bin.exe 4.4_correct.exe 6.1.exe 6.2.exe Name_Gen.exe 6.3.exe
 
 # =============================================================================
 # Built-in targets
@@ -691,14 +783,14 @@ build all: phony 1.1.exe 2.1.exe 2.2.exe 2.3.exe 3.1-1.exe 3.1-3.exe 3.2-2.exe M
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCCompiler.cmake.in C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeTestRCCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCCompiler.cmake.in C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCCompilerABI.c C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXCompiler.cmake.in C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCompilerIdDetection.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineCompilerId.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeDetermineSystem.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeFindBinUtils.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCCompiler.cmake.in C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystem.cmake.in C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeTestCCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeTestCXXCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeTestCompilerCommon.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeTestRCCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Internal/FeatureTesting.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/suxto/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/223.8214.51/bin/cmake/win/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################
