@@ -12,6 +12,7 @@ public class P7_3 {
         int temp;
         while ((temp = scanner.nextInt()) != 0) {
             vis[temp]++;
+            temp=1;
         }
         for (int i = 0; i < 101; i++) {
             if (vis[i] > 0) {

@@ -700,6 +700,39 @@ build 6.3.exe: CXX_EXECUTABLE_LINKER__6.2e3_Debug CMakeFiles/6.3.dir/EX6/6.3.cpp
   TARGET_IMPLIB = lib6.3.dll.a
   TARGET_PDB = 6.3.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target ParkingLot
+
+
+#############################################
+# Order-only phony target for ParkingLot
+
+build cmake_object_order_depends_target_ParkingLot: phony || CMakeFiles/ParkingLot.dir
+
+build CMakeFiles/ParkingLot.dir/GP/ParkingLot.cpp.obj: CXX_COMPILER__ParkingLot_Debug C$:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/GP/ParkingLot.cpp || cmake_object_order_depends_target_ParkingLot
+  DEP_FILE = CMakeFiles\ParkingLot.dir\GP\ParkingLot.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ParkingLot.dir
+  OBJECT_FILE_DIR = CMakeFiles\ParkingLot.dir\GP
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ParkingLot
+
+
+#############################################
+# Link the executable ParkingLot.exe
+
+build ParkingLot.exe: CXX_EXECUTABLE_LINKER__ParkingLot_Debug CMakeFiles/ParkingLot.dir/GP/ParkingLot.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\ParkingLot.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = ParkingLot.exe
+  TARGET_IMPLIB = libParkingLot.dll.a
+  TARGET_PDB = ParkingLot.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -766,6 +799,8 @@ build MyQueue: phony MyQueue.exe
 
 build Name_Gen: phony Name_Gen.exe
 
+build ParkingLot: phony ParkingLot.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -774,7 +809,7 @@ build Name_Gen: phony Name_Gen.exe
 #############################################
 # Folder: C:/Users/suxto/OneDrive/Documents/LearningStaff/DataStructures/cmake-build-debug
 
-build all: phony 1.1.exe 2.1.exe 2.2.exe 2.3.exe 3.1-1.exe 3.1-3.exe 3.2-2.exe MyQueue.exe 4.1.exe 4.2-2.exe 4.3.exe 4.4.exe 5.1.exe 5.2.exe 4.3_bin.exe 4.4_correct.exe 6.1.exe 6.2.exe Name_Gen.exe 6.3.exe
+build all: phony 1.1.exe 2.1.exe 2.2.exe 2.3.exe 3.1-1.exe 3.1-3.exe 3.2-2.exe MyQueue.exe 4.1.exe 4.2-2.exe 4.3.exe 4.4.exe 5.1.exe 5.2.exe 4.3_bin.exe 4.4_correct.exe 6.1.exe 6.2.exe Name_Gen.exe 6.3.exe ParkingLot.exe
 
 # =============================================================================
 # Built-in targets

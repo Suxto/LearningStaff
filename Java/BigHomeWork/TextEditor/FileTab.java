@@ -26,6 +26,7 @@ class FileTab extends Tab {
         try {
             fileWriter = new FileWriter(file);
             fileWriter.write(textArea.getText());
+            fileWriter.flush();
             fileWriter.close();
         } catch (IOException e) {
             throw new RuntimeException(e);

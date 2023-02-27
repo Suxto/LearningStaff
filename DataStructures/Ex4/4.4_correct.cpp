@@ -82,7 +82,7 @@ void encode() {
             node *tmp = pq.top();
             pq.pop();
             node *nd = new node(tmp, pq.top());
-//            cout << (tmp->data == 0 ? 'x' : tmp->data) << ' ' << (pq.top()->data == 0 ? 'x' : pq.top()->data) << ' '
+//            cout << (tmp->data == 0 ? 'x' : tmp->data) << ' ' << (pq.ptr()->data == 0 ? 'x' : pq.ptr()->data) << ' '
 //                 << nd->weight << endl;
             pq.pop();
             pq.push(nd);
