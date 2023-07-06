@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "myshell.h": "c",
+        "string.h": "c",
+        "types.h": "c",
+        "wait.h": "c",
+        "fcntl.h": "c",
+        "unistd.h": "c",
+        "environments.h": "c"
+    },
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/root/code",
+            "binaryPath": "/root/code/myshell",
+            "binaryArgs": []
+        }
+    ]
+}

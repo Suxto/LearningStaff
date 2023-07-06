@@ -1,0 +1,9 @@
+X=[0.2,0.1;
+   0.4,0.3];
+Y=[0.9,1.0;
+   0.0,0.1];
+Z=[0.1,0.7;
+   0.2,1.0];
+[XCandZhY,ZCandYhX]=abc(X,Y,Z);
+XCandZhY%output
+ZCandYhX%output

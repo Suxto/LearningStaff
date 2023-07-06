@@ -1,0 +1,54 @@
+clc; clear all; close all;
+tic;
+x = -5:0.001:4;
+A = ((x + 5) / 6) .* (x >= -5 & x <= 1) + (2.^(-x + 1)) .* (1 < x & x <= 4);
+B = exp(-abs(x + 1) / 7);
+AandB = min(A, B);
+AorB = max(A, B);
+AC = 1 - A;
+BC = 1 - B;
+AandAC = min(A, AC);
+AorAC = max(A, AC);
+BandBC = min(B, BC);
+BorBC = max(B, BC);
+
+figure 1;
+plot(x, A, '-g', 'LineWidth', 1);
+hold on;
+plot(x, B, '--r', 'LineWidth', 1);
+box off;
+xlabel('x');
+ylabel('Membership Function');
+axis([min(x), max(x), 0, 1.05]);
+legend('A', 'B', 'location', 'best');
+
+figure 2;
+plot(x, AandB, '-g', 'LineWidth', 1);
+hold on;
+plot(x, AorB, '--r', 'LineWidth', 1);
+box off;
+xlabel('x');
+ylabel('Membership Function');
+axis([min(x), max(x), 0, 1.05]);
+legend('A\capB', 'A\cupB', 'location', 'best');
+
+figure 3;
+plot(x, AandAC, '-g', 'LineWidth', 1);
+hold on;
+plot(x, AorAC, '--r', 'LineWidth', 1);
+box off;
+xlabel('x');
+ylabel('Membership Function');
+axis([min(x), max(x), 0, 1.05]);
+legend('A\capA^C', 'A\cupA^C', 'location', 'best');
+
+figure 4;
+plot(x, BandBC, '-g', 'LineWidth', 1);
+hold on;
+plot(x, BorBC, '--r', 'LineWidth', 1);
+box off;
+xlabel('x');
+ylabel('Membership Function');
+axis([min(x), max(x), 0, 1.05]);
+legend('B\capB^C', 'B\cupB^C', 'location', 'best');
+toc;
