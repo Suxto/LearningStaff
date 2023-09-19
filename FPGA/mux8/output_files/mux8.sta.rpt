@@ -1,0 +1,677 @@
+TimeQuest Timing Analyzer report for mux8
+Wed Nov 16 15:34:34 2022
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Propagation Delay
+ 13. Minimum Propagation Delay
+ 14. Slow 1200mV 85C Model Metastability Report
+ 15. Slow 1200mV 0C Model Fmax Summary
+ 16. Slow 1200mV 0C Model Setup Summary
+ 17. Slow 1200mV 0C Model Hold Summary
+ 18. Slow 1200mV 0C Model Recovery Summary
+ 19. Slow 1200mV 0C Model Removal Summary
+ 20. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 21. Propagation Delay
+ 22. Minimum Propagation Delay
+ 23. Slow 1200mV 0C Model Metastability Report
+ 24. Fast 1200mV 0C Model Setup Summary
+ 25. Fast 1200mV 0C Model Hold Summary
+ 26. Fast 1200mV 0C Model Recovery Summary
+ 27. Fast 1200mV 0C Model Removal Summary
+ 28. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 29. Propagation Delay
+ 30. Minimum Propagation Delay
+ 31. Fast 1200mV 0C Model Metastability Report
+ 32. Multicorner Timing Analysis Summary
+ 33. Propagation Delay
+ 34. Minimum Propagation Delay
+ 35. Board Trace Model Assignments
+ 36. Input Transition Times
+ 37. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 38. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 39. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 40. Clock Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths
+ 44. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; mux8                                               ;
+; Device Family      ; Cyclone IV E                                       ;
+; Device Name        ; EP4CE6E22C8                                        ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Fmax Summary ;
+--------------------------------------
+No paths to report.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
+---------------------------------------
+; Slow 1200mV 85C Model Setup Summary ;
+---------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 85C Model Hold Summary ;
+--------------------------------------
+No paths to report.
+
+
+------------------------------------------
+; Slow 1200mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
+-----------------------------------------------------
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
+-----------------------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A          ; andLogic    ; 10.901 ;        ;        ; 10.770 ;
+; A          ; muxout      ; 12.045 ; 11.816 ; 12.314 ; 12.078 ;
+; A          ; nandLogic   ;        ; 10.862 ; 10.717 ;        ;
+; A          ; norLogic    ;        ; 10.400 ; 10.327 ;        ;
+; A          ; notLogic    ;        ; 8.275  ; 8.446  ;        ;
+; A          ; nxorLogic   ; 10.382 ; 10.794 ; 10.662 ; 11.031 ;
+; A          ; orLogic     ; 10.212 ;        ;        ; 10.197 ;
+; A          ; xorLogic    ; 12.694 ; 11.972 ; 12.931 ; 12.252 ;
+; B          ; andLogic    ; 10.961 ;        ;        ; 10.824 ;
+; B          ; muxout      ; 12.058 ; 11.829 ; 12.299 ; 12.063 ;
+; B          ; nandLogic   ;        ; 10.922 ; 10.771 ;        ;
+; B          ; norLogic    ;        ; 10.486 ; 10.428 ;        ;
+; B          ; nxorLogic   ; 10.502 ; 10.877 ; 10.760 ; 11.150 ;
+; B          ; orLogic     ; 10.298 ;        ;        ; 10.298 ;
+; B          ; xorLogic    ; 12.777 ; 12.092 ; 13.050 ; 12.350 ;
+; C          ; muxout      ; 11.164 ;        ;        ; 11.286 ;
+; D          ; muxout      ; 11.458 ;        ;        ; 11.475 ;
+; E          ; muxout      ; 11.833 ; 11.582 ; 12.086 ; 11.828 ;
+; F          ; muxout      ; 11.464 ;        ;        ; 11.451 ;
+; G          ; muxout      ; 11.518 ; 11.267 ; 11.741 ; 11.483 ;
+; H          ; muxout      ; 11.351 ;        ;        ; 11.373 ;
+; select[0]  ; muxout      ; 12.281 ; 12.023 ; 12.567 ; 12.316 ;
+; select[1]  ; muxout      ; 12.243 ; 12.007 ; 12.504 ; 12.275 ;
+; select[2]  ; muxout      ; 10.720 ; 10.458 ; 11.001 ; 10.732 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A          ; andLogic    ; 10.501 ;        ;        ; 10.375 ;
+; A          ; muxout      ; 11.565 ; 11.322 ; 11.824 ; 11.573 ;
+; A          ; nandLogic   ;        ; 10.463 ; 10.324 ;        ;
+; A          ; norLogic    ;        ; 10.019 ; 9.949  ;        ;
+; A          ; notLogic    ;        ; 7.982  ; 8.144  ;        ;
+; A          ; nxorLogic   ; 9.997  ; 10.398 ; 10.271 ; 10.631 ;
+; A          ; orLogic     ; 9.839  ;        ;        ; 9.825  ;
+; A          ; xorLogic    ; 12.311 ; 11.598 ; 12.544 ; 11.872 ;
+; B          ; andLogic    ; 10.498 ;        ;        ; 10.358 ;
+; B          ; muxout      ; 11.574 ; 11.331 ; 11.804 ; 11.553 ;
+; B          ; nandLogic   ;        ; 10.460 ; 10.307 ;        ;
+; B          ; norLogic    ;        ; 10.023 ; 9.949  ;        ;
+; B          ; nxorLogic   ; 10.040 ; 10.399 ; 10.268 ; 10.669 ;
+; B          ; orLogic     ; 9.843  ;        ;        ; 9.825  ;
+; B          ; xorLogic    ; 12.312 ; 11.641 ; 12.582 ; 11.869 ;
+; C          ; muxout      ; 10.698 ;        ;        ; 10.782 ;
+; D          ; muxout      ; 10.984 ;        ;        ; 10.974 ;
+; E          ; muxout      ; 11.317 ; 11.063 ; 11.546 ; 11.284 ;
+; F          ; muxout      ; 11.009 ;        ;        ; 10.976 ;
+; G          ; muxout      ; 11.078 ; 10.824 ; 11.291 ; 11.029 ;
+; H          ; muxout      ; 10.898 ;        ;        ; 10.896 ;
+; select[0]  ; muxout      ; 11.203 ; 10.949 ; 11.460 ; 11.247 ;
+; select[1]  ; muxout      ; 11.158 ; 10.915 ; 11.401 ; 11.199 ;
+; select[2]  ; muxout      ; 10.329 ; 10.073 ; 10.602 ; 10.338 ;
++------------+-------------+--------+--------+--------+--------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Fmax Summary ;
+-------------------------------------
+No paths to report.
+
+
+--------------------------------------
+; Slow 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Slow 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A          ; andLogic    ; 10.026 ;        ;        ; 9.558  ;
+; A          ; muxout      ; 11.122 ; 10.680 ; 11.204 ; 10.756 ;
+; A          ; nandLogic   ;        ; 9.999  ; 9.517  ;        ;
+; A          ; norLogic    ;        ; 9.561  ; 9.172  ;        ;
+; A          ; notLogic    ;        ; 7.494  ; 7.495  ;        ;
+; A          ; nxorLogic   ; 9.381  ; 9.935  ; 9.495  ; 10.011 ;
+; A          ; orLogic     ; 9.380  ;        ;        ; 9.051  ;
+; A          ; xorLogic    ; 11.522 ; 10.660 ; 11.598 ; 10.774 ;
+; B          ; andLogic    ; 10.098 ;        ;        ; 9.594  ;
+; B          ; muxout      ; 11.148 ; 10.706 ; 11.178 ; 10.730 ;
+; B          ; nandLogic   ;        ; 10.071 ; 9.553  ;        ;
+; B          ; norLogic    ;        ; 9.656  ; 9.252  ;        ;
+; B          ; nxorLogic   ; 9.510  ; 10.027 ; 9.572  ; 10.101 ;
+; B          ; orLogic     ; 9.475  ;        ;        ; 9.131  ;
+; B          ; xorLogic    ; 11.614 ; 10.789 ; 11.688 ; 10.851 ;
+; C          ; muxout      ; 10.267 ;        ;        ; 10.048 ;
+; D          ; muxout      ; 10.565 ;        ;        ; 10.217 ;
+; E          ; muxout      ; 10.925 ; 10.460 ; 11.005 ; 10.534 ;
+; F          ; muxout      ; 10.573 ;        ;        ; 10.187 ;
+; G          ; muxout      ; 10.626 ; 10.161 ; 10.690 ; 10.219 ;
+; H          ; muxout      ; 10.473 ;        ;        ; 10.116 ;
+; select[0]  ; muxout      ; 11.323 ; 10.852 ; 11.437 ; 10.972 ;
+; select[1]  ; muxout      ; 11.304 ; 10.856 ; 11.382 ; 10.940 ;
+; select[2]  ; muxout      ; 9.880  ; 9.436  ; 9.986  ; 9.536  ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A          ; andLogic    ; 9.640  ;        ;        ; 9.192  ;
+; A          ; muxout      ; 10.655 ; 10.212 ; 10.738 ; 10.290 ;
+; A          ; nandLogic   ;        ; 9.615  ; 9.153  ;        ;
+; A          ; norLogic    ;        ; 9.194  ; 8.821  ;        ;
+; A          ; notLogic    ;        ; 7.212  ; 7.212  ;        ;
+; A          ; nxorLogic   ; 9.017  ; 9.553  ; 9.132  ; 9.632  ;
+; A          ; orLogic     ; 9.020  ;        ;        ; 8.705  ;
+; A          ; xorLogic    ; 11.153 ; 10.306 ; 11.232 ; 10.421 ;
+; B          ; andLogic    ; 9.649  ;        ;        ; 9.162  ;
+; B          ; muxout      ; 10.679 ; 10.236 ; 10.706 ; 10.258 ;
+; B          ; nandLogic   ;        ; 9.624  ; 9.123  ;        ;
+; B          ; norLogic    ;        ; 9.209  ; 8.808  ;        ;
+; B          ; nxorLogic   ; 9.076  ; 9.565  ; 9.116  ; 9.650  ;
+; B          ; orLogic     ; 9.035  ;        ;        ; 8.692  ;
+; B          ; xorLogic    ; 11.165 ; 10.365 ; 11.250 ; 10.405 ;
+; C          ; muxout      ; 9.811  ;        ;        ; 9.582  ;
+; D          ; muxout      ; 10.102 ;        ;        ; 9.751  ;
+; E          ; muxout      ; 10.427 ; 9.972  ; 10.488 ; 10.028 ;
+; F          ; muxout      ; 10.125 ;        ;        ; 9.749  ;
+; G          ; muxout      ; 10.198 ; 9.743  ; 10.259 ; 9.799  ;
+; H          ; muxout      ; 10.025 ;        ;        ; 9.673  ;
+; select[0]  ; muxout      ; 10.315 ; 9.863  ; 10.407 ; 9.990  ;
+; select[1]  ; muxout      ; 10.283 ; 9.843  ; 10.350 ; 9.945  ;
+; select[2]  ; muxout      ; 9.502  ; 9.071  ; 9.608  ; 9.172  ;
++------------+-------------+--------+--------+--------+--------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
+--------------------------------------
+; Fast 1200mV 0C Model Setup Summary ;
+--------------------------------------
+No paths to report.
+
+
+-------------------------------------
+; Fast 1200mV 0C Model Hold Summary ;
+-------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1200mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1200mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
+----------------------------------------------------
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
+----------------------------------------------------
+No paths to report.
+
+
++----------------------------------------------------------+
+; Propagation Delay                                        ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; andLogic    ; 5.010 ;       ;       ; 5.862 ;
+; A          ; muxout      ; 5.516 ; 5.672 ; 6.321 ; 6.470 ;
+; A          ; nandLogic   ;       ; 4.977 ; 5.834 ;       ;
+; A          ; norLogic    ;       ; 4.818 ; 5.653 ;       ;
+; A          ; notLogic    ;       ; 3.996 ; 4.753 ;       ;
+; A          ; nxorLogic   ; 5.082 ; 5.010 ; 5.870 ; 5.780 ;
+; A          ; orLogic     ; 4.755 ;       ;       ; 5.584 ;
+; A          ; xorLogic    ; 6.422 ; 6.234 ; 7.192 ; 7.022 ;
+; B          ; andLogic    ; 5.036 ;       ;       ; 5.873 ;
+; B          ; muxout      ; 5.517 ; 5.673 ; 6.294 ; 6.443 ;
+; B          ; nandLogic   ;       ; 5.003 ; 5.845 ;       ;
+; B          ; norLogic    ;       ; 4.861 ; 5.688 ;       ;
+; B          ; nxorLogic   ; 5.136 ; 5.050 ; 5.902 ; 5.829 ;
+; B          ; orLogic     ; 4.798 ;       ;       ; 5.619 ;
+; B          ; xorLogic    ; 6.462 ; 6.288 ; 7.241 ; 7.054 ;
+; C          ; muxout      ; 5.175 ;       ;       ; 6.079 ;
+; D          ; muxout      ; 5.255 ;       ;       ; 6.170 ;
+; E          ; muxout      ; 5.407 ; 5.560 ; 6.172 ; 6.318 ;
+; F          ; muxout      ; 5.246 ;       ;       ; 6.160 ;
+; G          ; muxout      ; 5.267 ; 5.420 ; 6.029 ; 6.175 ;
+; H          ; muxout      ; 5.214 ;       ;       ; 6.124 ;
+; select[0]  ; muxout      ; 5.637 ; 5.783 ; 6.411 ; 6.562 ;
+; select[1]  ; muxout      ; 5.601 ; 5.750 ; 6.364 ; 6.520 ;
+; select[2]  ; muxout      ; 4.982 ; 5.097 ; 5.766 ; 5.874 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; andLogic    ; 4.837 ;       ;       ; 5.675 ;
+; A          ; muxout      ; 5.311 ; 5.449 ; 6.106 ; 6.237 ;
+; A          ; nandLogic   ;       ; 4.806 ; 5.648 ;       ;
+; A          ; norLogic    ;       ; 4.653 ; 5.475 ;       ;
+; A          ; notLogic    ;       ; 3.863 ; 4.610 ;       ;
+; A          ; nxorLogic   ; 4.903 ; 4.837 ; 5.683 ; 5.597 ;
+; A          ; orLogic     ; 4.592 ;       ;       ; 5.409 ;
+; A          ; xorLogic    ; 6.254 ; 6.061 ; 7.014 ; 6.841 ;
+; B          ; andLogic    ; 4.836 ;       ;       ; 5.649 ;
+; B          ; muxout      ; 5.312 ; 5.450 ; 6.077 ; 6.208 ;
+; B          ; nandLogic   ;       ; 4.805 ; 5.622 ;       ;
+; B          ; norLogic    ;       ; 4.660 ; 5.462 ;       ;
+; B          ; nxorLogic   ; 4.920 ; 4.841 ; 5.666 ; 5.604 ;
+; B          ; orLogic     ; 4.599 ;       ;       ; 5.396 ;
+; B          ; xorLogic    ; 6.258 ; 6.078 ; 7.021 ; 6.824 ;
+; C          ; muxout      ; 4.977 ;       ;       ; 5.847 ;
+; D          ; muxout      ; 5.053 ;       ;       ; 5.930 ;
+; E          ; muxout      ; 5.183 ; 5.316 ; 5.936 ; 6.062 ;
+; F          ; muxout      ; 5.051 ;       ;       ; 5.927 ;
+; G          ; muxout      ; 5.076 ; 5.209 ; 5.831 ; 5.957 ;
+; H          ; muxout      ; 5.019 ;       ;       ; 5.893 ;
+; select[0]  ; muxout      ; 5.172 ; 5.301 ; 5.932 ; 6.080 ;
+; select[1]  ; muxout      ; 5.130 ; 5.264 ; 5.886 ; 6.039 ;
+; select[2]  ; muxout      ; 4.810 ; 4.919 ; 5.585 ; 5.687 ;
++------------+-------------+-------+-------+-------+-------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                        ;
++------------------+-------+------+----------+---------+---------------------+
+; Clock            ; Setup ; Hold ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+-------+------+----------+---------+---------------------+
+; Worst-case Slack ; N/A   ; N/A  ; N/A      ; N/A     ; N/A                 ;
+; Design-wide TNS  ; 0.0   ; 0.0  ; 0.0      ; 0.0     ; 0.0                 ;
++------------------+-------+------+----------+---------+---------------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; A          ; andLogic    ; 10.901 ;        ;        ; 10.770 ;
+; A          ; muxout      ; 12.045 ; 11.816 ; 12.314 ; 12.078 ;
+; A          ; nandLogic   ;        ; 10.862 ; 10.717 ;        ;
+; A          ; norLogic    ;        ; 10.400 ; 10.327 ;        ;
+; A          ; notLogic    ;        ; 8.275  ; 8.446  ;        ;
+; A          ; nxorLogic   ; 10.382 ; 10.794 ; 10.662 ; 11.031 ;
+; A          ; orLogic     ; 10.212 ;        ;        ; 10.197 ;
+; A          ; xorLogic    ; 12.694 ; 11.972 ; 12.931 ; 12.252 ;
+; B          ; andLogic    ; 10.961 ;        ;        ; 10.824 ;
+; B          ; muxout      ; 12.058 ; 11.829 ; 12.299 ; 12.063 ;
+; B          ; nandLogic   ;        ; 10.922 ; 10.771 ;        ;
+; B          ; norLogic    ;        ; 10.486 ; 10.428 ;        ;
+; B          ; nxorLogic   ; 10.502 ; 10.877 ; 10.760 ; 11.150 ;
+; B          ; orLogic     ; 10.298 ;        ;        ; 10.298 ;
+; B          ; xorLogic    ; 12.777 ; 12.092 ; 13.050 ; 12.350 ;
+; C          ; muxout      ; 11.164 ;        ;        ; 11.286 ;
+; D          ; muxout      ; 11.458 ;        ;        ; 11.475 ;
+; E          ; muxout      ; 11.833 ; 11.582 ; 12.086 ; 11.828 ;
+; F          ; muxout      ; 11.464 ;        ;        ; 11.451 ;
+; G          ; muxout      ; 11.518 ; 11.267 ; 11.741 ; 11.483 ;
+; H          ; muxout      ; 11.351 ;        ;        ; 11.373 ;
+; select[0]  ; muxout      ; 12.281 ; 12.023 ; 12.567 ; 12.316 ;
+; select[1]  ; muxout      ; 12.243 ; 12.007 ; 12.504 ; 12.275 ;
+; select[2]  ; muxout      ; 10.720 ; 10.458 ; 11.001 ; 10.732 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------------------+
+; Minimum Propagation Delay                                ;
++------------+-------------+-------+-------+-------+-------+
+; Input Port ; Output Port ; RR    ; RF    ; FR    ; FF    ;
++------------+-------------+-------+-------+-------+-------+
+; A          ; andLogic    ; 4.837 ;       ;       ; 5.675 ;
+; A          ; muxout      ; 5.311 ; 5.449 ; 6.106 ; 6.237 ;
+; A          ; nandLogic   ;       ; 4.806 ; 5.648 ;       ;
+; A          ; norLogic    ;       ; 4.653 ; 5.475 ;       ;
+; A          ; notLogic    ;       ; 3.863 ; 4.610 ;       ;
+; A          ; nxorLogic   ; 4.903 ; 4.837 ; 5.683 ; 5.597 ;
+; A          ; orLogic     ; 4.592 ;       ;       ; 5.409 ;
+; A          ; xorLogic    ; 6.254 ; 6.061 ; 7.014 ; 6.841 ;
+; B          ; andLogic    ; 4.836 ;       ;       ; 5.649 ;
+; B          ; muxout      ; 5.312 ; 5.450 ; 6.077 ; 6.208 ;
+; B          ; nandLogic   ;       ; 4.805 ; 5.622 ;       ;
+; B          ; norLogic    ;       ; 4.660 ; 5.462 ;       ;
+; B          ; nxorLogic   ; 4.920 ; 4.841 ; 5.666 ; 5.604 ;
+; B          ; orLogic     ; 4.599 ;       ;       ; 5.396 ;
+; B          ; xorLogic    ; 6.258 ; 6.078 ; 7.021 ; 6.824 ;
+; C          ; muxout      ; 4.977 ;       ;       ; 5.847 ;
+; D          ; muxout      ; 5.053 ;       ;       ; 5.930 ;
+; E          ; muxout      ; 5.183 ; 5.316 ; 5.936 ; 6.062 ;
+; F          ; muxout      ; 5.051 ;       ;       ; 5.927 ;
+; G          ; muxout      ; 5.076 ; 5.209 ; 5.831 ; 5.957 ;
+; H          ; muxout      ; 5.019 ;       ;       ; 5.893 ;
+; select[0]  ; muxout      ; 5.172 ; 5.301 ; 5.932 ; 6.080 ;
+; select[1]  ; muxout      ; 5.130 ; 5.264 ; 5.886 ; 6.039 ;
+; select[2]  ; muxout      ; 4.810 ; 4.919 ; 5.585 ; 5.687 ;
++------------+-------------+-------+-------+-------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; andLogic      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; orLogic       ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; notLogic      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; nandLogic     ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; norLogic      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; nxorLogic     ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; xorLogic      ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; muxout        ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 3.3-V LVTTL  ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; A                       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; B                       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; F                       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; select[0]               ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; G                       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; select[1]               ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; E                       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; H                       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; C                       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; D                       ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; select[2]               ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
+; ~ALTERA_DATA0~          ; 3.3-V LVTTL  ; 2640 ps         ; 2640 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; andLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; orLogic       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; notLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; nandLogic     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; norLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; nxorLogic     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; xorLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.09 V              ; -0.011 V            ; 0.196 V                              ; 0.301 V                              ; 4.93e-09 s                  ; 3.56e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.09 V             ; -0.011 V           ; 0.196 V                             ; 0.301 V                             ; 4.93e-09 s                 ; 3.56e-09 s                 ; Yes                       ; Yes                       ;
+; muxout        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 8.89e-09 V                   ; 3.12 V              ; -0.11 V             ; 0.153 V                              ; 0.272 V                              ; 6.41e-10 s                  ; 4.57e-10 s                  ; No                         ; Yes                        ; 3.08 V                      ; 8.89e-09 V                  ; 3.12 V             ; -0.11 V            ; 0.153 V                             ; 0.272 V                             ; 6.41e-10 s                 ; 4.57e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 3.51e-09 V                   ; 3.18 V              ; -0.157 V            ; 0.147 V                              ; 0.259 V                              ; 2.81e-10 s                  ; 2.53e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 3.51e-09 V                  ; 3.18 V             ; -0.157 V           ; 0.147 V                             ; 0.259 V                             ; 2.81e-10 s                 ; 2.53e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; andLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; orLogic       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; notLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; nandLogic     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; norLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; nxorLogic     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; xorLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.08 V              ; -0.00457 V          ; 0.185 V                              ; 0.21 V                               ; 5.8e-09 s                   ; 4.46e-09 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.08 V             ; -0.00457 V         ; 0.185 V                             ; 0.21 V                              ; 5.8e-09 s                  ; 4.46e-09 s                 ; Yes                       ; Yes                       ;
+; muxout        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 7.5e-07 V                    ; 3.11 V              ; -0.0503 V           ; 0.122 V                              ; 0.172 V                              ; 7.08e-10 s                  ; 6.43e-10 s                  ; Yes                        ; Yes                        ; 3.08 V                      ; 7.5e-07 V                   ; 3.11 V             ; -0.0503 V          ; 0.122 V                             ; 0.172 V                             ; 7.08e-10 s                 ; 6.43e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.08 V                       ; 2.6e-07 V                    ; 3.13 V              ; -0.103 V            ; 0.164 V                              ; 0.134 V                              ; 3.14e-10 s                  ; 4.05e-10 s                  ; Yes                        ; No                         ; 3.08 V                      ; 2.6e-07 V                   ; 3.13 V             ; -0.103 V           ; 0.164 V                             ; 0.134 V                             ; 3.14e-10 s                 ; 4.05e-10 s                 ; Yes                       ; No                        ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; andLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; orLogic       ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; notLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; nandLogic     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; norLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; nxorLogic     ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; xorLogic      ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.48 V              ; -0.0173 V           ; 0.356 V                              ; 0.324 V                              ; 3.89e-09 s                  ; 3.06e-09 s                  ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.48 V             ; -0.0173 V          ; 0.356 V                             ; 0.324 V                             ; 3.89e-09 s                 ; 3.06e-09 s                 ; No                        ; No                        ;
+; muxout        ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 1.85e-07 V                   ; 3.57 V              ; -0.141 V            ; 0.301 V                              ; 0.239 V                              ; 4.61e-10 s                  ; 4.2e-10 s                   ; No                         ; No                         ; 3.46 V                      ; 1.85e-07 V                  ; 3.57 V             ; -0.141 V           ; 0.301 V                             ; 0.239 V                             ; 4.61e-10 s                 ; 4.2e-10 s                  ; No                        ; No                        ;
+; ~ALTERA_DCLK~ ; 3.3-V LVTTL  ; 0 s                 ; 0 s                 ; 3.46 V                       ; 6.54e-08 V                   ; 3.66 V              ; -0.26 V             ; 0.41 V                               ; 0.32 V                               ; 1.57e-10 s                  ; 2.15e-10 s                  ; No                         ; Yes                        ; 3.46 V                      ; 6.54e-08 V                  ; 3.66 V             ; -0.26 V            ; 0.41 V                              ; 0.32 V                              ; 1.57e-10 s                 ; 2.15e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 11    ; 11   ;
+; Unconstrained Input Port Paths  ; 24    ; 24   ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 24    ; 24   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Wed Nov 16 15:34:33 2022
+Info: Command: quartus_sta mux8 -c mux8
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'mux8.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info: Analyzing Slow 1200mV 85C Model
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info: Analyzing Fast 1200mV 0C Model
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Wed Nov 16 15:34:34 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

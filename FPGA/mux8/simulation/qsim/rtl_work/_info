@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\suxto\Documents\FPGA\mux8\simulation\qsim
+vmux8
+!i10b 1
+!s100 T0LI;3bFDHaBVH[2Lkf_j3
+I2Q?OXO2JH;;ALBEf<:M:S2
+Z1 Vb]e01l^1J`a8ag4I<6GTV2
+Z2 dC:\Users\suxto\Documents\FPGA\mux8\simulation\qsim
+Z3 w1668583191
+Z4 8C:/Users/suxto/Documents/FPGA/mux8/mux8.v
+Z5 FC:/Users/suxto/Documents/FPGA/mux8/mux8.v
+L0 1
+Z6 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z7 !s108 1668584027.332000
+Z8 !s107 C:/Users/suxto/Documents/FPGA/mux8/mux8.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/suxto/Documents/FPGA/mux8|C:/Users/suxto/Documents/FPGA/mux8/mux8.v|
+!s101 -O0
+Z10 o-vlog01compat -work work -O0
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/suxto/Documents/FPGA/mux8 -O0
+vmux81
+!i10b 1
+!s100 hebXk^ldzA;n1;I:30z7:1
+ICYMZR?Hk8ojHa`6kZiE??0
+Vke]77l7W87M:BFcWQSH8Q1
+R2
+R3
+R4
+R5
+L0 48
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!s101 -O0
+R10
+R11

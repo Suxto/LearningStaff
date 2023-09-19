@@ -1,0 +1,91 @@
+# do StaticLED.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module StaticLED
+# 
+# Top level modules:
+# 	StaticLED
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module StaticLED_vlg_sample_tst
+# -- Compiling module StaticLED_vlg_check_tst
+# -- Compiling module StaticLED_vlg_vec_tst
+# 
+# Top level modules:
+# 	StaticLED_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.StaticLED_vlg_vec_tst 
+# Loading work.StaticLED_vlg_vec_tst
+# Loading work.StaticLED
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading work.StaticLED_vlg_sample_tst
+# Loading work.StaticLED_vlg_check_tst
+# SDF 10.1d Compiler 2012.11 Nov  2 2012
+# 
+# Loading instances from StaticLED_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from StaticLED_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /StaticLED_vlg_vec_tst File: Waveform.vwf.vt
+# ERROR! Vector Mismatch for output port counter[1] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0110
+# ERROR! Vector Mismatch for output port counter[2] :: @time = 1000000.000 ps
+#      Expected value = 0000
+#      Real value = 0110
+# ERROR! Vector Mismatch for output port digOut[1] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111110
+# ERROR! Vector Mismatch for output port digOut[2] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111110
+# ERROR! Vector Mismatch for output port digOut[3] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111110
+# ERROR! Vector Mismatch for output port digOut[4] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111110
+# ERROR! Vector Mismatch for output port digOut[5] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111110
+# ERROR! Vector Mismatch for output port digOut[6] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111110
+# ERROR! Vector Mismatch for output port digOut[7] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 11111110
+# ERROR! Vector Mismatch for output port segOut[0] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111101
+# ERROR! Vector Mismatch for output port segOut[2] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111101
+# ERROR! Vector Mismatch for output port segOut[3] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111101
+# ERROR! Vector Mismatch for output port segOut[4] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111101
+# ERROR! Vector Mismatch for output port segOut[5] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111101
+# ERROR! Vector Mismatch for output port segOut[6] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 01111101
+# ERROR! Vector Mismatch for output port counter[0] :: @time = 1100000.000 ps
+#      Expected value = 0000
+#      Real value = 0111
+# ERROR! Vector Mismatch for output port segOut[1] :: @time = 1100000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000111
+# ERROR! Vector Mismatch for output port counter[3] :: @time = 1900000.000 ps
+#      Expected value = 0000
+#      Real value = 1000
+#          18 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(527)
+#    Time: 2 us  Iteration: 0  Instance: /StaticLED_vlg_vec_tst/tb_out

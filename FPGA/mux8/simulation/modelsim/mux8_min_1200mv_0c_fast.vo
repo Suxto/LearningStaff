@@ -1,0 +1,409 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "11/16/2022 14:40:46"
+
+// 
+// Device: Altera EP4CE6E22C8 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module mux8 (
+	A,
+	B,
+	C,
+	D,
+	E,
+	F,
+	G,
+	H,
+	select,
+	andLogic,
+	orLogic,
+	notLogic,
+	nandLogic,
+	norLogic,
+	nxorLogic,
+	xorLogic,
+	muxout);
+input 	A;
+input 	B;
+input 	C;
+input 	D;
+input 	E;
+input 	F;
+input 	G;
+input 	H;
+input 	[2:0] select;
+output 	andLogic;
+output 	orLogic;
+output 	notLogic;
+output 	nandLogic;
+output 	norLogic;
+output 	nxorLogic;
+output 	xorLogic;
+output 	muxout;
+
+// Design Ports Information
+// C	=>  Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// D	=>  Location: PIN_99,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// E	=>  Location: PIN_39,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// F	=>  Location: PIN_38,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// G	=>  Location: PIN_30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// H	=>  Location: PIN_144,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// select[0]	=>  Location: PIN_127,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// select[1]	=>  Location: PIN_77,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// select[2]	=>  Location: PIN_66,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// andLogic	=>  Location: PIN_105,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// orLogic	=>  Location: PIN_65,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// notLogic	=>  Location: PIN_129,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// nandLogic	=>  Location: PIN_101,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// norLogic	=>  Location: PIN_59,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// nxorLogic	=>  Location: PIN_138,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// xorLogic	=>  Location: PIN_133,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// muxout	=>  Location: PIN_137,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// A	=>  Location: PIN_126,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// B	=>  Location: PIN_125,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("mux8_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire \C~input_o ;
+wire \D~input_o ;
+wire \E~input_o ;
+wire \F~input_o ;
+wire \G~input_o ;
+wire \H~input_o ;
+wire \select[0]~input_o ;
+wire \select[1]~input_o ;
+wire \select[2]~input_o ;
+wire \andLogic~output_o ;
+wire \orLogic~output_o ;
+wire \notLogic~output_o ;
+wire \nandLogic~output_o ;
+wire \norLogic~output_o ;
+wire \nxorLogic~output_o ;
+wire \xorLogic~output_o ;
+wire \muxout~output_o ;
+wire \A~input_o ;
+wire \B~input_o ;
+wire \andLogic~0_combout ;
+wire \orLogic~0_combout ;
+wire \xorLogic~0_combout ;
+
+
+// Location: IOOBUF_X34_Y19_N16
+cycloneive_io_obuf \andLogic~output (
+	.i(\andLogic~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\andLogic~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \andLogic~output .bus_hold = "false";
+defparam \andLogic~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X28_Y0_N23
+cycloneive_io_obuf \orLogic~output (
+	.i(\orLogic~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\orLogic~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \orLogic~output .bus_hold = "false";
+defparam \orLogic~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X16_Y24_N23
+cycloneive_io_obuf \notLogic~output (
+	.i(!\A~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\notLogic~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \notLogic~output .bus_hold = "false";
+defparam \notLogic~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X34_Y18_N23
+cycloneive_io_obuf \nandLogic~output (
+	.i(!\andLogic~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\nandLogic~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \nandLogic~output .bus_hold = "false";
+defparam \nandLogic~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y0_N16
+cycloneive_io_obuf \norLogic~output (
+	.i(!\orLogic~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\norLogic~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \norLogic~output .bus_hold = "false";
+defparam \norLogic~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y24_N9
+cycloneive_io_obuf \nxorLogic~output (
+	.i(!\xorLogic~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\nxorLogic~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \nxorLogic~output .bus_hold = "false";
+defparam \nxorLogic~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X13_Y24_N23
+cycloneive_io_obuf \xorLogic~output (
+	.i(\xorLogic~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\xorLogic~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \xorLogic~output .bus_hold = "false";
+defparam \xorLogic~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X7_Y24_N2
+cycloneive_io_obuf \muxout~output (
+	.i(\A~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\muxout~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \muxout~output .bus_hold = "false";
+defparam \muxout~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y24_N1
+cycloneive_io_ibuf \A~input (
+	.i(A),
+	.ibar(gnd),
+	.o(\A~input_o ));
+// synopsys translate_off
+defparam \A~input .bus_hold = "false";
+defparam \A~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X18_Y24_N22
+cycloneive_io_ibuf \B~input (
+	.i(B),
+	.ibar(gnd),
+	.o(\B~input_o ));
+// synopsys translate_off
+defparam \B~input .bus_hold = "false";
+defparam \B~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X12_Y21_N8
+cycloneive_lcell_comb \andLogic~0 (
+// Equation(s):
+// \andLogic~0_combout  = (\A~input_o  & \B~input_o )
+
+	.dataa(gnd),
+	.datab(\A~input_o ),
+	.datac(gnd),
+	.datad(\B~input_o ),
+	.cin(gnd),
+	.combout(\andLogic~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \andLogic~0 .lut_mask = 16'hCC00;
+defparam \andLogic~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X12_Y21_N18
+cycloneive_lcell_comb \orLogic~0 (
+// Equation(s):
+// \orLogic~0_combout  = (\A~input_o ) # (\B~input_o )
+
+	.dataa(gnd),
+	.datab(\A~input_o ),
+	.datac(gnd),
+	.datad(\B~input_o ),
+	.cin(gnd),
+	.combout(\orLogic~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \orLogic~0 .lut_mask = 16'hFFCC;
+defparam \orLogic~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X12_Y21_N4
+cycloneive_lcell_comb \xorLogic~0 (
+// Equation(s):
+// \xorLogic~0_combout  = \A~input_o  $ (\B~input_o )
+
+	.dataa(gnd),
+	.datab(\A~input_o ),
+	.datac(gnd),
+	.datad(\B~input_o ),
+	.cin(gnd),
+	.combout(\xorLogic~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \xorLogic~0 .lut_mask = 16'h33CC;
+defparam \xorLogic~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y2_N22
+cycloneive_io_ibuf \C~input (
+	.i(C),
+	.ibar(gnd),
+	.o(\C~input_o ));
+// synopsys translate_off
+defparam \C~input .bus_hold = "false";
+defparam \C~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y17_N15
+cycloneive_io_ibuf \D~input (
+	.i(D),
+	.ibar(gnd),
+	.o(\D~input_o ));
+// synopsys translate_off
+defparam \D~input .bus_hold = "false";
+defparam \D~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N15
+cycloneive_io_ibuf \E~input (
+	.i(E),
+	.ibar(gnd),
+	.o(\E~input_o ));
+// synopsys translate_off
+defparam \E~input .bus_hold = "false";
+defparam \E~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N22
+cycloneive_io_ibuf \F~input (
+	.i(F),
+	.ibar(gnd),
+	.o(\F~input_o ));
+// synopsys translate_off
+defparam \F~input .bus_hold = "false";
+defparam \F~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y8_N15
+cycloneive_io_ibuf \G~input (
+	.i(G),
+	.ibar(gnd),
+	.o(\G~input_o ));
+// synopsys translate_off
+defparam \G~input .bus_hold = "false";
+defparam \G~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y24_N8
+cycloneive_io_ibuf \H~input (
+	.i(H),
+	.ibar(gnd),
+	.o(\H~input_o ));
+// synopsys translate_off
+defparam \H~input .bus_hold = "false";
+defparam \H~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y24_N8
+cycloneive_io_ibuf \select[0]~input (
+	.i(select[0]),
+	.ibar(gnd),
+	.o(\select[0]~input_o ));
+// synopsys translate_off
+defparam \select[0]~input .bus_hold = "false";
+defparam \select[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y4_N15
+cycloneive_io_ibuf \select[1]~input (
+	.i(select[1]),
+	.ibar(gnd),
+	.o(\select[1]~input_o ));
+// synopsys translate_off
+defparam \select[1]~input .bus_hold = "false";
+defparam \select[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X28_Y0_N1
+cycloneive_io_ibuf \select[2]~input (
+	.i(select[2]),
+	.ibar(gnd),
+	.o(\select[2]~input_o ));
+// synopsys translate_off
+defparam \select[2]~input .bus_hold = "false";
+defparam \select[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign andLogic = \andLogic~output_o ;
+
+assign orLogic = \orLogic~output_o ;
+
+assign notLogic = \notLogic~output_o ;
+
+assign nandLogic = \nandLogic~output_o ;
+
+assign norLogic = \norLogic~output_o ;
+
+assign nxorLogic = \nxorLogic~output_o ;
+
+assign xorLogic = \xorLogic~output_o ;
+
+assign muxout = \muxout~output_o ;
+
+endmodule

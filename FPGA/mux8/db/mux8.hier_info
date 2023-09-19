@@ -1,0 +1,37 @@
+|mux8
+A => A.IN1
+B => B.IN1
+C => C.IN1
+D => D.IN1
+E => E.IN1
+F => F.IN1
+G => G.IN1
+H => H.IN1
+select[0] => select[0].IN1
+select[1] => select[1].IN1
+select[2] => select[2].IN1
+andLogic << andLogic.DB_MAX_OUTPUT_PORT_TYPE
+orLogic << orLogic.DB_MAX_OUTPUT_PORT_TYPE
+notLogic << A.DB_MAX_OUTPUT_PORT_TYPE
+nandLogic << andLogic.DB_MAX_OUTPUT_PORT_TYPE
+norLogic << orLogic.DB_MAX_OUTPUT_PORT_TYPE
+nxorLogic << xorLogic.DB_MAX_OUTPUT_PORT_TYPE
+xorLogic << xorLogic.DB_MAX_OUTPUT_PORT_TYPE
+muxout << mux81:mux.port9
+
+
+|mux8|mux81:mux
+A => Mux0.IN0
+B => Mux0.IN1
+C => Mux0.IN2
+D => Mux0.IN3
+E => Mux0.IN4
+F => Mux0.IN5
+G => Mux0.IN6
+H => Mux0.IN7
+sel[0] => Mux0.IN10
+sel[1] => Mux0.IN9
+sel[2] => Mux0.IN8
+out <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

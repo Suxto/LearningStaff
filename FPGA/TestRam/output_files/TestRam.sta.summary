@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'bnRD'
+Slack : -3.117
+TNS   : -23.078
+
+Type  : Slow 1200mV 85C Model Setup 'bclk'
+Slack : -3.065
+TNS   : -3.664
+
+Type  : Slow 1200mV 85C Model Hold 'bnRD'
+Slack : -0.781
+TNS   : -5.074
+
+Type  : Slow 1200mV 85C Model Hold 'bclk'
+Slack : 0.429
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'bnRD'
+Slack : -0.948
+TNS   : -5.725
+
+Type  : Slow 1200mV 85C Model Removal 'bnRD'
+Slack : -0.793
+TNS   : -3.441
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bclk'
+Slack : -3.201
+TNS   : -15.804
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bnRD'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Setup 'bclk'
+Slack : -2.869
+TNS   : -3.295
+
+Type  : Slow 1200mV 0C Model Setup 'bnRD'
+Slack : -2.765
+TNS   : -20.265
+
+Type  : Slow 1200mV 0C Model Hold 'bnRD'
+Slack : -0.721
+TNS   : -4.773
+
+Type  : Slow 1200mV 0C Model Hold 'bclk'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'bnRD'
+Slack : -0.656
+TNS   : -3.285
+
+Type  : Slow 1200mV 0C Model Removal 'bnRD'
+Slack : -0.713
+TNS   : -2.922
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bclk'
+Slack : -3.201
+TNS   : -15.804
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bnRD'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Setup 'bclk'
+Slack : -0.815
+TNS   : -1.313
+
+Type  : Fast 1200mV 0C Model Setup 'bnRD'
+Slack : -0.607
+TNS   : -3.823
+
+Type  : Fast 1200mV 0C Model Hold 'bnRD'
+Slack : -0.354
+TNS   : -2.399
+
+Type  : Fast 1200mV 0C Model Hold 'bclk'
+Slack : 0.203
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'bnRD'
+Slack : -0.671
+TNS   : -4.443
+
+Type  : Fast 1200mV 0C Model Removal 'bnRD'
+Slack : -0.415
+TNS   : -2.045
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bclk'
+Slack : -3.000
+TNS   : -7.510
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bnRD'
+Slack : -3.000
+TNS   : -3.000
+
+------------------------------------------------------------

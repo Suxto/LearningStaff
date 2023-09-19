@@ -1,0 +1,28 @@
+module ComLogic(A,B,C,D,E,F,G,H,select,
+			andLogic, orLogic,notLogic, nandLogic, norLogic, xnorLogic, xorLogic,
+			muxout);
+  input		A,B,C,D,E,F,G,H;
+  output 	andLogic, orLogic,notLogic, nandLogic, norLogic, xnorLogic, xorLogic;
+            
+  input		[2:0]select;
+  output	muxout;
+
+
+
+ 
+endmodule
+
+
+module mux81(A,B,C,D,E,F,G,H,sel,out);
+input A,B,C,D,E,F,G,H;
+input [2:0] sel;
+output out;
+reg out;
+always@(A or B or C or D or E or F or G or H or sel)
+
+
+
+（程序填空：always语句块完成8选1多路选择器）
+
+
+endmodule

@@ -1,0 +1,35 @@
+|latch_8bit
+inData[0] => data[0].DATAIN
+inData[1] => data[1].DATAIN
+inData[2] => data[2].DATAIN
+inData[3] => data[3].DATAIN
+inData[4] => data[4].DATAIN
+inData[5] => data[5].DATAIN
+inData[6] => data[6].DATAIN
+inData[7] => data[7].DATAIN
+outData[0] <= outData[0].DB_MAX_OUTPUT_PORT_TYPE
+outData[1] <= outData[1].DB_MAX_OUTPUT_PORT_TYPE
+outData[2] <= outData[2].DB_MAX_OUTPUT_PORT_TYPE
+outData[3] <= outData[3].DB_MAX_OUTPUT_PORT_TYPE
+outData[4] <= outData[4].DB_MAX_OUTPUT_PORT_TYPE
+outData[5] <= outData[5].DB_MAX_OUTPUT_PORT_TYPE
+outData[6] <= outData[6].DB_MAX_OUTPUT_PORT_TYPE
+outData[7] <= outData[7].DB_MAX_OUTPUT_PORT_TYPE
+LE => data[0].LATCH_ENABLE
+LE => data[1].LATCH_ENABLE
+LE => data[2].LATCH_ENABLE
+LE => data[3].LATCH_ENABLE
+LE => data[4].LATCH_ENABLE
+LE => data[5].LATCH_ENABLE
+LE => data[6].LATCH_ENABLE
+LE => data[7].LATCH_ENABLE
+nOE => outData[0].OE
+nOE => outData[1].OE
+nOE => outData[2].OE
+nOE => outData[3].OE
+nOE => outData[4].OE
+nOE => outData[5].OE
+nOE => outData[6].OE
+nOE => outData[7].OE
+
+

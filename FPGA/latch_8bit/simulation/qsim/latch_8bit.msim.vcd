@@ -1,0 +1,546 @@
+$comment
+	File created using the following command:
+		vcd file latch_8bit.msim.vcd -direction
+$end
+$date
+	Wed Nov 23 14:11:51 2022
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module latch_8bit_vlg_vec_tst $end
+$var reg 1 ! LE $end
+$var reg 8 " inData [7:0] $end
+$var reg 1 # nOE $end
+$var wire 1 $ outData [7] $end
+$var wire 1 % outData [6] $end
+$var wire 1 & outData [5] $end
+$var wire 1 ' outData [4] $end
+$var wire 1 ( outData [3] $end
+$var wire 1 ) outData [2] $end
+$var wire 1 * outData [1] $end
+$var wire 1 + outData [0] $end
+$var wire 1 , sampler $end
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 outData[0]~output_o $end
+$var wire 1 4 outData[1]~output_o $end
+$var wire 1 5 outData[2]~output_o $end
+$var wire 1 6 outData[3]~output_o $end
+$var wire 1 7 outData[4]~output_o $end
+$var wire 1 8 outData[5]~output_o $end
+$var wire 1 9 outData[6]~output_o $end
+$var wire 1 : outData[7]~output_o $end
+$var wire 1 ; LE~input_o $end
+$var wire 1 < LE~inputclkctrl_outclk $end
+$var wire 1 = inData[0]~input_o $end
+$var wire 1 > data[0]~feeder_combout $end
+$var wire 1 ? nOE~input_o $end
+$var wire 1 @ inData[1]~input_o $end
+$var wire 1 A data[1]~feeder_combout $end
+$var wire 1 B inData[2]~input_o $end
+$var wire 1 C inData[3]~input_o $end
+$var wire 1 D data[3]~feeder_combout $end
+$var wire 1 E inData[4]~input_o $end
+$var wire 1 F data[4]~feeder_combout $end
+$var wire 1 G inData[5]~input_o $end
+$var wire 1 H data[5]~feeder_combout $end
+$var wire 1 I inData[6]~input_o $end
+$var wire 1 J data[6]~feeder_combout $end
+$var wire 1 K inData[7]~input_o $end
+$var wire 1 L data [7] $end
+$var wire 1 M data [6] $end
+$var wire 1 N data [5] $end
+$var wire 1 O data [4] $end
+$var wire 1 P data [3] $end
+$var wire 1 Q data [2] $end
+$var wire 1 R data [1] $end
+$var wire 1 S data [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0#
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x,
+0-
+1.
+x/
+10
+11
+12
+x3
+x4
+x5
+x6
+x7
+x8
+x9
+x:
+0;
+x<
+0=
+x>
+0?
+0@
+xA
+0B
+0C
+xD
+0E
+xF
+0G
+xH
+0I
+xJ
+0K
+0S
+0R
+0Q
+0P
+0O
+0N
+0M
+0L
+$end
+#208
+0<
+#3652
+0A
+#3665
+0>
+#3680
+0H
+#3683
+0F
+#3701
+0J
+#3702
+0D
+#7078
+0:
+0$
+#7343
+09
+0%
+#7379
+05
+0)
+#7728
+03
+06
+0+
+0(
+#7755
+04
+0*
+#8030
+08
+0&
+#8116
+07
+0'
+#100000
+b1 "
+1#
+0,
+#100764
+1?
+1=
+#104224
+1>
+#107830
+z:
+z$
+#107970
+z5
+z)
+#108106
+z9
+z%
+#108392
+z4
+z*
+#108510
+z3
+z6
+z+
+z(
+#108725
+z8
+z&
+#108781
+z7
+z'
+#170000
+1!
+1,
+#170766
+1;
+#170988
+1<
+#172894
+1S
+#180000
+0!
+0,
+#180812
+0;
+#181020
+0<
+#200000
+b11 "
+b10 "
+0#
+1,
+#200764
+1@
+#200811
+0?
+0=
+#204215
+1A
+#204476
+0>
+#207889
+0:
+0$
+#208154
+09
+0%
+#208190
+05
+0)
+#208539
+06
+0(
+#208566
+04
+0*
+#208653
+13
+1+
+#208841
+08
+0&
+#208927
+07
+0'
+#300000
+b11 "
+1#
+0,
+#300764
+1?
+1=
+#304224
+1>
+#307830
+z:
+z$
+#307970
+z5
+z)
+#308106
+z9
+z%
+#308392
+z4
+z*
+#308396
+z3
+z+
+#308510
+z6
+z(
+#308725
+z8
+z&
+#308781
+z7
+z'
+#400000
+b111 "
+b101 "
+b100 "
+0#
+1,
+#400766
+1B
+#400811
+0?
+0@
+0=
+#404463
+0A
+#404476
+0>
+#407889
+0:
+0$
+#408154
+09
+0%
+#408190
+05
+0)
+#408539
+06
+0(
+#408566
+04
+0*
+#408653
+13
+1+
+#408841
+08
+0&
+#408927
+07
+0'
+#420000
+1!
+0,
+#420766
+1;
+#420988
+1<
+#422864
+1Q
+#422894
+0S
+#427082
+03
+0+
+#427527
+15
+1)
+#430000
+0!
+1,
+#430812
+0;
+#431020
+0<
+#500000
+b101 "
+1#
+0,
+#500764
+1?
+1=
+#504224
+1>
+#507830
+z:
+z$
+#507893
+z5
+z)
+#508106
+z9
+z%
+#508392
+z4
+z*
+#508510
+z3
+z6
+z+
+z(
+#508725
+z8
+z&
+#508781
+z7
+z'
+#600000
+b111 "
+b110 "
+0#
+1,
+#600764
+1@
+#600811
+0?
+0=
+#604215
+1A
+#604476
+0>
+#607889
+0:
+0$
+#608154
+09
+0%
+#608267
+15
+1)
+#608539
+03
+06
+0+
+0(
+#608566
+04
+0*
+#608841
+08
+0&
+#608927
+07
+0'
+#700000
+b111 "
+1#
+0,
+#700764
+1?
+1=
+#704224
+1>
+#707830
+z:
+z$
+#707893
+z5
+z)
+#708106
+z9
+z%
+#708392
+z4
+z*
+#708510
+z3
+z6
+z+
+z(
+#708725
+z8
+z&
+#708781
+z7
+z'
+#800000
+b1111 "
+b1011 "
+b1001 "
+b1000 "
+0#
+1,
+#800764
+1C
+#800811
+0?
+0@
+0=
+#800812
+0B
+#804275
+1D
+#804463
+0A
+#804476
+0>
+#807889
+0:
+0$
+#808154
+09
+0%
+#808267
+15
+1)
+#808539
+03
+06
+0+
+0(
+#808566
+04
+0*
+#808841
+08
+0&
+#808927
+07
+0'
+#820000
+1!
+0,
+#820766
+1;
+#820988
+1<
+#822864
+0Q
+#822894
+1P
+#827351
+16
+1(
+#827403
+05
+0)
+#830000
+0!
+1,
+#830812
+0;
+#831020
+0<
+#900000
+b1001 "
+1#
+0,
+#900764
+1?
+1=
+#904224
+1>
+#907830
+z:
+z$
+#907970
+z5
+z)
+#908106
+z9
+z%
+#908392
+z4
+z*
+#908396
+z6
+z(
+#908510
+z3
+z+
+#908725
+z8
+z&
+#908781
+z7
+z'
+#1000000

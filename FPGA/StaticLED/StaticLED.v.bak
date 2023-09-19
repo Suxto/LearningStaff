@@ -1,0 +1,85 @@
+module mod1HzClock (
+    clk,
+    nrst,
+    clk_out
+);
+    input clk;
+    input nrst;
+    output clk_out;
+
+    reg clk_out;
+    reg [25:0] counter;
+
+
+    always @(posedge clk or negedge nrst) begin
+        if (nrst == 0) begin
+            clk_out <= 0;
+            counter <= 0;
+        end else if (counter != 24999999) counter <= counter + 1;
+        else begin
+            clk_out <= !clk_out;
+            counter <= 0;
+        end
+    end
+endmodule
+
+
+module encoder (
+    inData,
+    segData
+);
+    input [3:0] inData;
+    output [7:0] segData;
+
+    reg [7:0] segData;
+
+    always @(inData)
+        case (inData)
+            3'b000:  segData <= 7'b0111111;
+            3'b001:  segData <= 7'b0000110;
+            3'b010:  segData <= 7'b1011011;
+            3'b011:  segData <= 7'b1001111;
+            3'b100:  segData <= 7'b1100110;
+            3'b101:  segData <= 7'b1101101;
+            3'b110:  segData <= 7'b1111101;
+            3'b111:  segData <= 7'b0000111;
+            default: segData <= 7'bx;
+        endcase
+
+    // （程序填空：一位10进制数转换为数码管的段码 ）
+
+endmodule
+module StaticLED (
+    clk,
+    nRst,
+    segOut,
+    digOut
+);
+    input clk, nRst;
+    output [7:0] segOut;
+    output [7:0] digOut;
+
+    wire [7:0] digOut;
+    wire [7:0] segOut;
+    reg [3:0] counter;
+
+    wire clk_out;
+
+    assign digOut = 8'b11111110;  //0号数码管显示
+
+
+    mod1HzClock Clock (
+        .clk    (clk),
+        .nrst   (nRst),
+        .clk_out(clk_out)
+    );
+    always @(posedge clk_out or negedge nRst) begin
+        if (!nRst) counter = 0;
+        else counter <= counter + 1;
+    end
+    encoder coder (
+        .inData (counter),
+        .segData(segOut)
+    );
+
+endmodule

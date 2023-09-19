@@ -1,0 +1,28 @@
+module mod1HzClock (
+    clk,
+    nrst,
+    clk_out
+);
+  input clk;  //时钟脉冲输入信号，clk为50MHz的时钟脉冲
+  input nrst;  //清零端，用于将26位的计数器清零
+  output clk_out;  //输出变量，该变量即为频率为1Hz的脉冲
+
+  reg clk_out;
+  reg [25:0] counter;  //设定一个26位的十进制计数器     
+  //(偶数分频：50MHz/1Hz=50M;50M/2=25M;25M的位宽为26位）
+
+  always @(posedge clk or negedge nrst) begin
+    //当nrst为0时，计数器与时钟输出清零
+    if (!nrst) begin
+      clk_out = 0;
+    end else if (counter == 24999999) begin
+      clk_out <= !clk_out;
+    end else counter <= counter + 1;
+  end
+endmodule
+
+module moduleName (
+  ports
+);
+  
+endmodule

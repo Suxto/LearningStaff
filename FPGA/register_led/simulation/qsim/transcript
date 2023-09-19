@@ -1,0 +1,58 @@
+# do register_led.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_led
+# 
+# Top level modules:
+# 	register_led
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module register_led_vlg_sample_tst
+# -- Compiling module register_led_vlg_check_tst
+# -- Compiling module register_led_vlg_vec_tst
+# 
+# Top level modules:
+# 	register_led_vlg_vec_tst
+# vsim -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.register_led_vlg_vec_tst 
+# Loading work.register_led_vlg_vec_tst
+# Loading work.register_led
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading work.register_led_vlg_sample_tst
+# Loading work.register_led_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port clk_out :: @time = 1000000.000 ps
+#      Expected value = 0
+#      Real value = 1
+# ERROR! Vector Mismatch for output port outData[3] :: @time = 1000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00001000
+# ERROR! Vector Mismatch for output port outData[4] :: @time = 1200000.000 ps
+#      Expected value = 00000000
+#      Real value = 00010000
+# ERROR! Vector Mismatch for output port outData[5] :: @time = 1400000.000 ps
+#      Expected value = 00000000
+#      Real value = 00100000
+# ERROR! Vector Mismatch for output port outData[6] :: @time = 1600000.000 ps
+#      Expected value = 00000000
+#      Real value = 01000000
+# ERROR! Vector Mismatch for output port outData[7] :: @time = 1800000.000 ps
+#      Expected value = 00000000
+#      Real value = 10000000
+# ERROR! Vector Mismatch for output port outData[0] :: @time = 2000000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000001
+# ERROR! Vector Mismatch for output port outData[1] :: @time = 2200000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000010
+# ERROR! Vector Mismatch for output port outData[2] :: @time = 2400000.000 ps
+#      Expected value = 00000000
+#      Real value = 00000100
+#           9 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(313)
+#    Time: 10 us  Iteration: 0  Instance: /register_led_vlg_vec_tst/tb_out

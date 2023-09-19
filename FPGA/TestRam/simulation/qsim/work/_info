@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\suxto\Documents\FPGA\TestRam\simulation\qsim
+vTestRam
+Z1 !s100 9KOS]iX_5Y58REzF8WPUz0
+Z2 I@[I`]GT9:@CVbLC0cb>IW1
+Z3 VhF`>?1Ic[3FGlKlZ@o=bB2
+Z4 dC:\Users\suxto\Documents\FPGA\TestRam\simulation\qsim
+Z5 w1671542581
+Z6 8TestRam.vo
+Z7 FTestRam.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|TestRam.vo|
+Z10 o-work work -O0
+Z11 n@test@ram
+!i10b 1
+!s85 0
+Z12 !s108 1671542582.270000
+Z13 !s107 TestRam.vo|
+!s101 -O0
+vTestRam_vlg_check_tst
+!i10b 1
+Z14 !s100 FjIDIOkZz8gk^CXbIK;>]0
+Z15 I^I6mnN6K?=oLaQQ=b8Fm70
+Z16 V=HZ]6B[ba1DcmozF]S4k80
+R4
+Z17 w1671542580
+Z18 8Waveform.vwf.vt
+Z19 FWaveform.vwf.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z20 !s108 1671542582.311000
+Z21 !s107 Waveform.vwf.vt|
+Z22 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+Z23 n@test@ram_vlg_check_tst
+vTestRam_vlg_sample_tst
+!i10b 1
+Z24 !s100 Di21CLY=ZEb[C:mC<XId21
+Z25 I=H;SdW0[GMf;l_:^LZ_G20
+Z26 V0O^AXiQe]9`kmPFCL:Y9j2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@test@ram_vlg_sample_tst
+vTestRam_vlg_vec_tst
+!i10b 1
+Z28 !s100 SUI22fCC8VNBd`U6NA@Zc0
+Z29 I4_nc>UXlZIcj0YG8km`Z23
+Z30 VGO>7i20HeE8z9j>Gd6lY61
+R4
+R17
+R18
+R19
+Z31 L0 285
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@test@ram_vlg_vec_tst

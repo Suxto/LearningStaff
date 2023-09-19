@@ -1,0 +1,18 @@
+|Time
+nRst => T3~reg0.ACLR
+nRst => T2~reg0.ACLR
+nRst => T1~reg0.ACLR
+CLK => T3~reg0.CLK
+CLK => T2~reg0.CLK
+CLK => T1~reg0.CLK
+nSTART => always0.IN0
+nSTOP => always0.IN1
+nSTOP => T1.OUTPUTSELECT
+nSTOP => T2.OUTPUTSELECT
+nSTOP => T3.OUTPUTSELECT
+nSTOP => always0.IN1
+T1 <= T1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+T2 <= T2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+T3 <= T3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

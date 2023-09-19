@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\suxto\Documents\FPGA\mux8\simulation\qsim
+vmux8
+Z1 !s100 7G]3b1VchmY5f0WQDzG_51
+Z2 IkbVdREfJj[3[=5NU3U=6L0
+Z3 Vb]e01l^1J`a8ag4I<6GTV2
+Z4 dC:\Users\suxto\Documents\FPGA\mux8\simulation\qsim
+Z5 w1668583414
+Z6 8mux8.vo
+Z7 Fmux8.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|mux8.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1668583415.571000
+Z12 !s107 mux8.vo|
+!s101 -O0
+vmux8_vlg_check_tst
+!i10b 1
+Z13 !s100 ?PnWIzmZW89L50K=7184j2
+Z14 IZnoBCZ4hoBH9D81gn<N]83
+Z15 VDGnESn4fYkF1ojndAb0o80
+R4
+Z16 w1668583412
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 73
+R8
+r1
+!s85 0
+31
+Z19 !s108 1668583415.707000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+vmux8_vlg_sample_tst
+!i10b 1
+Z22 !s100 MW=]0`o]UeEe0]Hk1PHgm1
+Z23 I:`oJhL4D2`FP^XS98l;:T1
+Z24 VIF^RnBM=mJ5_;JB:SJFza0
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vmux8_vlg_vec_tst
+!i10b 1
+!s100 @Poh>MAG2<MRX;Q?oZN:a3
+ILo94_T122nkB4an5m?zkg2
+Z25 VP=IIaW0l_m=14Ag>QMiZ[3
+R4
+R16
+R17
+R18
+Z26 L0 203
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

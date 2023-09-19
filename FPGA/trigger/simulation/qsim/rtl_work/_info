@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\suxto\Documents\FPGA\trigger\simulation\qsim
+vtrigger
+I0@Va>KUFgHBa3;OM]jMYd2
+Z1 VE]n0hmihAkMIkUN]F?nd>2
+Z2 dC:\Users\suxto\Documents\FPGA\trigger\simulation\qsim
+w1669123516
+Z3 8trigger.vo
+Z4 Ftrigger.vo
+L0 31
+Z5 OV;L;10.1d;51
+r1
+31
+Z6 !s90 -work|work|trigger.vo|
+Z7 o-work work -O0
+!i10b 1
+!s100 mT8I9EE`]flcMj?Xg6VET3
+!s85 0
+!s108 1669123517.131000
+Z8 !s107 trigger.vo|
+!s101 -O0
+vtrigger_vlg_check_tst
+!i10b 1
+Z9 !s100 BBe1T@B_kz<K?UVZV3XHJ1
+Z10 I0RhTc=N?DcP8`TTV;QB?L2
+Z11 V=Fg3@;4RmC1beA;<LMOSc3
+R2
+Z12 w1669123515
+Z13 8Waveform.vwf.vt
+Z14 FWaveform.vwf.vt
+L0 61
+R5
+r1
+!s85 0
+31
+Z15 !s108 1669123517.178000
+Z16 !s107 Waveform.vwf.vt|
+Z17 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R7
+vtrigger_vlg_sample_tst
+!i10b 1
+Z18 !s100 Z_^:GYM^8[S>cj:fRVm9g2
+Z19 I@eZhA@307dC=72_GQF=FM0
+Z20 VQF?lFJ7VAmYM`deHEJHTK3
+R2
+R12
+R13
+R14
+L0 29
+R5
+r1
+!s85 0
+31
+R15
+R16
+R17
+!s101 -O0
+R7
+vtrigger_vlg_vec_tst
+!i10b 1
+Z21 !s100 gJF?fYRTOIO`l?CM5<no`3
+Z22 IPf3B<3jeemZ:W3`Q5I0=h1
+Z23 VNfY7dFRIdJ6e75PV<:MhO1
+R2
+R12
+R13
+R14
+Z24 L0 281
+R5
+r1
+!s85 0
+31
+R15
+R16
+R17
+!s101 -O0
+R7

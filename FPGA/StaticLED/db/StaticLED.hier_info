@@ -1,0 +1,57 @@
+|StaticLED
+clk => counter[0]~reg0.CLK
+clk => counter[1]~reg0.CLK
+clk => counter[2]~reg0.CLK
+clk => counter[3]~reg0.CLK
+nRst => counter[0]~reg0.ACLR
+nRst => counter[1]~reg0.ACLR
+nRst => counter[2]~reg0.ACLR
+nRst => counter[3]~reg0.ACLR
+segOut[0] <= encoder:coder.segData
+segOut[1] <= encoder:coder.segData
+segOut[2] <= encoder:coder.segData
+segOut[3] <= encoder:coder.segData
+segOut[4] <= encoder:coder.segData
+segOut[5] <= encoder:coder.segData
+segOut[6] <= encoder:coder.segData
+segOut[7] <= encoder:coder.segData
+digOut[0] <= <GND>
+digOut[1] <= <VCC>
+digOut[2] <= <VCC>
+digOut[3] <= <VCC>
+digOut[4] <= <VCC>
+digOut[5] <= <VCC>
+digOut[6] <= <VCC>
+digOut[7] <= <VCC>
+counter[0] <= counter[0].DB_MAX_OUTPUT_PORT_TYPE
+counter[1] <= counter[1].DB_MAX_OUTPUT_PORT_TYPE
+counter[2] <= counter[2].DB_MAX_OUTPUT_PORT_TYPE
+counter[3] <= counter[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StaticLED|encoder:coder
+inData[0] => Mux0.IN19
+inData[0] => Mux1.IN19
+inData[0] => Decoder0.IN2
+inData[0] => Mux2.IN19
+inData[1] => Mux0.IN18
+inData[1] => Mux1.IN18
+inData[1] => Decoder0.IN1
+inData[1] => Mux2.IN18
+inData[2] => Mux0.IN17
+inData[2] => Mux1.IN17
+inData[2] => Decoder0.IN0
+inData[2] => Mux2.IN17
+inData[3] => Mux0.IN16
+inData[3] => Mux1.IN16
+inData[3] => Mux2.IN16
+segData[0] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+segData[1] <= segData.DB_MAX_OUTPUT_PORT_TYPE
+segData[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+segData[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segData[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+segData[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+segData[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+segData[7] <= <GND>
+
+

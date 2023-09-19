@@ -1,0 +1,20 @@
+module trigger (
+    nCLR,
+    CLK,
+    D,
+    Q
+);
+  input nCLR, CLK;
+  input [7:0] D;
+  output [7:0] Q;
+  reg [7:0] Q;
+
+  always @(CLK) begin
+    if (CLK == 1) Q = D;
+  end
+
+  always @(nCLR) begin
+    if (nCLR == 1) Q = 8'b00000000;
+  end
+
+endmodule

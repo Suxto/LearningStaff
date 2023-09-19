@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\suxto\Documents\FPGA\StaticLED\simulation\qsim
+vStaticLED
+Z1 IRVGNEYNkMzSM7UeXWiS[d2
+Z2 V[o7gKQfi8945kJ:i0`6793
+Z3 dC:\Users\suxto\Documents\FPGA\StaticLED\simulation\qsim
+Z4 w1670298230
+Z5 8StaticLED.vo
+Z6 FStaticLED.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|StaticLED.vo|
+Z9 o-work work -O0
+Z10 n@static@l@e@d
+!i10b 1
+Z11 !s100 da3oR@4aK@4MC<C;diF4A1
+!s85 0
+Z12 !s108 1670298231.056000
+Z13 !s107 StaticLED.vo|
+!s101 -O0
+vStaticLED_vlg_check_tst
+!i10b 1
+!s100 00[FY0C[ag=dOd?g07O@I3
+ITWR;WaPH^SX<O;75=ocKh1
+Z14 VF@;5a=8oPod3ROk_BhVU<1
+R3
+Z15 w1670298229
+Z16 8Waveform.vwf.vt
+Z17 FWaveform.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z18 !s108 1670298231.094000
+Z19 !s107 Waveform.vwf.vt|
+Z20 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+Z21 n@static@l@e@d_vlg_check_tst
+vStaticLED_vlg_sample_tst
+!i10b 1
+Z22 !s100 4R:zPT8DzKbn80_b<?>2I2
+Z23 ILOOU1E:HX:El;_6_<BEL21
+Z24 V`D9f0big4lHT2^=XWLXNQ0
+R3
+R15
+R16
+R17
+L0 29
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z25 n@static@l@e@d_vlg_sample_tst
+vStaticLED_vlg_vec_tst
+!i10b 1
+!s100 _S9451F@kef=zXn]>8e6Z2
+IRmKEZEfO@bT:JXmzM<_LS3
+Z26 V06k[:o`e4LRYG491?d]<]3
+R3
+R15
+R16
+R17
+L0 531
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R9
+Z27 n@static@l@e@d_vlg_vec_tst

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\suxto\Documents\FPGA\Time\simulation\qsim
+vTime
+Z1 !s100 M2m9kT>oUKKE<CcckZCge0
+Z2 IbKHACbz>NA6BAmR=5`_;k0
+Z3 VJZ4<j_;?09D=CiG@G:R=z2
+Z4 dC:\Users\suxto\Documents\FPGA\Time\simulation\qsim
+Z5 w1672066907
+Z6 8Time.vo
+Z7 FTime.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Time.vo|
+Z10 o-work work -O0
+Z11 n@time
+!i10b 1
+!s85 0
+Z12 !s108 1672066907.883000
+Z13 !s107 Time.vo|
+!s101 -O0
+vTime_vlg_check_tst
+!i10b 1
+Z14 !s100 >bQ3bOz>LA]WE763JVO<a0
+Z15 IhCiH04Bz<`XgMhjLaKA;G0
+Z16 V@jC?1LQ9CJhYVb:oYNDoM3
+R4
+Z17 w1672066906
+Z18 8Waveform.vwf.vt
+Z19 FWaveform.vwf.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z20 !s108 1672066907.921000
+Z21 !s107 Waveform.vwf.vt|
+Z22 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+Z23 n@time_vlg_check_tst
+vTime_vlg_sample_tst
+!i10b 1
+Z24 !s100 ^jK2oQUGnHNOHSY@9LEYb1
+Z25 IFXAzP[GZ>9QMYJj:VShik3
+Z26 VGi7A>C`e]J[XgBkT<mi3h0
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@time_vlg_sample_tst
+vTime_vlg_vec_tst
+!i10b 1
+!s100 _9mQiS5RFEE4j@@PoXiGV0
+IFCQWN=SJO4c0>mm6kRK:<2
+Z28 VU2I7RUFBn^1C6G9nIRize0
+R4
+R17
+R18
+R19
+Z29 L0 212
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@time_vlg_vec_tst

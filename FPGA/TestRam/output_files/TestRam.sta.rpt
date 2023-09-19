@@ -1,0 +1,1694 @@
+TimeQuest Timing Analyzer report for TestRam
+Tue Dec 20 21:04:59 2022
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1200mV 85C Model Setup Summary
+  8. Slow 1200mV 85C Model Hold Summary
+  9. Slow 1200mV 85C Model Recovery Summary
+ 10. Slow 1200mV 85C Model Removal Summary
+ 11. Slow 1200mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1200mV 85C Model Setup: 'bnRD'
+ 13. Slow 1200mV 85C Model Setup: 'bclk'
+ 14. Slow 1200mV 85C Model Hold: 'bnRD'
+ 15. Slow 1200mV 85C Model Hold: 'bclk'
+ 16. Slow 1200mV 85C Model Recovery: 'bnRD'
+ 17. Slow 1200mV 85C Model Removal: 'bnRD'
+ 18. Slow 1200mV 85C Model Minimum Pulse Width: 'bclk'
+ 19. Slow 1200mV 85C Model Minimum Pulse Width: 'bnRD'
+ 20. Setup Times
+ 21. Hold Times
+ 22. Clock to Output Times
+ 23. Minimum Clock to Output Times
+ 24. Slow 1200mV 85C Model Metastability Report
+ 25. Slow 1200mV 0C Model Fmax Summary
+ 26. Slow 1200mV 0C Model Setup Summary
+ 27. Slow 1200mV 0C Model Hold Summary
+ 28. Slow 1200mV 0C Model Recovery Summary
+ 29. Slow 1200mV 0C Model Removal Summary
+ 30. Slow 1200mV 0C Model Minimum Pulse Width Summary
+ 31. Slow 1200mV 0C Model Setup: 'bclk'
+ 32. Slow 1200mV 0C Model Setup: 'bnRD'
+ 33. Slow 1200mV 0C Model Hold: 'bnRD'
+ 34. Slow 1200mV 0C Model Hold: 'bclk'
+ 35. Slow 1200mV 0C Model Recovery: 'bnRD'
+ 36. Slow 1200mV 0C Model Removal: 'bnRD'
+ 37. Slow 1200mV 0C Model Minimum Pulse Width: 'bclk'
+ 38. Slow 1200mV 0C Model Minimum Pulse Width: 'bnRD'
+ 39. Setup Times
+ 40. Hold Times
+ 41. Clock to Output Times
+ 42. Minimum Clock to Output Times
+ 43. Slow 1200mV 0C Model Metastability Report
+ 44. Fast 1200mV 0C Model Setup Summary
+ 45. Fast 1200mV 0C Model Hold Summary
+ 46. Fast 1200mV 0C Model Recovery Summary
+ 47. Fast 1200mV 0C Model Removal Summary
+ 48. Fast 1200mV 0C Model Minimum Pulse Width Summary
+ 49. Fast 1200mV 0C Model Setup: 'bclk'
+ 50. Fast 1200mV 0C Model Setup: 'bnRD'
+ 51. Fast 1200mV 0C Model Hold: 'bnRD'
+ 52. Fast 1200mV 0C Model Hold: 'bclk'
+ 53. Fast 1200mV 0C Model Recovery: 'bnRD'
+ 54. Fast 1200mV 0C Model Removal: 'bnRD'
+ 55. Fast 1200mV 0C Model Minimum Pulse Width: 'bclk'
+ 56. Fast 1200mV 0C Model Minimum Pulse Width: 'bnRD'
+ 57. Setup Times
+ 58. Hold Times
+ 59. Clock to Output Times
+ 60. Minimum Clock to Output Times
+ 61. Fast 1200mV 0C Model Metastability Report
+ 62. Multicorner Timing Analysis Summary
+ 63. Setup Times
+ 64. Hold Times
+ 65. Clock to Output Times
+ 66. Minimum Clock to Output Times
+ 67. Board Trace Model Assignments
+ 68. Input Transition Times
+ 69. Signal Integrity Metrics (Slow 1200mv 0c Model)
+ 70. Signal Integrity Metrics (Slow 1200mv 85c Model)
+ 71. Signal Integrity Metrics (Fast 1200mv 0c Model)
+ 72. Setup Transfers
+ 73. Hold Transfers
+ 74. Recovery Transfers
+ 75. Removal Transfers
+ 76. Report TCCS
+ 77. Report RSKM
+ 78. Unconstrained Paths
+ 79. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; TestRam                                            ;
+; Device Family      ; Cyclone IV E                                       ;
+; Device Name        ; EP4CE6E22C8                                        ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Enabled                                            ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 16     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                           ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets  ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+; bclk       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { bclk } ;
+; bnRD       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { bnRD } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                        ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 384.91 MHz ; 250.0 MHz       ; bnRD       ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------+
+; Slow 1200mV 85C Model Setup Summary ;
++-------+--------+--------------------+
+; Clock ; Slack  ; End Point TNS      ;
++-------+--------+--------------------+
+; bnRD  ; -3.117 ; -23.078            ;
+; bclk  ; -3.065 ; -3.664             ;
++-------+--------+--------------------+
+
+
++------------------------------------+
+; Slow 1200mV 85C Model Hold Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; bnRD  ; -0.781 ; -5.074            ;
+; bclk  ; 0.429  ; 0.000             ;
++-------+--------+-------------------+
+
+
++----------------------------------------+
+; Slow 1200mV 85C Model Recovery Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; bnRD  ; -0.948 ; -5.725                ;
++-------+--------+-----------------------+
+
+
++---------------------------------------+
+; Slow 1200mV 85C Model Removal Summary ;
++-------+--------+----------------------+
+; Clock ; Slack  ; End Point TNS        ;
++-------+--------+----------------------+
+; bnRD  ; -0.793 ; -3.441               ;
++-------+--------+----------------------+
+
+
++---------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary ;
++-------+--------+----------------------------------+
+; Clock ; Slack  ; End Point TNS                    ;
++-------+--------+----------------------------------+
+; bclk  ; -3.201 ; -15.804                          ;
+; bnRD  ; -3.000 ; -3.000                           ;
++-------+--------+----------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'bnRD'                                                                                                                                                           ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                      ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; -3.117 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[4]$latch ; bclk         ; bnRD        ; 1.000        ; 2.150      ; 5.053      ;
+; -3.033 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[5]$latch ; bclk         ; bnRD        ; 1.000        ; 2.127      ; 4.945      ;
+; -2.923 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[6]$latch ; bclk         ; bnRD        ; 1.000        ; 2.151      ; 5.049      ;
+; -2.899 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[3]$latch ; bclk         ; bnRD        ; 1.000        ; 2.124      ; 4.994      ;
+; -2.822 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[0]$latch ; bclk         ; bnRD        ; 1.000        ; 2.125      ; 4.920      ;
+; -2.775 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[1]$latch ; bclk         ; bnRD        ; 1.000        ; 2.339      ; 4.932      ;
+; -2.774 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[7]$latch ; bclk         ; bnRD        ; 1.000        ; 2.341      ; 4.942      ;
+; -2.735 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[2]$latch ; bclk         ; bnRD        ; 1.000        ; 2.338      ; 4.897      ;
+; -0.799 ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.133      ; 5.238      ;
+; -0.605 ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.134      ; 5.234      ;
+; -0.574 ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.110      ; 4.989      ;
+; -0.438 ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.107      ; 5.036      ;
+; -0.393 ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.322      ; 5.053      ;
+; -0.392 ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.108      ; 4.993      ;
+; -0.388 ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.321      ; 5.053      ;
+; -0.380 ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.324      ; 5.051      ;
+; -0.170 ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.133      ; 5.109      ;
+; 0.023  ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.134      ; 5.106      ;
+; 0.052  ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.110      ; 4.863      ;
+; 0.187  ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.107      ; 4.911      ;
+; 0.198  ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.322      ; 4.962      ;
+; 0.203  ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.321      ; 4.962      ;
+; 0.210  ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.324      ; 4.961      ;
+; 0.232  ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.108      ; 4.869      ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup: 'bclk'                                                                                                                                                                ;
++--------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node     ; To Node                                                                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -3.065 ; DBus[1]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.624     ; 1.469      ;
+; -2.944 ; DBus[7]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.626     ; 1.346      ;
+; -2.913 ; DBus[2]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.623     ; 1.318      ;
+; -2.726 ; DBus[4]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.428     ; 1.326      ;
+; -2.724 ; DBus[6]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.428     ; 1.324      ;
+; -2.358 ; DBus[0]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.401     ; 0.985      ;
+; -2.358 ; DBus[3]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.401     ; 0.985      ;
+; -2.352 ; DBus[5]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.403     ; 0.977      ;
+; -0.599 ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; 0.500        ; 2.890      ; 4.017      ;
+; 0.018  ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; 1.000        ; 2.890      ; 3.900      ;
++--------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'bnRD'                                                                                                                                                            ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                      ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.781 ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.523      ; 4.742      ;
+; -0.778 ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.521      ; 4.743      ;
+; -0.777 ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.520      ; 4.743      ;
+; -0.661 ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.298      ; 4.637      ;
+; -0.651 ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.300      ; 4.649      ;
+; -0.615 ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.298      ; 4.683      ;
+; -0.407 ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.325      ; 4.918      ;
+; -0.404 ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.325      ; 4.921      ;
+; -0.173 ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.523      ; 4.870      ;
+; -0.169 ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.520      ; 4.871      ;
+; -0.169 ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.521      ; 4.872      ;
+; -0.019 ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.298      ; 4.799      ;
+; -0.009 ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.300      ; 4.811      ;
+; 0.028  ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.298      ; 4.846      ;
+; 0.164  ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.325      ; 5.009      ;
+; 0.168  ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.325      ; 5.013      ;
+; 1.918  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[2]$latch ; bclk         ; bnRD        ; 0.000        ; 2.630      ; 4.588      ;
+; 1.944  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[1]$latch ; bclk         ; bnRD        ; 0.000        ; 2.631      ; 4.615      ;
+; 1.952  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[7]$latch ; bclk         ; bnRD        ; 0.000        ; 2.633      ; 4.625      ;
+; 2.177  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[0]$latch ; bclk         ; bnRD        ; 0.000        ; 2.408      ; 4.625      ;
+; 2.210  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[5]$latch ; bclk         ; bnRD        ; 0.000        ; 2.410      ; 4.660      ;
+; 2.247  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[3]$latch ; bclk         ; bnRD        ; 0.000        ; 2.408      ; 4.695      ;
+; 2.280  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[6]$latch ; bclk         ; bnRD        ; 0.000        ; 2.435      ; 4.755      ;
+; 2.299  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[4]$latch ; bclk         ; bnRD        ; 0.000        ; 2.435      ; 4.774      ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold: 'bclk'                                                                                                                                                                ;
++-------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node                                                                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.429 ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; 0.000        ; 2.983      ; 3.706      ;
+; 1.059 ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; -0.500       ; 2.983      ; 3.836      ;
+; 2.717 ; DBus[5]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.120     ; 0.891      ;
+; 2.725 ; DBus[0]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.118     ; 0.901      ;
+; 2.727 ; DBus[3]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.117     ; 0.904      ;
+; 3.035 ; DBus[4]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.143     ; 1.186      ;
+; 3.056 ; DBus[6]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.144     ; 1.206      ;
+; 3.233 ; DBus[2]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.331     ; 1.196      ;
+; 3.260 ; DBus[7]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.334     ; 1.220      ;
+; 3.410 ; DBus[1]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.332     ; 1.372      ;
++-------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Recovery: 'bnRD'                                                                   ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.948 ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.110      ; 5.363      ;
+; -0.872 ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.133      ; 5.311      ;
+; -0.763 ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.107      ; 5.361      ;
+; -0.760 ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.108      ; 5.361      ;
+; -0.683 ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.134      ; 5.312      ;
+; -0.643 ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.321      ; 5.308      ;
+; -0.641 ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.324      ; 5.312      ;
+; -0.415 ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.500        ; 5.322      ; 5.075      ;
+; -0.367 ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.110      ; 5.282      ;
+; -0.276 ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.133      ; 5.215      ;
+; -0.182 ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.107      ; 5.280      ;
+; -0.179 ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.108      ; 5.280      ;
+; -0.087 ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.134      ; 5.216      ;
+; -0.048 ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.321      ; 5.213      ;
+; -0.044 ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.324      ; 5.215      ;
+; 0.188  ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; 1.000        ; 5.322      ; 4.972      ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Removal: 'bnRD'                                                                    ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.793 ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.521      ; 4.728      ;
+; -0.559 ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.523      ; 4.964      ;
+; -0.559 ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.520      ; 4.961      ;
+; -0.360 ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.325      ; 4.965      ;
+; -0.359 ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.325      ; 4.966      ;
+; -0.271 ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.298      ; 5.027      ;
+; -0.270 ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.300      ; 5.030      ;
+; -0.270 ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.298      ; 5.028      ;
+; -0.252 ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.521      ; 4.789      ;
+; -0.027 ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.523      ; 5.016      ;
+; -0.027 ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.520      ; 5.013      ;
+; 0.170  ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.325      ; 5.015      ;
+; 0.172  ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.325      ; 5.017      ;
+; 0.245  ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.298      ; 5.063      ;
+; 0.246  ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.300      ; 5.066      ;
+; 0.246  ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.298      ; 5.064      ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'bclk'                                                                                                                                     ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                               ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------+
+; -3.201 ; 1.000        ; 4.201          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -3.201 ; 1.000        ; 4.201          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -3.201 ; 1.000        ; 4.201          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg       ;
+; -3.201 ; 1.000        ; 4.201          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; bclk  ; Rise       ; bclk                                                                                                 ;
+; 0.164  ; 0.399        ; 0.235          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 0.164  ; 0.399        ; 0.235          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg       ;
+; 0.164  ; 0.399        ; 0.235          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 0.166  ; 0.401        ; 0.235          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 0.345  ; 0.580        ; 0.235          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 0.348  ; 0.583        ; 0.235          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 0.348  ; 0.583        ; 0.235          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg       ;
+; 0.348  ; 0.583        ; 0.235          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 0.445  ; 0.445        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; R|altsyncram_component|auto_generated|ram_block1a0|clk0                                              ;
+; 0.454  ; 0.454        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~input|o                                                                                         ;
+; 0.467  ; 0.467        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~inputclkctrl|inclk[0]                                                                           ;
+; 0.467  ; 0.467        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~inputclkctrl|outclk                                                                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~input|i                                                                                         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~input|i                                                                                         ;
+; 0.532  ; 0.532        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~inputclkctrl|inclk[0]                                                                           ;
+; 0.532  ; 0.532        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~inputclkctrl|outclk                                                                             ;
+; 0.546  ; 0.546        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~input|o                                                                                         ;
+; 0.555  ; 0.555        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; R|altsyncram_component|auto_generated|ram_block1a0|clk0                                              ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width: 'bnRD'                                                          ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                    ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; bnRD  ; Rise       ; bnRD                      ;
+; 0.417  ; 0.417        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[7]~9|datad           ;
+; 0.430  ; 0.430        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]~9|combout         ;
+; 0.447  ; 0.447        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[1]$latch|datac       ;
+; 0.447  ; 0.447        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[2]$latch|datac       ;
+; 0.447  ; 0.447        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]$latch|datac       ;
+; 0.453  ; 0.453        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; bnRD~input|o              ;
+; 0.455  ; 0.455        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[1]$latch             ;
+; 0.455  ; 0.455        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[2]$latch             ;
+; 0.455  ; 0.455        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[7]$latch             ;
+; 0.459  ; 0.459        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[4]$latch|datad       ;
+; 0.459  ; 0.459        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[6]$latch|datad       ;
+; 0.461  ; 0.461        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[0]$latch|datad       ;
+; 0.461  ; 0.461        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[3]$latch|datad       ;
+; 0.461  ; 0.461        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[5]$latch|datad       ;
+; 0.468  ; 0.468        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]~9clkctrl|inclk[0] ;
+; 0.468  ; 0.468        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]~9clkctrl|outclk   ;
+; 0.497  ; 0.497        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[4]$latch             ;
+; 0.497  ; 0.497        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[6]$latch             ;
+; 0.498  ; 0.498        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[0]$latch             ;
+; 0.498  ; 0.498        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[3]$latch             ;
+; 0.499  ; 0.499        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[0]$latch             ;
+; 0.499  ; 0.499        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[3]$latch             ;
+; 0.499  ; 0.499        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[5]$latch             ;
+; 0.499  ; 0.499        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[5]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[4]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; bnRD~input|i              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; bnRD~input|i              ;
+; 0.501  ; 0.501        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[6]$latch             ;
+; 0.529  ; 0.529        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]~9clkctrl|inclk[0] ;
+; 0.529  ; 0.529        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]~9clkctrl|outclk   ;
+; 0.535  ; 0.535        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[0]$latch|datad       ;
+; 0.535  ; 0.535        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[3]$latch|datad       ;
+; 0.536  ; 0.536        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[5]$latch|datad       ;
+; 0.537  ; 0.537        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[4]$latch|datad       ;
+; 0.538  ; 0.538        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[6]$latch|datad       ;
+; 0.541  ; 0.541        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[1]$latch             ;
+; 0.541  ; 0.541        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[7]$latch             ;
+; 0.542  ; 0.542        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[2]$latch             ;
+; 0.547  ; 0.547        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; bnRD~input|o              ;
+; 0.549  ; 0.549        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[1]$latch|datac       ;
+; 0.549  ; 0.549        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]$latch|datac       ;
+; 0.550  ; 0.550        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[2]$latch|datac       ;
+; 0.565  ; 0.565        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]~9|combout         ;
+; 0.578  ; 0.578        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[7]~9|datad           ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ABus[*]   ; bclk       ; 1.973  ; 2.169  ; Rise       ; bclk            ;
+;  ABus[0]  ; bclk       ; -0.809 ; -0.604 ; Rise       ; bclk            ;
+;  ABus[1]  ; bclk       ; -1.047 ; -0.890 ; Rise       ; bclk            ;
+;  ABus[2]  ; bclk       ; 1.973  ; 2.169  ; Rise       ; bclk            ;
+;  ABus[3]  ; bclk       ; -1.061 ; -0.900 ; Rise       ; bclk            ;
+;  ABus[4]  ; bclk       ; -1.045 ; -0.879 ; Rise       ; bclk            ;
+;  ABus[5]  ; bclk       ; 1.701  ; 2.012  ; Rise       ; bclk            ;
+;  ABus[6]  ; bclk       ; 1.820  ; 2.010  ; Rise       ; bclk            ;
+;  ABus[7]  ; bclk       ; 1.799  ; 2.044  ; Rise       ; bclk            ;
+; bnRD      ; bclk       ; 0.942  ; 1.059  ; Rise       ; bclk            ;
+; bnWR      ; bclk       ; 1.851  ; 2.046  ; Rise       ; bclk            ;
+; bnRD      ; bnRD       ; 1.150  ; 1.279  ; Rise       ; bnRD            ;
+; in244[*]  ; bnRD       ; 2.162  ; 2.328  ; Rise       ; bnRD            ;
+;  in244[0] ; bnRD       ; 1.747  ; 1.932  ; Rise       ; bnRD            ;
+;  in244[1] ; bnRD       ; 1.483  ; 1.667  ; Rise       ; bnRD            ;
+;  in244[2] ; bnRD       ; 1.173  ; 1.409  ; Rise       ; bnRD            ;
+;  in244[3] ; bnRD       ; 1.562  ; 1.823  ; Rise       ; bnRD            ;
+;  in244[4] ; bnRD       ; 1.458  ; 1.740  ; Rise       ; bnRD            ;
+;  in244[5] ; bnRD       ; 2.162  ; 2.328  ; Rise       ; bnRD            ;
+;  in244[6] ; bnRD       ; 1.271  ; 1.561  ; Rise       ; bnRD            ;
+;  in244[7] ; bnRD       ; 1.152  ; 1.350  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ABus[*]   ; bclk       ; 1.386  ; 1.230  ; Rise       ; bclk            ;
+;  ABus[0]  ; bclk       ; 1.143  ; 0.945  ; Rise       ; bclk            ;
+;  ABus[1]  ; bclk       ; 1.371  ; 1.220  ; Rise       ; bclk            ;
+;  ABus[2]  ; bclk       ; -1.522 ; -1.707 ; Rise       ; bclk            ;
+;  ABus[3]  ; bclk       ; 1.386  ; 1.230  ; Rise       ; bclk            ;
+;  ABus[4]  ; bclk       ; 1.370  ; 1.209  ; Rise       ; bclk            ;
+;  ABus[5]  ; bclk       ; -1.257 ; -1.555 ; Rise       ; bclk            ;
+;  ABus[6]  ; bclk       ; -1.370 ; -1.553 ; Rise       ; bclk            ;
+;  ABus[7]  ; bclk       ; -1.350 ; -1.586 ; Rise       ; bclk            ;
+; bnRD      ; bclk       ; -0.469 ; -0.599 ; Rise       ; bclk            ;
+; bnWR      ; bclk       ; -1.388 ; -1.572 ; Rise       ; bclk            ;
+; bnRD      ; bnRD       ; 0.781  ; 0.653  ; Rise       ; bnRD            ;
+; in244[*]  ; bnRD       ; 0.437  ; 0.252  ; Rise       ; bnRD            ;
+;  in244[0] ; bnRD       ; -0.294 ; -0.454 ; Rise       ; bnRD            ;
+;  in244[1] ; bnRD       ; 0.129  ; -0.032 ; Rise       ; bnRD            ;
+;  in244[2] ; bnRD       ; 0.420  ; 0.198  ; Rise       ; bnRD            ;
+;  in244[3] ; bnRD       ; -0.109 ; -0.347 ; Rise       ; bnRD            ;
+;  in244[4] ; bnRD       ; 0.167  ; -0.098 ; Rise       ; bnRD            ;
+;  in244[5] ; bnRD       ; -0.513 ; -0.654 ; Rise       ; bnRD            ;
+;  in244[6] ; bnRD       ; 0.164  ; -0.108 ; Rise       ; bnRD            ;
+;  in244[7] ; bnRD       ; 0.437  ; 0.252  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; DBus[*]   ; bnRD       ; 11.355 ; 11.265 ; Rise       ; bnRD            ;
+;  DBus[0]  ; bnRD       ; 9.903  ; 9.737  ; Rise       ; bnRD            ;
+;  DBus[1]  ; bnRD       ; 9.927  ; 9.720  ; Rise       ; bnRD            ;
+;  DBus[2]  ; bnRD       ; 11.355 ; 11.265 ; Rise       ; bnRD            ;
+;  DBus[3]  ; bnRD       ; 9.847  ; 9.629  ; Rise       ; bnRD            ;
+;  DBus[4]  ; bnRD       ; 9.882  ; 9.682  ; Rise       ; bnRD            ;
+;  DBus[5]  ; bnRD       ; 9.684  ; 9.545  ; Rise       ; bnRD            ;
+;  DBus[6]  ; bnRD       ; 11.171 ; 11.132 ; Rise       ; bnRD            ;
+;  DBus[7]  ; bnRD       ; 9.960  ; 9.737  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; DBus[*]   ; bnRD       ; 9.340  ; 9.205  ; Rise       ; bnRD            ;
+;  DBus[0]  ; bnRD       ; 9.549  ; 9.389  ; Rise       ; bnRD            ;
+;  DBus[1]  ; bnRD       ; 9.568  ; 9.368  ; Rise       ; bnRD            ;
+;  DBus[2]  ; bnRD       ; 10.998 ; 10.914 ; Rise       ; bnRD            ;
+;  DBus[3]  ; bnRD       ; 9.491  ; 9.280  ; Rise       ; bnRD            ;
+;  DBus[4]  ; bnRD       ; 9.528  ; 9.335  ; Rise       ; bnRD            ;
+;  DBus[5]  ; bnRD       ; 9.340  ; 9.205  ; Rise       ; bnRD            ;
+;  DBus[6]  ; bnRD       ; 10.826 ; 10.791 ; Rise       ; bnRD            ;
+;  DBus[7]  ; bnRD       ; 9.601  ; 9.385  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
+----------------------------------------------
+; Slow 1200mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                         ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
++------------+-----------------+------------+---------------------------------------------------------------+
+; 485.44 MHz ; 250.0 MHz       ; bnRD       ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------+
+; Slow 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; bclk  ; -2.869 ; -3.295            ;
+; bnRD  ; -2.765 ; -20.265           ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Slow 1200mV 0C Model Hold Summary ;
++-------+--------+------------------+
+; Clock ; Slack  ; End Point TNS    ;
++-------+--------+------------------+
+; bnRD  ; -0.721 ; -4.773           ;
+; bclk  ; 0.410  ; 0.000            ;
++-------+--------+------------------+
+
+
++---------------------------------------+
+; Slow 1200mV 0C Model Recovery Summary ;
++-------+--------+----------------------+
+; Clock ; Slack  ; End Point TNS        ;
++-------+--------+----------------------+
+; bnRD  ; -0.656 ; -3.285               ;
++-------+--------+----------------------+
+
+
++--------------------------------------+
+; Slow 1200mV 0C Model Removal Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; bnRD  ; -0.713 ; -2.922              ;
++-------+--------+---------------------+
+
+
++--------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; bclk  ; -3.201 ; -15.804                         ;
+; bnRD  ; -3.000 ; -3.000                          ;
++-------+--------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'bclk'                                                                                                                                                                 ;
++--------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node     ; To Node                                                                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.869 ; DBus[1]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.472     ; 1.416      ;
+; -2.759 ; DBus[7]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.473     ; 1.305      ;
+; -2.726 ; DBus[2]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.470     ; 1.275      ;
+; -2.557 ; DBus[4]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.291     ; 1.285      ;
+; -2.554 ; DBus[6]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.291     ; 1.282      ;
+; -2.193 ; DBus[0]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.266     ; 0.946      ;
+; -2.192 ; DBus[3]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.265     ; 0.946      ;
+; -2.187 ; DBus[5]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -2.268     ; 0.938      ;
+; -0.426 ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; 0.500        ; 2.646      ; 3.591      ;
+; 0.088  ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; 1.000        ; 2.646      ; 3.577      ;
++--------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup: 'bnRD'                                                                                                                                                            ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                      ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; -2.765 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[4]$latch ; bclk         ; bnRD        ; 1.000        ; 2.039      ; 4.660      ;
+; -2.708 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[5]$latch ; bclk         ; bnRD        ; 1.000        ; 2.017      ; 4.580      ;
+; -2.553 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[3]$latch ; bclk         ; bnRD        ; 1.000        ; 2.015      ; 4.629      ;
+; -2.553 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[6]$latch ; bclk         ; bnRD        ; 1.000        ; 2.040      ; 4.657      ;
+; -2.472 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[0]$latch ; bclk         ; bnRD        ; 1.000        ; 2.015      ; 4.549      ;
+; -2.419 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[7]$latch ; bclk         ; bnRD        ; 1.000        ; 2.215      ; 4.563      ;
+; -2.418 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[1]$latch ; bclk         ; bnRD        ; 1.000        ; 2.213      ; 4.553      ;
+; -2.377 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[2]$latch ; bclk         ; bnRD        ; 1.000        ; 2.212      ; 4.516      ;
+; -0.530 ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.766      ; 4.672      ;
+; -0.377 ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.744      ; 4.496      ;
+; -0.317 ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.767      ; 4.668      ;
+; -0.222 ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.742      ; 4.545      ;
+; -0.174 ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.742      ; 4.498      ;
+; -0.142 ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.940      ; 4.524      ;
+; -0.138 ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.939      ; 4.524      ;
+; -0.131 ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.942      ; 4.522      ;
+; -0.116 ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.766      ; 4.758      ;
+; 0.081  ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.744      ; 4.538      ;
+; 0.096  ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.767      ; 4.755      ;
+; 0.237  ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.742      ; 4.586      ;
+; 0.257  ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.940      ; 4.625      ;
+; 0.262  ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.939      ; 4.624      ;
+; 0.268  ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.942      ; 4.623      ;
+; 0.285  ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.742      ; 4.539      ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'bnRD'                                                                                                                                                             ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                      ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.721 ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.124      ; 4.403      ;
+; -0.720 ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.123      ; 4.403      ;
+; -0.717 ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.121      ; 4.404      ;
+; -0.637 ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.917      ; 4.280      ;
+; -0.631 ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.919      ; 4.288      ;
+; -0.599 ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.916      ; 4.317      ;
+; -0.376 ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.942      ; 4.566      ;
+; -0.372 ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.942      ; 4.570      ;
+; -0.302 ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.124      ; 4.342      ;
+; -0.299 ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.123      ; 4.344      ;
+; -0.297 ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.121      ; 4.344      ;
+; -0.159 ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.917      ; 4.278      ;
+; -0.153 ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.919      ; 4.286      ;
+; -0.122 ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.916      ; 4.314      ;
+; 0.031  ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.942      ; 4.493      ;
+; 0.035  ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.942      ; 4.497      ;
+; 1.634  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[2]$latch ; bclk         ; bnRD        ; 0.000        ; 2.475      ; 4.149      ;
+; 1.654  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[1]$latch ; bclk         ; bnRD        ; 0.000        ; 2.477      ; 4.171      ;
+; 1.662  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[7]$latch ; bclk         ; bnRD        ; 0.000        ; 2.478      ; 4.180      ;
+; 1.871  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[0]$latch ; bclk         ; bnRD        ; 0.000        ; 2.271      ; 4.182      ;
+; 1.895  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[5]$latch ; bclk         ; bnRD        ; 0.000        ; 2.273      ; 4.208      ;
+; 1.927  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[3]$latch ; bclk         ; bnRD        ; 0.000        ; 2.270      ; 4.237      ;
+; 1.967  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[6]$latch ; bclk         ; bnRD        ; 0.000        ; 2.296      ; 4.303      ;
+; 1.987  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[4]$latch ; bclk         ; bnRD        ; 0.000        ; 2.296      ; 4.323      ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold: 'bclk'                                                                                                                                                                 ;
++-------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node                                                                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.410 ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; 0.000        ; 2.727      ; 3.407      ;
+; 0.934 ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; -0.500       ; 2.727      ; 3.431      ;
+; 2.551 ; DBus[5]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.011     ; 0.810      ;
+; 2.558 ; DBus[0]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.009     ; 0.819      ;
+; 2.560 ; DBus[3]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.009     ; 0.821      ;
+; 2.841 ; DBus[4]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.033     ; 1.078      ;
+; 2.857 ; DBus[6]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.034     ; 1.093      ;
+; 3.021 ; DBus[2]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.206     ; 1.085      ;
+; 3.046 ; DBus[7]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.209     ; 1.107      ;
+; 3.188 ; DBus[1]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -2.207     ; 1.251      ;
++-------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Recovery: 'bnRD'                                                                    ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.656 ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.744      ; 4.775      ;
+; -0.578 ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.766      ; 4.720      ;
+; -0.450 ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.742      ; 4.773      ;
+; -0.448 ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.742      ; 4.772      ;
+; -0.370 ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.767      ; 4.721      ;
+; -0.331 ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.939      ; 4.717      ;
+; -0.329 ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.942      ; 4.720      ;
+; -0.318 ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.744      ; 4.937      ;
+; -0.222 ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.766      ; 4.864      ;
+; -0.123 ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.500        ; 4.940      ; 4.505      ;
+; -0.112 ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.742      ; 4.935      ;
+; -0.111 ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.742      ; 4.935      ;
+; -0.014 ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.767      ; 4.865      ;
+; 0.024  ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.939      ; 4.862      ;
+; 0.026  ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.942      ; 4.865      ;
+; 0.252  ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; 1.000        ; 4.940      ; 4.630      ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Removal: 'bnRD'                                                                     ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.713 ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.123      ; 4.410      ;
+; -0.487 ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.124      ; 4.637      ;
+; -0.487 ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.000        ; 5.121      ; 4.634      ;
+; -0.393 ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.123      ; 4.250      ;
+; -0.303 ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.942      ; 4.639      ;
+; -0.302 ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.942      ; 4.640      ;
+; -0.211 ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.917      ; 4.706      ;
+; -0.210 ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.919      ; 4.709      ;
+; -0.209 ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.000        ; 4.916      ; 4.707      ;
+; -0.189 ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.121      ; 4.452      ;
+; -0.188 ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; -0.500       ; 5.124      ; 4.456      ;
+; -0.007 ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.942      ; 4.455      ;
+; -0.006 ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.942      ; 4.456      ;
+; 0.068  ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.917      ; 4.505      ;
+; 0.069  ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.919      ; 4.508      ;
+; 0.070  ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; -0.500       ; 4.916      ; 4.506      ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'bclk'                                                                                                                                      ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                               ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------+
+; -3.201 ; 1.000        ; 4.201          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -3.201 ; 1.000        ; 4.201          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -3.201 ; 1.000        ; 4.201          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg       ;
+; -3.201 ; 1.000        ; 4.201          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; bclk  ; Rise       ; bclk                                                                                                 ;
+; 0.170  ; 0.400        ; 0.230          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 0.170  ; 0.400        ; 0.230          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg       ;
+; 0.170  ; 0.400        ; 0.230          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 0.172  ; 0.402        ; 0.230          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 0.356  ; 0.586        ; 0.230          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 0.357  ; 0.587        ; 0.230          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 0.357  ; 0.587        ; 0.230          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg       ;
+; 0.357  ; 0.587        ; 0.230          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 0.455  ; 0.455        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; R|altsyncram_component|auto_generated|ram_block1a0|clk0                                              ;
+; 0.475  ; 0.475        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~input|o                                                                                         ;
+; 0.479  ; 0.479        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~inputclkctrl|inclk[0]                                                                           ;
+; 0.479  ; 0.479        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~inputclkctrl|outclk                                                                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~input|i                                                                                         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~input|i                                                                                         ;
+; 0.521  ; 0.521        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~inputclkctrl|inclk[0]                                                                           ;
+; 0.521  ; 0.521        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~inputclkctrl|outclk                                                                             ;
+; 0.525  ; 0.525        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~input|o                                                                                         ;
+; 0.544  ; 0.544        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; R|altsyncram_component|auto_generated|ram_block1a0|clk0                                              ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width: 'bnRD'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                    ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; bnRD  ; Rise       ; bnRD                      ;
+; 0.282  ; 0.282        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[7]~9|datad           ;
+; 0.290  ; 0.290        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]~9|combout         ;
+; 0.373  ; 0.373        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]~9clkctrl|inclk[0] ;
+; 0.373  ; 0.373        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]~9clkctrl|outclk   ;
+; 0.384  ; 0.384        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[1]$latch|datac       ;
+; 0.385  ; 0.385        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[2]$latch|datac       ;
+; 0.385  ; 0.385        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]$latch|datac       ;
+; 0.389  ; 0.389        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[5]$latch|datad       ;
+; 0.390  ; 0.390        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[0]$latch|datad       ;
+; 0.390  ; 0.390        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[3]$latch|datad       ;
+; 0.392  ; 0.392        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[4]$latch|datad       ;
+; 0.393  ; 0.393        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[6]$latch|datad       ;
+; 0.400  ; 0.400        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[1]$latch             ;
+; 0.401  ; 0.401        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[2]$latch             ;
+; 0.401  ; 0.401        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[7]$latch             ;
+; 0.435  ; 0.435        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[5]$latch             ;
+; 0.436  ; 0.436        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[0]$latch             ;
+; 0.436  ; 0.436        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[3]$latch             ;
+; 0.438  ; 0.438        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[4]$latch             ;
+; 0.439  ; 0.439        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[6]$latch             ;
+; 0.476  ; 0.476        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; bnRD~input|o              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; bnRD~input|i              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; bnRD~input|i              ;
+; 0.524  ; 0.524        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; bnRD~input|o              ;
+; 0.555  ; 0.555        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[4]$latch             ;
+; 0.555  ; 0.555        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[6]$latch             ;
+; 0.558  ; 0.558        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[0]$latch             ;
+; 0.558  ; 0.558        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[3]$latch             ;
+; 0.558  ; 0.558        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[5]$latch             ;
+; 0.591  ; 0.591        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[1]$latch             ;
+; 0.592  ; 0.592        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[2]$latch             ;
+; 0.592  ; 0.592        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[7]$latch             ;
+; 0.600  ; 0.600        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[4]$latch|datad       ;
+; 0.600  ; 0.600        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[6]$latch|datad       ;
+; 0.603  ; 0.603        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[0]$latch|datad       ;
+; 0.603  ; 0.603        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[3]$latch|datad       ;
+; 0.603  ; 0.603        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[5]$latch|datad       ;
+; 0.607  ; 0.607        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[1]$latch|datac       ;
+; 0.608  ; 0.608        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[2]$latch|datac       ;
+; 0.608  ; 0.608        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]$latch|datac       ;
+; 0.619  ; 0.619        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]~9clkctrl|inclk[0] ;
+; 0.619  ; 0.619        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]~9clkctrl|outclk   ;
+; 0.699  ; 0.699        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]~9|combout         ;
+; 0.707  ; 0.707        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[7]~9|datad           ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ABus[*]   ; bclk       ; 1.772  ; 1.813  ; Rise       ; bclk            ;
+;  ABus[0]  ; bclk       ; -0.718 ; -0.430 ; Rise       ; bclk            ;
+;  ABus[1]  ; bclk       ; -0.927 ; -0.718 ; Rise       ; bclk            ;
+;  ABus[2]  ; bclk       ; 1.772  ; 1.813  ; Rise       ; bclk            ;
+;  ABus[3]  ; bclk       ; -0.940 ; -0.726 ; Rise       ; bclk            ;
+;  ABus[4]  ; bclk       ; -0.927 ; -0.704 ; Rise       ; bclk            ;
+;  ABus[5]  ; bclk       ; 1.500  ; 1.675  ; Rise       ; bclk            ;
+;  ABus[6]  ; bclk       ; 1.637  ; 1.668  ; Rise       ; bclk            ;
+;  ABus[7]  ; bclk       ; 1.611  ; 1.696  ; Rise       ; bclk            ;
+; bnRD      ; bclk       ; 0.872  ; 0.886  ; Rise       ; bclk            ;
+; bnWR      ; bclk       ; 1.628  ; 1.703  ; Rise       ; bclk            ;
+; bnRD      ; bnRD       ; 1.096  ; 1.010  ; Rise       ; bnRD            ;
+; in244[*]  ; bnRD       ; 1.952  ; 1.883  ; Rise       ; bnRD            ;
+;  in244[0] ; bnRD       ; 1.519  ; 1.488  ; Rise       ; bnRD            ;
+;  in244[1] ; bnRD       ; 1.266  ; 1.244  ; Rise       ; bnRD            ;
+;  in244[2] ; bnRD       ; 0.973  ; 1.017  ; Rise       ; bnRD            ;
+;  in244[3] ; bnRD       ; 1.351  ; 1.383  ; Rise       ; bnRD            ;
+;  in244[4] ; bnRD       ; 1.254  ; 1.364  ; Rise       ; bnRD            ;
+;  in244[5] ; bnRD       ; 1.952  ; 1.883  ; Rise       ; bnRD            ;
+;  in244[6] ; bnRD       ; 1.064  ; 1.162  ; Rise       ; bnRD            ;
+;  in244[7] ; bnRD       ; 0.967  ; 0.957  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ABus[*]   ; bclk       ; 1.232  ; 1.027  ; Rise       ; bclk            ;
+;  ABus[0]  ; bclk       ; 1.019  ; 0.742  ; Rise       ; bclk            ;
+;  ABus[1]  ; bclk       ; 1.220  ; 1.019  ; Rise       ; bclk            ;
+;  ABus[2]  ; bclk       ; -1.367 ; -1.402 ; Rise       ; bclk            ;
+;  ABus[3]  ; bclk       ; 1.232  ; 1.027  ; Rise       ; bclk            ;
+;  ABus[4]  ; bclk       ; 1.220  ; 1.006  ; Rise       ; bclk            ;
+;  ABus[5]  ; bclk       ; -1.103 ; -1.271 ; Rise       ; bclk            ;
+;  ABus[6]  ; bclk       ; -1.234 ; -1.264 ; Rise       ; bclk            ;
+;  ABus[7]  ; bclk       ; -1.209 ; -1.291 ; Rise       ; bclk            ;
+; bnRD      ; bclk       ; -0.450 ; -0.474 ; Rise       ; bclk            ;
+; bnWR      ; bclk       ; -1.209 ; -1.280 ; Rise       ; bclk            ;
+; bnRD      ; bnRD       ; 0.721  ; 0.782  ; Rise       ; bnRD            ;
+; in244[*]  ; bnRD       ; 0.481  ; 0.492  ; Rise       ; bnRD            ;
+;  in244[0] ; bnRD       ; -0.191 ; -0.150 ; Rise       ; bnRD            ;
+;  in244[1] ; bnRD       ; 0.205  ; 0.235  ; Rise       ; bnRD            ;
+;  in244[2] ; bnRD       ; 0.477  ; 0.437  ; Rise       ; bnRD            ;
+;  in244[3] ; bnRD       ; -0.028 ; -0.051 ; Rise       ; bnRD            ;
+;  in244[4] ; bnRD       ; 0.262  ; 0.158  ; Rise       ; bnRD            ;
+;  in244[5] ; bnRD       ; -0.408 ; -0.330 ; Rise       ; bnRD            ;
+;  in244[6] ; bnRD       ; 0.244  ; 0.152  ; Rise       ; bnRD            ;
+;  in244[7] ; bnRD       ; 0.481  ; 0.492  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; DBus[*]   ; bnRD       ; 10.382 ; 10.181 ; Rise       ; bnRD            ;
+;  DBus[0]  ; bnRD       ; 9.127  ; 8.865  ; Rise       ; bnRD            ;
+;  DBus[1]  ; bnRD       ; 9.137  ; 8.863  ; Rise       ; bnRD            ;
+;  DBus[2]  ; bnRD       ; 10.382 ; 10.181 ; Rise       ; bnRD            ;
+;  DBus[3]  ; bnRD       ; 9.057  ; 8.781  ; Rise       ; bnRD            ;
+;  DBus[4]  ; bnRD       ; 9.118  ; 8.813  ; Rise       ; bnRD            ;
+;  DBus[5]  ; bnRD       ; 8.901  ; 8.710  ; Rise       ; bnRD            ;
+;  DBus[6]  ; bnRD       ; 10.200 ; 10.069 ; Rise       ; bnRD            ;
+;  DBus[7]  ; bnRD       ; 9.172  ; 8.876  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                          ;
++-----------+------------+--------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+-------+------------+-----------------+
+; DBus[*]   ; bnRD       ; 8.565  ; 8.380 ; Rise       ; bnRD            ;
+;  DBus[0]  ; bnRD       ; 8.782  ; 8.530 ; Rise       ; bnRD            ;
+;  DBus[1]  ; bnRD       ; 8.788  ; 8.524 ; Rise       ; bnRD            ;
+;  DBus[2]  ; bnRD       ; 10.035 ; 9.844 ; Rise       ; bnRD            ;
+;  DBus[3]  ; bnRD       ; 8.712  ; 8.446 ; Rise       ; bnRD            ;
+;  DBus[4]  ; bnRD       ; 8.774  ; 8.480 ; Rise       ; bnRD            ;
+;  DBus[5]  ; bnRD       ; 8.565  ; 8.380 ; Rise       ; bnRD            ;
+;  DBus[6]  ; bnRD       ; 9.864  ; 9.739 ; Rise       ; bnRD            ;
+;  DBus[7]  ; bnRD       ; 8.823  ; 8.538 ; Rise       ; bnRD            ;
++-----------+------------+--------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Slow 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++------------------------------------+
+; Fast 1200mV 0C Model Setup Summary ;
++-------+--------+-------------------+
+; Clock ; Slack  ; End Point TNS     ;
++-------+--------+-------------------+
+; bclk  ; -0.815 ; -1.313            ;
+; bnRD  ; -0.607 ; -3.823            ;
++-------+--------+-------------------+
+
+
++-----------------------------------+
+; Fast 1200mV 0C Model Hold Summary ;
++-------+--------+------------------+
+; Clock ; Slack  ; End Point TNS    ;
++-------+--------+------------------+
+; bnRD  ; -0.354 ; -2.399           ;
+; bclk  ; 0.203  ; 0.000            ;
++-------+--------+------------------+
+
+
++---------------------------------------+
+; Fast 1200mV 0C Model Recovery Summary ;
++-------+--------+----------------------+
+; Clock ; Slack  ; End Point TNS        ;
++-------+--------+----------------------+
+; bnRD  ; -0.671 ; -4.443               ;
++-------+--------+----------------------+
+
+
++--------------------------------------+
+; Fast 1200mV 0C Model Removal Summary ;
++-------+--------+---------------------+
+; Clock ; Slack  ; End Point TNS       ;
++-------+--------+---------------------+
+; bnRD  ; -0.415 ; -2.045              ;
++-------+--------+---------------------+
+
+
++--------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary ;
++-------+--------+---------------------------------+
+; Clock ; Slack  ; End Point TNS                   ;
++-------+--------+---------------------------------+
+; bclk  ; -3.000 ; -7.510                          ;
+; bnRD  ; -3.000 ; -3.000                          ;
++-------+--------+---------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'bclk'                                                                                                                                                                 ;
++--------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node     ; To Node                                                                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.815 ; DBus[1]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -1.138     ; 0.666      ;
+; -0.752 ; DBus[7]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -1.140     ; 0.601      ;
+; -0.736 ; DBus[2]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -1.137     ; 0.588      ;
+; -0.664 ; DBus[6]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -1.060     ; 0.593      ;
+; -0.653 ; DBus[4]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -1.059     ; 0.583      ;
+; -0.498 ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; 0.500        ; 1.306      ; 2.293      ;
+; -0.481 ; DBus[0]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -1.044     ; 0.426      ;
+; -0.479 ; DBus[3]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -1.043     ; 0.425      ;
+; -0.475 ; DBus[5]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 1.000        ; -1.045     ; 0.419      ;
+; 0.499  ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; 1.000        ; 1.306      ; 1.796      ;
++--------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup: 'bnRD'                                                                                                                                                            ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                      ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.607 ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.284      ; 2.865      ;
+; -0.568 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[4]$latch ; bclk         ; bnRD        ; 1.000        ; 0.926      ; 1.948      ;
+; -0.521 ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.285      ; 2.860      ;
+; -0.512 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[5]$latch ; bclk         ; bnRD        ; 1.000        ; 0.913      ; 1.877      ;
+; -0.477 ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.271      ; 2.720      ;
+; -0.475 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[6]$latch ; bclk         ; bnRD        ; 1.000        ; 0.927      ; 1.936      ;
+; -0.452 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[3]$latch ; bclk         ; bnRD        ; 1.000        ; 0.911      ; 1.896      ;
+; -0.441 ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.359      ; 2.791      ;
+; -0.439 ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.360      ; 2.790      ;
+; -0.433 ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.362      ; 2.787      ;
+; -0.418 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[0]$latch ; bclk         ; bnRD        ; 1.000        ; 0.912      ; 1.863      ;
+; -0.417 ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.269      ; 2.739      ;
+; -0.410 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[1]$latch ; bclk         ; bnRD        ; 1.000        ; 1.002      ; 1.883      ;
+; -0.410 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[7]$latch ; bclk         ; bnRD        ; 1.000        ; 1.004      ; 1.886      ;
+; -0.399 ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[2]$latch ; bclk         ; bnRD        ; 1.000        ; 1.001      ; 1.871      ;
+; -0.391 ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.270      ; 2.714      ;
+; 0.501  ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.284      ; 2.257      ;
+; 0.585  ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.285      ; 2.254      ;
+; 0.598  ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.271      ; 2.145      ;
+; 0.658  ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.269      ; 2.164      ;
+; 0.666  ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.359      ; 2.184      ;
+; 0.668  ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.360      ; 2.183      ;
+; 0.673  ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.362      ; 2.181      ;
+; 0.684  ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.270      ; 2.139      ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'bnRD'                                                                                                                                                             ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                                                                      ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.354 ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.449      ; 2.095      ;
+; -0.350 ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.447      ; 2.097      ;
+; -0.348 ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.446      ; 2.098      ;
+; -0.313 ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.354      ; 2.041      ;
+; -0.313 ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.353      ; 2.040      ;
+; -0.296 ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.352      ; 2.056      ;
+; -0.215 ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.369      ; 2.154      ;
+; -0.210 ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.368      ; 2.158      ;
+; 0.529  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[2]$latch ; bclk         ; bnRD        ; 0.000        ; 1.140      ; 1.709      ;
+; 0.537  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[1]$latch ; bclk         ; bnRD        ; 0.000        ; 1.141      ; 1.718      ;
+; 0.539  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[7]$latch ; bclk         ; bnRD        ; 0.000        ; 1.143      ; 1.722      ;
+; 0.609  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[0]$latch ; bclk         ; bnRD        ; 0.000        ; 1.047      ; 1.696      ;
+; 0.617  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[5]$latch ; bclk         ; bnRD        ; 0.000        ; 1.048      ; 1.705      ;
+; 0.634  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[3]$latch ; bclk         ; bnRD        ; 0.000        ; 1.046      ; 1.720      ;
+; 0.664  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[6]$latch ; bclk         ; bnRD        ; 0.000        ; 1.063      ; 1.767      ;
+; 0.671  ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg ; DBus[4]$latch ; bclk         ; bnRD        ; 0.000        ; 1.062      ; 1.773      ;
+; 0.705  ; bnRD                                                                                           ; DBus[7]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.449      ; 2.674      ;
+; 0.710  ; bnRD                                                                                           ; DBus[1]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.447      ; 2.677      ;
+; 0.712  ; bnRD                                                                                           ; DBus[2]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.446      ; 2.678      ;
+; 0.715  ; bnRD                                                                                           ; DBus[0]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.353      ; 2.588      ;
+; 0.716  ; bnRD                                                                                           ; DBus[5]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.354      ; 2.590      ;
+; 0.733  ; bnRD                                                                                           ; DBus[3]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.352      ; 2.605      ;
+; 0.844  ; bnRD                                                                                           ; DBus[6]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.369      ; 2.733      ;
+; 0.850  ; bnRD                                                                                           ; DBus[4]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.368      ; 2.738      ;
++--------+------------------------------------------------------------------------------------------------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold: 'bclk'                                                                                                                                                                 ;
++-------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node                                                                                             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.203 ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; 0.000        ; 1.358      ; 1.705      ;
+; 1.127 ; DBus[5]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -0.911     ; 0.360      ;
+; 1.129 ; DBus[3]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -0.909     ; 0.364      ;
+; 1.131 ; DBus[0]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -0.910     ; 0.365      ;
+; 1.206 ; bnRD          ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg      ; bnRD         ; bclk        ; -0.500       ; 1.358      ; 2.208      ;
+; 1.284 ; DBus[4]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -0.924     ; 0.504      ;
+; 1.286 ; DBus[6]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -0.925     ; 0.505      ;
+; 1.356 ; DBus[2]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -0.999     ; 0.501      ;
+; 1.369 ; DBus[7]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -1.002     ; 0.511      ;
+; 1.419 ; DBus[1]$latch ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0 ; bnRD         ; bclk        ; 0.000        ; -1.000     ; 0.563      ;
++-------+---------------+-----------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Recovery: 'bnRD'                                                                    ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.671 ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.271      ; 2.914      ;
+; -0.616 ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.284      ; 2.874      ;
+; -0.590 ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.269      ; 2.912      ;
+; -0.589 ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.270      ; 2.912      ;
+; -0.536 ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.285      ; 2.875      ;
+; -0.521 ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.359      ; 2.871      ;
+; -0.520 ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.362      ; 2.874      ;
+; -0.400 ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.500        ; 2.360      ; 2.751      ;
+; 0.461  ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.271      ; 2.282      ;
+; 0.510  ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.284      ; 2.248      ;
+; 0.542  ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.269      ; 2.280      ;
+; 0.543  ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.270      ; 2.280      ;
+; 0.590  ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.285      ; 2.249      ;
+; 0.604  ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.359      ; 2.246      ;
+; 0.605  ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.362      ; 2.249      ;
+; 0.713  ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; 1.000        ; 2.360      ; 2.138      ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Removal: 'bnRD'                                                                     ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+; -0.415 ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.447      ; 2.032      ;
+; -0.311 ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.449      ; 2.138      ;
+; -0.311 ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.446      ; 2.135      ;
+; -0.229 ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.369      ; 2.140      ;
+; -0.229 ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.368      ; 2.139      ;
+; -0.184 ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.353      ; 2.169      ;
+; -0.183 ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.354      ; 2.171      ;
+; -0.183 ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; 0.000        ; 2.352      ; 2.169      ;
+; 0.650  ; bnRD      ; DBus[1]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.447      ; 2.617      ;
+; 0.770  ; bnRD      ; DBus[7]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.449      ; 2.739      ;
+; 0.770  ; bnRD      ; DBus[2]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.446      ; 2.736      ;
+; 0.851  ; bnRD      ; DBus[6]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.369      ; 2.740      ;
+; 0.851  ; bnRD      ; DBus[4]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.368      ; 2.739      ;
+; 0.902  ; bnRD      ; DBus[0]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.353      ; 2.775      ;
+; 0.904  ; bnRD      ; DBus[5]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.354      ; 2.778      ;
+; 0.904  ; bnRD      ; DBus[3]$latch ; bnRD         ; bnRD        ; -0.500       ; 2.352      ; 2.776      ;
++--------+-----------+---------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'bclk'                                                                                                                                      ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                                                                               ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; bclk  ; Rise       ; bclk                                                                                                 ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg       ;
+; -1.000 ; 1.000        ; 2.000          ; Min Period       ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -0.128 ; 0.102        ; 0.230          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; -0.128 ; 0.102        ; 0.230          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg       ;
+; -0.128 ; 0.102        ; 0.230          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_we_reg       ;
+; -0.126 ; 0.104        ; 0.230          ; Low Pulse Width  ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 0.115  ; 0.115        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; R|altsyncram_component|auto_generated|ram_block1a0|clk0                                              ;
+; 0.120  ; 0.120        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~input|o                                                                                         ;
+; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~inputclkctrl|inclk[0]                                                                           ;
+; 0.139  ; 0.139        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~inputclkctrl|outclk                                                                             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~input|i                                                                                         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bclk  ; Rise       ; bclk~input|i                                                                                         ;
+; 0.665  ; 0.895        ; 0.230          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_address_reg0 ;
+; 0.665  ; 0.895        ; 0.230          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_datain_reg0  ;
+; 0.665  ; 0.895        ; 0.230          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_re_reg       ;
+; 0.665  ; 0.895        ; 0.230          ; High Pulse Width ; bclk  ; Rise       ; RAM:R|altsyncram:altsyncram_component|altsyncram_gpg1:auto_generated|ram_block1a0~porta_we_reg       ;
+; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~inputclkctrl|inclk[0]                                                                           ;
+; 0.861  ; 0.861        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~inputclkctrl|outclk                                                                             ;
+; 0.880  ; 0.880        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; bclk~input|o                                                                                         ;
+; 0.884  ; 0.884        ; 0.000          ; High Pulse Width ; bclk  ; Rise       ; R|altsyncram_component|auto_generated|ram_block1a0|clk0                                              ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width: 'bnRD'                                                           ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                    ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+; -3.000 ; 1.000        ; 4.000          ; Port Rate        ; bnRD  ; Rise       ; bnRD                      ;
+; 0.028  ; 0.028        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]~9|combout         ;
+; 0.034  ; 0.034        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[7]~9|datad           ;
+; 0.070  ; 0.070        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]~9clkctrl|inclk[0] ;
+; 0.070  ; 0.070        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]~9clkctrl|outclk   ;
+; 0.110  ; 0.110        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[0]$latch             ;
+; 0.110  ; 0.110        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[3]$latch             ;
+; 0.110  ; 0.110        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[4]$latch             ;
+; 0.110  ; 0.110        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[5]$latch             ;
+; 0.111  ; 0.111        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[6]$latch             ;
+; 0.115  ; 0.115        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[0]$latch|datad       ;
+; 0.115  ; 0.115        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[3]$latch|datad       ;
+; 0.115  ; 0.115        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[4]$latch|datad       ;
+; 0.115  ; 0.115        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[5]$latch|datad       ;
+; 0.116  ; 0.116        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[6]$latch|datad       ;
+; 0.121  ; 0.121        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[1]$latch|datac       ;
+; 0.121  ; 0.121        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[2]$latch|datac       ;
+; 0.121  ; 0.121        ; 0.000          ; High Pulse Width ; bnRD  ; Fall       ; DBus[7]$latch|datac       ;
+; 0.121  ; 0.121        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; bnRD~input|o              ;
+; 0.124  ; 0.124        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[1]$latch             ;
+; 0.124  ; 0.124        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[2]$latch             ;
+; 0.124  ; 0.124        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; DBus[7]$latch             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; bnRD~input|i              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; bnRD  ; Rise       ; bnRD~input|i              ;
+; 0.874  ; 0.874        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[7]$latch             ;
+; 0.875  ; 0.875        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[1]$latch             ;
+; 0.875  ; 0.875        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[2]$latch             ;
+; 0.877  ; 0.877        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]$latch|datac       ;
+; 0.878  ; 0.878        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[1]$latch|datac       ;
+; 0.878  ; 0.878        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[2]$latch|datac       ;
+; 0.879  ; 0.879        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; bnRD~input|o              ;
+; 0.883  ; 0.883        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[0]$latch|datad       ;
+; 0.883  ; 0.883        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[3]$latch|datad       ;
+; 0.883  ; 0.883        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[5]$latch|datad       ;
+; 0.883  ; 0.883        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[6]$latch|datad       ;
+; 0.884  ; 0.884        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[4]$latch|datad       ;
+; 0.887  ; 0.887        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[0]$latch             ;
+; 0.887  ; 0.887        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[3]$latch             ;
+; 0.887  ; 0.887        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[5]$latch             ;
+; 0.887  ; 0.887        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[6]$latch             ;
+; 0.888  ; 0.888        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[4]$latch             ;
+; 0.927  ; 0.927        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]~9clkctrl|inclk[0] ;
+; 0.927  ; 0.927        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]~9clkctrl|outclk   ;
+; 0.963  ; 0.963        ; 0.000          ; High Pulse Width ; bnRD  ; Rise       ; DBus[7]~9|datad           ;
+; 0.968  ; 0.968        ; 0.000          ; Low Pulse Width  ; bnRD  ; Fall       ; DBus[7]~9|combout         ;
++--------+--------------+----------------+------------------+-------+------------+---------------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ABus[*]   ; bclk       ; 0.931  ; 1.541  ; Rise       ; bclk            ;
+;  ABus[0]  ; bclk       ; -0.319 ; 0.024  ; Rise       ; bclk            ;
+;  ABus[1]  ; bclk       ; -0.443 ; -0.093 ; Rise       ; bclk            ;
+;  ABus[2]  ; bclk       ; 0.931  ; 1.541  ; Rise       ; bclk            ;
+;  ABus[3]  ; bclk       ; -0.452 ; -0.100 ; Rise       ; bclk            ;
+;  ABus[4]  ; bclk       ; -0.445 ; -0.097 ; Rise       ; bclk            ;
+;  ABus[5]  ; bclk       ; 0.853  ; 1.494  ; Rise       ; bclk            ;
+;  ABus[6]  ; bclk       ; 0.860  ; 1.468  ; Rise       ; bclk            ;
+;  ABus[7]  ; bclk       ; 0.869  ; 1.487  ; Rise       ; bclk            ;
+; bnRD      ; bclk       ; 0.461  ; 0.958  ; Rise       ; bclk            ;
+; bnWR      ; bclk       ; 0.914  ; 1.453  ; Rise       ; bclk            ;
+; bnRD      ; bnRD       ; 0.479  ; 1.087  ; Rise       ; bnRD            ;
+; in244[*]  ; bnRD       ; 0.955  ; 1.606  ; Rise       ; bnRD            ;
+;  in244[0] ; bnRD       ; 0.770  ; 1.405  ; Rise       ; bnRD            ;
+;  in244[1] ; bnRD       ; 0.681  ; 1.309  ; Rise       ; bnRD            ;
+;  in244[2] ; bnRD       ; 0.548  ; 1.174  ; Rise       ; bnRD            ;
+;  in244[3] ; bnRD       ; 0.711  ; 1.362  ; Rise       ; bnRD            ;
+;  in244[4] ; bnRD       ; 0.691  ; 1.319  ; Rise       ; bnRD            ;
+;  in244[5] ; bnRD       ; 0.955  ; 1.606  ; Rise       ; bnRD            ;
+;  in244[6] ; bnRD       ; 0.600  ; 1.237  ; Rise       ; bnRD            ;
+;  in244[7] ; bnRD       ; 0.527  ; 1.149  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ABus[*]   ; bclk       ; 0.601  ; 0.249  ; Rise       ; bclk            ;
+;  ABus[0]  ; bclk       ; 0.473  ; 0.129  ; Rise       ; bclk            ;
+;  ABus[1]  ; bclk       ; 0.592  ; 0.242  ; Rise       ; bclk            ;
+;  ABus[2]  ; bclk       ; -0.721 ; -1.324 ; Rise       ; bclk            ;
+;  ABus[3]  ; bclk       ; 0.601  ; 0.249  ; Rise       ; bclk            ;
+;  ABus[4]  ; bclk       ; 0.595  ; 0.245  ; Rise       ; bclk            ;
+;  ABus[5]  ; bclk       ; -0.648 ; -1.279 ; Rise       ; bclk            ;
+;  ABus[6]  ; bclk       ; -0.655 ; -1.254 ; Rise       ; bclk            ;
+;  ABus[7]  ; bclk       ; -0.663 ; -1.271 ; Rise       ; bclk            ;
+; bnRD      ; bclk       ; -0.243 ; -0.746 ; Rise       ; bclk            ;
+; bnWR      ; bclk       ; -0.696 ; -1.229 ; Rise       ; bclk            ;
+; bnRD      ; bnRD       ; 0.354  ; -0.225 ; Rise       ; bnRD            ;
+; in244[*]  ; bnRD       ; 0.161  ; -0.443 ; Rise       ; bnRD            ;
+;  in244[0] ; bnRD       ; -0.135 ; -0.756 ; Rise       ; bnRD            ;
+;  in244[1] ; bnRD       ; 0.015  ; -0.596 ; Rise       ; bnRD            ;
+;  in244[2] ; bnRD       ; 0.140  ; -0.466 ; Rise       ; bnRD            ;
+;  in244[3] ; bnRD       ; -0.081 ; -0.715 ; Rise       ; bnRD            ;
+;  in244[4] ; bnRD       ; 0.014  ; -0.595 ; Rise       ; bnRD            ;
+;  in244[5] ; bnRD       ; -0.236 ; -0.870 ; Rise       ; bnRD            ;
+;  in244[6] ; bnRD       ; 0.025  ; -0.593 ; Rise       ; bnRD            ;
+;  in244[7] ; bnRD       ; 0.161  ; -0.443 ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Clock to Output Times                                                 ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; DBus[*]   ; bnRD       ; 5.442 ; 5.553 ; Rise       ; bnRD            ;
+;  DBus[0]  ; bnRD       ; 4.545 ; 4.630 ; Rise       ; bnRD            ;
+;  DBus[1]  ; bnRD       ; 4.514 ; 4.570 ; Rise       ; bnRD            ;
+;  DBus[2]  ; bnRD       ; 5.442 ; 5.553 ; Rise       ; bnRD            ;
+;  DBus[3]  ; bnRD       ; 4.501 ; 4.560 ; Rise       ; bnRD            ;
+;  DBus[4]  ; bnRD       ; 4.510 ; 4.592 ; Rise       ; bnRD            ;
+;  DBus[5]  ; bnRD       ; 4.467 ; 4.533 ; Rise       ; bnRD            ;
+;  DBus[6]  ; bnRD       ; 5.421 ; 5.540 ; Rise       ; bnRD            ;
+;  DBus[7]  ; bnRD       ; 4.530 ; 4.586 ; Rise       ; bnRD            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; DBus[*]   ; bnRD       ; 4.319 ; 4.383 ; Rise       ; bnRD            ;
+;  DBus[0]  ; bnRD       ; 4.397 ; 4.480 ; Rise       ; bnRD            ;
+;  DBus[1]  ; bnRD       ; 4.365 ; 4.419 ; Rise       ; bnRD            ;
+;  DBus[2]  ; bnRD       ; 5.293 ; 5.402 ; Rise       ; bnRD            ;
+;  DBus[3]  ; bnRD       ; 4.353 ; 4.410 ; Rise       ; bnRD            ;
+;  DBus[4]  ; bnRD       ; 4.363 ; 4.443 ; Rise       ; bnRD            ;
+;  DBus[5]  ; bnRD       ; 4.319 ; 4.383 ; Rise       ; bnRD            ;
+;  DBus[6]  ; bnRD       ; 5.272 ; 5.389 ; Rise       ; bnRD            ;
+;  DBus[7]  ; bnRD       ; 4.380 ; 4.435 ; Rise       ; bnRD            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
+---------------------------------------------
+; Fast 1200mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++--------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                            ;
++------------------+---------+--------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+--------+----------+---------+---------------------+
+; Worst-case Slack ; -3.117  ; -0.781 ; -0.948   ; -0.793  ; -3.201              ;
+;  bclk            ; -3.065  ; 0.203  ; N/A      ; N/A     ; -3.201              ;
+;  bnRD            ; -3.117  ; -0.781 ; -0.948   ; -0.793  ; -3.000              ;
+; Design-wide TNS  ; -26.742 ; -5.074 ; -5.725   ; -3.441  ; -18.804             ;
+;  bclk            ; -3.664  ; 0.000  ; N/A      ; N/A     ; -15.804             ;
+;  bnRD            ; -23.078 ; -5.074 ; -5.725   ; -3.441  ; -3.000              ;
++------------------+---------+--------+----------+---------+---------------------+
+
+
++-------------------------------------------------------------------------+
+; Setup Times                                                             ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ABus[*]   ; bclk       ; 1.973  ; 2.169  ; Rise       ; bclk            ;
+;  ABus[0]  ; bclk       ; -0.319 ; 0.024  ; Rise       ; bclk            ;
+;  ABus[1]  ; bclk       ; -0.443 ; -0.093 ; Rise       ; bclk            ;
+;  ABus[2]  ; bclk       ; 1.973  ; 2.169  ; Rise       ; bclk            ;
+;  ABus[3]  ; bclk       ; -0.452 ; -0.100 ; Rise       ; bclk            ;
+;  ABus[4]  ; bclk       ; -0.445 ; -0.097 ; Rise       ; bclk            ;
+;  ABus[5]  ; bclk       ; 1.701  ; 2.012  ; Rise       ; bclk            ;
+;  ABus[6]  ; bclk       ; 1.820  ; 2.010  ; Rise       ; bclk            ;
+;  ABus[7]  ; bclk       ; 1.799  ; 2.044  ; Rise       ; bclk            ;
+; bnRD      ; bclk       ; 0.942  ; 1.059  ; Rise       ; bclk            ;
+; bnWR      ; bclk       ; 1.851  ; 2.046  ; Rise       ; bclk            ;
+; bnRD      ; bnRD       ; 1.150  ; 1.279  ; Rise       ; bnRD            ;
+; in244[*]  ; bnRD       ; 2.162  ; 2.328  ; Rise       ; bnRD            ;
+;  in244[0] ; bnRD       ; 1.747  ; 1.932  ; Rise       ; bnRD            ;
+;  in244[1] ; bnRD       ; 1.483  ; 1.667  ; Rise       ; bnRD            ;
+;  in244[2] ; bnRD       ; 1.173  ; 1.409  ; Rise       ; bnRD            ;
+;  in244[3] ; bnRD       ; 1.562  ; 1.823  ; Rise       ; bnRD            ;
+;  in244[4] ; bnRD       ; 1.458  ; 1.740  ; Rise       ; bnRD            ;
+;  in244[5] ; bnRD       ; 2.162  ; 2.328  ; Rise       ; bnRD            ;
+;  in244[6] ; bnRD       ; 1.271  ; 1.561  ; Rise       ; bnRD            ;
+;  in244[7] ; bnRD       ; 1.152  ; 1.350  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; ABus[*]   ; bclk       ; 1.386  ; 1.230  ; Rise       ; bclk            ;
+;  ABus[0]  ; bclk       ; 1.143  ; 0.945  ; Rise       ; bclk            ;
+;  ABus[1]  ; bclk       ; 1.371  ; 1.220  ; Rise       ; bclk            ;
+;  ABus[2]  ; bclk       ; -0.721 ; -1.324 ; Rise       ; bclk            ;
+;  ABus[3]  ; bclk       ; 1.386  ; 1.230  ; Rise       ; bclk            ;
+;  ABus[4]  ; bclk       ; 1.370  ; 1.209  ; Rise       ; bclk            ;
+;  ABus[5]  ; bclk       ; -0.648 ; -1.271 ; Rise       ; bclk            ;
+;  ABus[6]  ; bclk       ; -0.655 ; -1.254 ; Rise       ; bclk            ;
+;  ABus[7]  ; bclk       ; -0.663 ; -1.271 ; Rise       ; bclk            ;
+; bnRD      ; bclk       ; -0.243 ; -0.474 ; Rise       ; bclk            ;
+; bnWR      ; bclk       ; -0.696 ; -1.229 ; Rise       ; bclk            ;
+; bnRD      ; bnRD       ; 0.781  ; 0.782  ; Rise       ; bnRD            ;
+; in244[*]  ; bnRD       ; 0.481  ; 0.492  ; Rise       ; bnRD            ;
+;  in244[0] ; bnRD       ; -0.135 ; -0.150 ; Rise       ; bnRD            ;
+;  in244[1] ; bnRD       ; 0.205  ; 0.235  ; Rise       ; bnRD            ;
+;  in244[2] ; bnRD       ; 0.477  ; 0.437  ; Rise       ; bnRD            ;
+;  in244[3] ; bnRD       ; -0.028 ; -0.051 ; Rise       ; bnRD            ;
+;  in244[4] ; bnRD       ; 0.262  ; 0.158  ; Rise       ; bnRD            ;
+;  in244[5] ; bnRD       ; -0.236 ; -0.330 ; Rise       ; bnRD            ;
+;  in244[6] ; bnRD       ; 0.244  ; 0.152  ; Rise       ; bnRD            ;
+;  in244[7] ; bnRD       ; 0.481  ; 0.492  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; DBus[*]   ; bnRD       ; 11.355 ; 11.265 ; Rise       ; bnRD            ;
+;  DBus[0]  ; bnRD       ; 9.903  ; 9.737  ; Rise       ; bnRD            ;
+;  DBus[1]  ; bnRD       ; 9.927  ; 9.720  ; Rise       ; bnRD            ;
+;  DBus[2]  ; bnRD       ; 11.355 ; 11.265 ; Rise       ; bnRD            ;
+;  DBus[3]  ; bnRD       ; 9.847  ; 9.629  ; Rise       ; bnRD            ;
+;  DBus[4]  ; bnRD       ; 9.882  ; 9.682  ; Rise       ; bnRD            ;
+;  DBus[5]  ; bnRD       ; 9.684  ; 9.545  ; Rise       ; bnRD            ;
+;  DBus[6]  ; bnRD       ; 11.171 ; 11.132 ; Rise       ; bnRD            ;
+;  DBus[7]  ; bnRD       ; 9.960  ; 9.737  ; Rise       ; bnRD            ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------+
+; Minimum Clock to Output Times                                         ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; DBus[*]   ; bnRD       ; 4.319 ; 4.383 ; Rise       ; bnRD            ;
+;  DBus[0]  ; bnRD       ; 4.397 ; 4.480 ; Rise       ; bnRD            ;
+;  DBus[1]  ; bnRD       ; 4.365 ; 4.419 ; Rise       ; bnRD            ;
+;  DBus[2]  ; bnRD       ; 5.293 ; 5.402 ; Rise       ; bnRD            ;
+;  DBus[3]  ; bnRD       ; 4.353 ; 4.410 ; Rise       ; bnRD            ;
+;  DBus[4]  ; bnRD       ; 4.363 ; 4.443 ; Rise       ; bnRD            ;
+;  DBus[5]  ; bnRD       ; 4.319 ; 4.383 ; Rise       ; bnRD            ;
+;  DBus[6]  ; bnRD       ; 5.272 ; 5.389 ; Rise       ; bnRD            ;
+;  DBus[7]  ; bnRD       ; 4.380 ; 4.435 ; Rise       ; bnRD            ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; DBus[0]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DBus[1]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DBus[2]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DBus[3]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DBus[4]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DBus[5]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DBus[6]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; DBus[7]       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; in244[0]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bnRD                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bnWR                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in244[1]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in244[2]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in244[3]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in244[4]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in244[5]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in244[6]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; in244[7]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; bclk                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ABus[0]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ABus[1]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ABus[2]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ABus[3]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ABus[4]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ABus[5]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ABus[6]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ABus[7]                 ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; DBus[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.36 V              ; -0.00737 V          ; 0.209 V                              ; 0.012 V                              ; 5.22e-10 s                  ; 5.33e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.36 V             ; -0.00737 V         ; 0.209 V                             ; 0.012 V                             ; 5.22e-10 s                 ; 5.33e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.38 V              ; -0.0073 V           ; 0.097 V                              ; 0.018 V                              ; 4.24e-10 s                  ; 3.65e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.38 V             ; -0.0073 V          ; 0.097 V                             ; 0.018 V                             ; 4.24e-10 s                 ; 3.65e-10 s                 ; No                        ; Yes                       ;
+; DBus[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.33 V              ; -0.00421 V          ; 0.165 V                              ; 0.078 V                              ; 3.11e-09 s                  ; 2.85e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.33 V             ; -0.00421 V         ; 0.165 V                             ; 0.078 V                             ; 3.11e-09 s                 ; 2.85e-09 s                 ; Yes                       ; Yes                       ;
+; DBus[3]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.38 V              ; -0.0073 V           ; 0.097 V                              ; 0.018 V                              ; 4.24e-10 s                  ; 3.65e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.38 V             ; -0.0073 V          ; 0.097 V                             ; 0.018 V                             ; 4.24e-10 s                 ; 3.65e-10 s                 ; No                        ; Yes                       ;
+; DBus[4]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.36 V              ; -0.00737 V          ; 0.209 V                              ; 0.012 V                              ; 5.22e-10 s                  ; 5.33e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.36 V             ; -0.00737 V         ; 0.209 V                             ; 0.012 V                             ; 5.22e-10 s                 ; 5.33e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[5]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.8e-09 V                    ; 2.37 V              ; -0.00373 V          ; 0.104 V                              ; 0.011 V                              ; 4.34e-10 s                  ; 3.82e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.8e-09 V                   ; 2.37 V             ; -0.00373 V         ; 0.104 V                             ; 0.011 V                             ; 4.34e-10 s                 ; 3.82e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[6]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.8e-09 V                    ; 2.33 V              ; -0.00425 V          ; 0.168 V                              ; 0.058 V                              ; 3.12e-09 s                  ; 2.87e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.8e-09 V                   ; 2.33 V             ; -0.00425 V         ; 0.168 V                             ; 0.058 V                             ; 3.12e-09 s                 ; 2.87e-09 s                 ; Yes                       ; Yes                       ;
+; DBus[7]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.07e-09 V                   ; 2.38 V              ; -0.0073 V           ; 0.097 V                              ; 0.018 V                              ; 4.24e-10 s                  ; 3.65e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 2.07e-09 V                  ; 2.38 V             ; -0.0073 V          ; 0.097 V                             ; 0.018 V                             ; 4.24e-10 s                 ; 3.65e-10 s                 ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.74e-09 V                   ; 2.37 V              ; -0.0346 V           ; 0.198 V                              ; 0.094 V                              ; 3.14e-10 s                  ; 2.92e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.74e-09 V                  ; 2.37 V             ; -0.0346 V          ; 0.198 V                             ; 0.094 V                             ; 3.14e-10 s                 ; 2.92e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.57e-09 V                   ; 2.37 V              ; -0.00683 V          ; 0.171 V                              ; 0.018 V                              ; 4.97e-10 s                  ; 6.66e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.57e-09 V                  ; 2.37 V             ; -0.00683 V         ; 0.171 V                             ; 0.018 V                             ; 4.97e-10 s                 ; 6.66e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1200mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; DBus[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.34 V              ; -0.00869 V          ; 0.14 V                               ; 0.046 V                              ; 6.89e-10 s                  ; 6.56e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.34 V             ; -0.00869 V         ; 0.14 V                              ; 0.046 V                             ; 6.89e-10 s                 ; 6.56e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.35 V              ; -0.00834 V          ; 0.127 V                              ; 0.035 V                              ; 4.7e-10 s                   ; 4.64e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.35 V             ; -0.00834 V         ; 0.127 V                             ; 0.035 V                             ; 4.7e-10 s                  ; 4.64e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.33 V              ; -0.0022 V           ; 0.088 V                              ; 0.056 V                              ; 3.76e-09 s                  ; 3.48e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.33 V             ; -0.0022 V          ; 0.088 V                             ; 0.056 V                             ; 3.76e-09 s                 ; 3.48e-09 s                 ; Yes                       ; Yes                       ;
+; DBus[3]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.35 V              ; -0.00834 V          ; 0.127 V                              ; 0.035 V                              ; 4.7e-10 s                   ; 4.64e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.35 V             ; -0.00834 V         ; 0.127 V                             ; 0.035 V                             ; 4.7e-10 s                  ; 4.64e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[4]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.34 V              ; -0.00869 V          ; 0.14 V                               ; 0.046 V                              ; 6.89e-10 s                  ; 6.56e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.34 V             ; -0.00869 V         ; 0.14 V                              ; 0.046 V                             ; 6.89e-10 s                 ; 6.56e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[5]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.85e-07 V                   ; 2.35 V              ; -0.0123 V           ; 0.144 V                              ; 0.042 V                              ; 4.81e-10 s                  ; 4.81e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.85e-07 V                  ; 2.35 V             ; -0.0123 V          ; 0.144 V                             ; 0.042 V                             ; 4.81e-10 s                 ; 4.81e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[6]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.85e-07 V                   ; 2.33 V              ; -0.00229 V          ; 0.111 V                              ; 0.057 V                              ; 3.78e-09 s                  ; 3.5e-09 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 2.85e-07 V                  ; 2.33 V             ; -0.00229 V         ; 0.111 V                             ; 0.057 V                             ; 3.78e-09 s                 ; 3.5e-09 s                  ; Yes                       ; Yes                       ;
+; DBus[7]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.93e-07 V                   ; 2.35 V              ; -0.00834 V          ; 0.127 V                              ; 0.035 V                              ; 4.7e-10 s                   ; 4.64e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.93e-07 V                  ; 2.35 V             ; -0.00834 V         ; 0.127 V                             ; 0.035 V                             ; 4.7e-10 s                  ; 4.64e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.55e-07 V                   ; 2.35 V              ; -0.00221 V          ; 0.097 V                              ; 0.005 V                              ; 4.49e-10 s                  ; 3.85e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.55e-07 V                  ; 2.35 V             ; -0.00221 V         ; 0.097 V                             ; 0.005 V                             ; 4.49e-10 s                 ; 3.85e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.54e-07 V                   ; 2.34 V              ; -0.00774 V          ; 0.109 V                              ; 0.026 V                              ; 6.58e-10 s                  ; 8.24e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 2.54e-07 V                  ; 2.34 V             ; -0.00774 V         ; 0.109 V                             ; 0.026 V                             ; 6.58e-10 s                 ; 8.24e-10 s                 ; Yes                       ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1200mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; DBus[0]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; DBus[1]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[2]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.64 V              ; -0.0117 V           ; 0.202 V                              ; 0.176 V                              ; 2.38e-09 s                  ; 2.22e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.64 V             ; -0.0117 V          ; 0.202 V                             ; 0.176 V                             ; 2.38e-09 s                 ; 2.22e-09 s                 ; No                        ; Yes                       ;
+; DBus[3]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[4]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.71 V              ; -0.0317 V           ; 0.148 V                              ; 0.064 V                              ; 4.51e-10 s                  ; 4.15e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.71 V             ; -0.0317 V          ; 0.148 V                             ; 0.064 V                             ; 4.51e-10 s                 ; 4.15e-10 s                 ; No                        ; Yes                       ;
+; DBus[5]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.72 V              ; -0.0349 V           ; 0.173 V                              ; 0.1 V                                ; 2.72e-10 s                  ; 2.69e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.72 V             ; -0.0349 V          ; 0.173 V                             ; 0.1 V                               ; 2.72e-10 s                 ; 2.69e-10 s                 ; Yes                       ; Yes                       ;
+; DBus[6]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.05e-08 V                   ; 2.64 V              ; -0.0113 V           ; 0.208 V                              ; 0.179 V                              ; 2.38e-09 s                  ; 2.23e-09 s                  ; No                         ; Yes                        ; 2.62 V                      ; 4.05e-08 V                  ; 2.64 V             ; -0.0113 V          ; 0.208 V                             ; 0.179 V                             ; 2.38e-09 s                 ; 2.23e-09 s                 ; No                        ; Yes                       ;
+; DBus[7]       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.74e-08 V                   ; 2.73 V              ; -0.0384 V           ; 0.169 V                              ; 0.089 V                              ; 2.7e-10 s                   ; 2.62e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.74e-08 V                  ; 2.73 V             ; -0.0384 V          ; 0.169 V                             ; 0.089 V                             ; 2.7e-10 s                  ; 2.62e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.22e-08 V                   ; 2.74 V              ; -0.06 V             ; 0.158 V                              ; 0.08 V                               ; 2.68e-10 s                  ; 2.19e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2.22e-08 V                  ; 2.74 V             ; -0.06 V            ; 0.158 V                             ; 0.08 V                              ; 2.68e-10 s                 ; 2.19e-10 s                 ; Yes                       ; Yes                       ;
+; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.54e-08 V                   ; 2.7 V               ; -0.00943 V          ; 0.276 V                              ; 0.035 V                              ; 3.19e-10 s                  ; 4.99e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 3.54e-08 V                  ; 2.7 V              ; -0.00943 V         ; 0.276 V                             ; 0.035 V                             ; 3.19e-10 s                 ; 4.99e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; bnRD       ; bclk     ; 9        ; 1        ; 0        ; 0        ;
+; bclk       ; bnRD     ; 8        ; 0        ; 0        ; 0        ;
+; bnRD       ; bnRD     ; 8        ; 8        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; bnRD       ; bclk     ; 9        ; 1        ; 0        ; 0        ;
+; bclk       ; bnRD     ; 8        ; 0        ; 0        ; 0        ;
+; bnRD       ; bnRD     ; 8        ; 8        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Recovery Transfers                                                ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; bnRD       ; bnRD     ; 8        ; 8        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Removal Transfers                                                 ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; bnRD       ; bnRD     ; 8        ; 8        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 17    ; 17   ;
+; Unconstrained Input Port Paths  ; 26    ; 26   ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 16    ; 16   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue Dec 20 21:04:58 2022
+Info: Command: quartus_sta TestRam -c TestRam
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Core supply voltage is 1.2V
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Warning (335093): TimeQuest Timing Analyzer is analyzing 9 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'TestRam.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name bclk bclk
+    Info (332105): create_clock -period 1.000 -name bnRD bnRD
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -3.117
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.117             -23.078 bnRD 
+    Info (332119):    -3.065              -3.664 bclk 
+Info (332146): Worst-case hold slack is -0.781
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.781              -5.074 bnRD 
+    Info (332119):     0.429               0.000 bclk 
+Info (332146): Worst-case recovery slack is -0.948
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.948              -5.725 bnRD 
+Info (332146): Worst-case removal slack is -0.793
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.793              -3.441 bnRD 
+Info (332146): Worst-case minimum pulse width slack is -3.201
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.201             -15.804 bclk 
+    Info (332119):    -3.000              -3.000 bnRD 
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.869
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.869              -3.295 bclk 
+    Info (332119):    -2.765             -20.265 bnRD 
+Info (332146): Worst-case hold slack is -0.721
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.721              -4.773 bnRD 
+    Info (332119):     0.410               0.000 bclk 
+Info (332146): Worst-case recovery slack is -0.656
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.656              -3.285 bnRD 
+Info (332146): Worst-case removal slack is -0.713
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.713              -2.922 bnRD 
+Info (332146): Worst-case minimum pulse width slack is -3.201
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.201             -15.804 bclk 
+    Info (332119):    -3.000              -3.000 bnRD 
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.815
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.815              -1.313 bclk 
+    Info (332119):    -0.607              -3.823 bnRD 
+Info (332146): Worst-case hold slack is -0.354
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.354              -2.399 bnRD 
+    Info (332119):     0.203               0.000 bclk 
+Info (332146): Worst-case recovery slack is -0.671
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.671              -4.443 bnRD 
+Info (332146): Worst-case removal slack is -0.415
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.415              -2.045 bnRD 
+Info (332146): Worst-case minimum pulse width slack is -3.000
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.000              -7.510 bclk 
+    Info (332119):    -3.000              -3.000 bnRD 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4616 megabytes
+    Info: Processing ended: Tue Dec 20 21:04:59 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
