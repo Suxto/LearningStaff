@@ -1,0 +1,15 @@
+[package]
+name = "apriori"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.scripts]
+run_main = "cargo run --bin apriori"
+
+[dependencies]
+csv = "^1.1"
+
+
+[[bin]]
+name = "apriori"
+path = "src/main.rs"

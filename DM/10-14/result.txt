@@ -1,0 +1,24 @@
+Finished dev [unoptimized + debuginfo] target(s) in 0.01s
+     Running `target\debug\naive_Bayes_classification.exe`
+2 mark type read:
+<=50K >50K
+14 attribute read
+Attr { attr_name: "age", attr_type: continuous }
+Attr { attr_name: "workclass", attr_type: Discrete: Self-emp-not-inc,Private,Federal-gov,Local-gov,Never-worked,Self-emp-inc,Without-pay,State-gov, }
+Attr { attr_name: "fnlwgt", attr_type: continuous }
+Attr { attr_name: "education", attr_type: Discrete: 5th-6th,1st-4th,Prof-school,Masters,11th,Preschool,Doctorate,Bachelors,Assoc-acdm,9th,7th-8th,Assoc-voc,HS-grad,12th,10th,Some-college, }
+Attr { attr_name: "education-num", attr_type: continuous }
+Attr { attr_name: "marital-status", attr_type: Discrete: Divorced,Never-married,Widowed,Married-spouse-absent,Married-AF-spouse,Separated,Married-civ-spouse, }
+Attr { attr_name: "occupation", attr_type: Discrete: Armed-Forces,Priv-house-serv,Tech-support,Other-service,Transport-moving,Sales,Exec-managerial,Craft-repair,Prof-specialty,Handlers-cleaners,Farming-fishing,Machine-op-inspct,Adm-clerical,Protective-serv, }
+Attr { attr_name: "relationship", attr_type: Discrete: Other-relative,Husband,Unmarried,Wife,Own-child,Not-in-family, }
+Attr { attr_name: "race", attr_type: Discrete: Other,Black,Amer-Indian-Eskimo,Asian-Pac-Islander,White, }
+Attr { attr_name: "sex", attr_type: Discrete: Female,Male, }
+Attr { attr_name: "capital-gain", attr_type: continuous }
+Attr { attr_name: "capital-loss", attr_type: continuous }
+Attr { attr_name: "hours-per-week", attr_type: continuous }
+Attr { attr_name: "native-country", attr_type: Discrete: India,Thailand,Outlying-US(Guam-USVI-etc),Germany,Dominican-Republic,Nicaragua,Greece,Iran,Hong,Columbia,Jamaica,United-States,Philippines,Ireland,Hungary,China,England,Laos,Scotland,Trinadad&Tobago,El-Salvador,Taiwan,Cambodia,Canada,Cuba,Puerto-Rico,Poland,Vietnam,Mexico,Haiti,Guatemala,Peru,Ecuador,South,Italy,Portugal,France,Holand-Netherlands,Japan,Yugoslavia,Honduras, }
+The accuracy 0.7342464070752979
+
+Process finished with exit code 0
+
+

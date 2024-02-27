@@ -1,0 +1,54 @@
+C:/Users/suxto/.cargo/bin/cargo.exe run --color=always --package decision_tree --bin decision_tree
+    Finished dev [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target\debug\decision_tree.exe`
+There are 8 attributes:
+Attr0 :Name: 编号, Vals: number
+Attr1 :Name: 色泽, Vals: {青绿,乌黑,浅白}
+Attr2 :Name: 根蒂, Vals: {蜷缩,稍蜷,硬挺}
+Attr3 :Name: 敲声, Vals: {浊响,沉闷,清脆}
+Attr4 :Name: 纹理, Vals: {清晰,稍糊,模糊}
+Attr5 :Name: 脐部, Vals: {凹陷,稍凹,平坦}
+Attr6 :Name: 触感, Vals: {硬滑,软粘}
+Attr7 :Name: 好瓜, Vals: {是,否}
+Please input the attribute index you want to remove, split by space(can be empty)
+0
+Node: All
+        Node: 纹理==清晰
+                Leaf: 根蒂==蜷缩
+                Data contains:
+                [Number(1), String("青绿"), String("蜷缩"), String("浊响"), String("清晰"), String("凹陷"), String("硬滑"), String(" 是")]
+                [Number(2), String("乌黑"), String("蜷缩"), String("沉闷"), String("清晰"), String("凹陷"), String("硬滑"), String(" 是")]
+                [Number(3), String("乌黑"), String("蜷缩"), String("浊响"), String("清晰"), String("凹陷"), String("硬滑"), String(" 是")]
+                [Number(4), String("青绿"), String("蜷缩"), String("沉闷"), String("清晰"), String("凹陷"), String("硬滑"), String(" 是")]
+                [Number(5), String("浅白"), String("蜷缩"), String("浊响"), String("清晰"), String("凹陷"), String("硬滑"), String(" 是")]
+                Node: 根蒂==稍蜷
+                        Leaf: 色泽==青绿
+                        Data contains:
+                        [Number(6), String("青绿"), String("稍蜷"), String("浊响"), String("清晰"), String("稍凹"), String("软粘"), String("是")]
+                        Node: 色泽==乌黑
+                                Leaf: 触感==硬滑
+                                Data contains:
+                                [Number(8), String("乌黑"), String("稍蜷"), String("浊响"), String("清晰"), String("稍凹"), String(" 硬滑"), String("是")]
+                                Leaf: 触感==软粘
+                                Data contains:
+                                [Number(15), String("乌黑"), String("稍蜷"), String("浊响"), String("清晰"), String("稍凹"), String("软粘"), String("否")]
+                Leaf: 根蒂==硬挺
+                Data contains:
+                [Number(10), String("青绿"), String("硬挺"), String("清脆"), String("清晰"), String("平坦"), String("软粘"), String("否")]
+        Node: 纹理==稍糊
+                Leaf: 触感==硬滑
+                Data contains:
+                [Number(9), String("乌黑"), String("稍蜷"), String("沉闷"), String("稍糊"), String("稍凹"), String("硬滑"), String(" 否")]
+                [Number(13), String("青绿"), String("稍蜷"), String("浊响"), String("稍糊"), String("凹陷"), String("硬滑"), String("否")]
+                [Number(14), String("浅白"), String("稍蜷"), String("沉闷"), String("稍糊"), String("凹陷"), String("硬滑"), String("否")]
+                [Number(17), String("青绿"), String("蜷缩"), String("沉闷"), String("稍糊"), String("稍凹"), String("硬滑"), String("否")]
+                Leaf: 触感==软粘
+                Data contains:
+                [Number(7), String("乌黑"), String("稍蜷"), String("浊响"), String("稍糊"), String("稍凹"), String("软粘"), String(" 是")]
+        Leaf: 纹理==模糊
+        Data contains:
+        [Number(11), String("浅白"), String("硬挺"), String("清脆"), String("模糊"), String("平坦"), String("硬滑"), String("否")]   
+        [Number(12), String("浅白"), String("蜷缩"), String("浊响"), String("模糊"), String("平坦"), String("软粘"), String("否")]   
+        [Number(16), String("浅白"), String("蜷缩"), String("浊响"), String("模糊"), String("平坦"), String("硬滑"), String("否")]   
+
+Process finished with exit code 0
