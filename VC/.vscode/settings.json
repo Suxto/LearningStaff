@@ -1,0 +1,21 @@
+{
+    "C_Cpp.default.includePath": [
+        "C:/Users/suxto/OneDrive/Documents/Etc/VC98/INCLUDE"
+    ],
+    "code-runner.executorMap": {
+        "c": "cd $dir && C:/Users/suxto/OneDrive/Documents/Etc/VC98/VC98.BAT CL \"$fileName\" /nologo && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && C:/Users/suxto/OneDrive/Documents/Etc/VC98/VC98.BAT CL -GX \"$fileName\" /nologo && $dir$fileNameWithoutExt"
+    },
+    "files.associations": {
+        "vector": "cpp",
+        "exception": "cpp",
+        "cstring": "cpp",
+        "streambuf": "cpp",
+        "iosfwd": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "string": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp"
+    }
+}
